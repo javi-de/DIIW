@@ -1,0 +1,37 @@
+*{
+    margin-bottom:5px;
+    box-sizing: border-box;
+    padding:5px;
+}
+main{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+fieldset:nth-child(1) label{
+    float:left;
+    width: 20%;
+    clear:both;
+    text-align:right;
+}
+fieldset:nth-child(1) input{
+    float:left;
+}
+fieldset label{
+    display:inline;
+}
+fieldset{
+    clear:both;
+}
+h1 {
+	text-align:center;
+	font-size:24px;
+}
+details summary{
+    cursor:pointer;
+}
+fieldset:last-child{
+    text-align: center;
+}
+button{
+    display:inline;
+}

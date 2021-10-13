@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 170px;
+    height: 60px;
+    margin: 10px;
+    padding: 30px;
+    background-color: blue;
+}
+
+img{
+    border: 2px dashed white;
+}
+
+span{
+    background-color: #2FF;
+}
+
+
+/**************************posicionamiento vertical********************************/
+.baseline{
+    vertical-align: baseline;
+}
+
+.sub{
+    vertical-align: sub;
+}
+
+.super{
+    vertical-align: super;
+}
+
+.top{
+    vertical-align: top;
+}
+
+.text-top{
+    vertical-align: text-top;
+}
+
+.middle{
+    vertical-align: middle;
+}
+
+.bottom{
+    vertical-align: bottom;
+}
+
+.text-bottom{
+    vertical-align: text-bottom;
+}
+
+.medida2em{
+    vertical-align: 2em;
+}
+
+.medida-2em{
+    vertical-align: -2em;
+}
+
+.porcentaje10{
+    vertical-align: 10%;
+}
+
+.porcentaje80{
+    vertical-align: 80%;
+}

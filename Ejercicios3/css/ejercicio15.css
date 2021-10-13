@@ -1,0 +1,29 @@
+.rellenos{
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    background-color: lightgreen;
+}
+
+.padding1{
+    padding: 25px;
+    background-color: violet;
+
+}
+
+.padding2{
+    padding: 20px 15px;
+    background-color: coral;
+
+}
+
+.padding3{
+    padding: 60px 80px 35px;
+    background-color: lime;
+}
+
+.padding4{
+    padding: 10px 50px 20px 100px;
+    background-color: turquoise;
+}

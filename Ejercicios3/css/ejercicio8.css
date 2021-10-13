@@ -1,0 +1,8 @@
+.recuadro1{
+    column-count: 3;
+    background-color: rgb(163, 163, 163);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+}

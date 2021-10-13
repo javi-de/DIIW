@@ -1,0 +1,32 @@
+div{
+    background-color: lightgrey;
+    margin: auto;
+}
+
+.caso1{
+    background-color: lightgreen;
+    display: block;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.caso2{
+    background-color: lightskyblue;
+    display: inline;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.caso3{
+    background-color: lightpink;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}

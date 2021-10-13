@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: red;
+}
+
+p, .linea, div{
+    width: 25%;
+    height: 75px;
+    color: white;
+    font-weight: bold;
+    border: thick solid black;
+}
+
+p{
+    background-color: red;
+    margin: 20px 12px;
+}
+
+.linea{
+    background-color: blue;
+    margin: 12px 30px 12px 12px;
+}
+
+div{
+    background-color: green;
+    margin: 12px;
+}

@@ -1,0 +1,23 @@
+p.primero{
+    font-size: 1em;
+}
+
+.primero span{
+    color: red;
+}
+
+p.segundo{
+    font-size: 1.2em;
+}
+
+.segundo span{
+    color: blue;
+}
+
+p.tercero{
+    font-size: 0.8em;
+}
+
+.tercero span{
+    color: green;
+}

@@ -1,0 +1,55 @@
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: red;
+}
+
+div{
+    width: 20%;
+    height: 75px;
+    font-weight: bold;
+    border: thick solid black;
+}
+
+.caja1{
+    background-color: red;
+    position: relative;
+}
+
+.caja2{
+    background-color: blue;
+    position: relative;
+    left: 100px;
+    top: -50px;
+}
+
+.caja3{
+    background-color: green;
+    position: relative;
+}
+
+.caja4{
+    background-color: lightskyblue;
+    position: relative;
+    left: 250px;
+    top: -200px;
+}
+
+.caja5{
+    background-color: darkseagreen;
+    position: relative;
+    right: 50px;
+
+}

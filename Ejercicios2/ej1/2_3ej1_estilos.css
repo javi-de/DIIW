@@ -1,0 +1,132 @@
+/* 1.- A todos los elementos */ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* 2.- A todo h1 que sea hijo inmediato de header */
+.cabecera>h1{
+    color: blueviolet;
+    font: bold 25px verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* 3.- A todos los h3 que son hermanos de h2 */
+h2~h3{
+    color: yellowgreen;
+    font: bold 20px verdana, sans-serif;
+    text-indent: 10%;
+}
+
+/* 4.- A todo aquel h3 que está inmediatamente precedidos por un hermano h3 con atributo -class- */
+h3[class]+h3{
+    color: orange;
+    font: bold 20px verdana, sans-serif;
+}
+
+/* 5.- A todo h3 que tenga como atributo -class- el valor -fecha- */
+h3[class="fecha"]{
+    color: black;
+    font: 12px verdana, sans-serif; 
+}
+
+/* 6.- A todo aquel h3 que tenga un atributo -class- cuyo valor contenga la palabra -indentado- */
+h3[class~="indentado"]{
+    text-indent: 20%;
+}
+
+/* 7.- Al primer párrafo de cada artículo */
+article p:first-of-type{
+    text-indent: 5%;
+}
+
+/* 8.- A los párrafos impares del artículo2 */
+#articulo2 p:nth-of-type(2n+1){
+    color: blue;
+    text-decoration: line-through;
+}
+
+/* 9.- A la última cita de cada artículo */
+article cite:last-child{
+    color: red;
+    text-decoration: underline;
+}
+
+/* 10.- A la primera letra de cada párrafo */
+p::first-letter{
+    text-transform: uppercase;
+}
+
+/* 11.- Añadir un * después de cada <blockquote> */
+blockquote::after{
+    content: "*";
+}
+
+
+/***********************************************************************************************************/
+body {
+    margin: 15px auto;
+    max-width: 960px;
+    text-align: center;
+}
+
+.cabecera {
+    background: #FFFBB9;
+    border: 1px solid #999999;
+    padding: 20px;
+}
+
+main {
+    float: left;
+    margin: 20px 2% 0 0;
+    width: 73%;
+}
+
+aside {
+    background: #CCCCCC;
+    box-sizing: border-box;
+    float: left;
+    margin: 20px 0 0 0;
+    padding: 2px;
+    width: 25%;
+}
+
+.pie {
+    border-top: 2px solid #999999;
+    clear: both;
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    background: #FFFBCC;
+    border: 1px solid #999999;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+article footer {
+    text-align: right;
+}
+
+time {
+    color: #999999;
+}
+
+figcaption {
+    font: italic 14px verdana, sans-serif;
+}
+
+nav {
+    background: #CCCCCC;
+    padding: 5px 15px;
+}
+
+nav li {
+    display: inline-block;
+    font: bold 14px verdana, sans-serif;
+    list-style: none;
+    padding: 5px;
+    position: relative;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio4.css">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <form name="ficha_inscripcion" id="ficha_inscripcion" method="post" action="#">
+        <fieldset>
+            <legend>Datos identificativos</legend>
+
+            <label for="codigo_sus">Código de suscripción</label>
+            <input type="text" name="codigo_sus" id="codigo_sus" size="10" readonly value="INS-123">
+            
+            <label for="socio">Nº de socio</label>
+            <input type="text" name="socio" id="socio" size="10" disabled value="123">
+            
+            <label for="usuario">Usuario*</label>
+            <input type="text" name="usuario" id="usuario" maxlength="10" required>
+            
+            <label for="contra1">Constraseña*</label>
+            <input type="password" name="contra1" id="contra1" maxlength="10" required>
+
+            <label for="contra2">Repite contraseña*</label>
+            <input type="password" name="contra2" id="contra2" maxlength="10" required>
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" name="nombre" id="nombre" size="30" maxlength="30" autofocus>
+
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" size="10" maxlength="8" pattern="[0-9]{8}" oninvalid="this.setCustomValidity('Debes introducir solo números')"
+            oninput="this.setCustomValidity('')">
+
+            <label for="letra">Letra</label>
+            <input type="text" name="letra" id="letra" size="2" maxlength="1" pattern="[A-Z]" oninvalid="this.setCustomValidity('Debes introducir una letra mayúscula')"
+            oninput="this.setCustomValidity('')">
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion"  size="30" maxlength="30" >
+            
+            <label for="ciudad">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad" size="15" maxlength="15">
+            
+            <label for="cp">Código postal</label>
+            <input type="text" name="cp" id="cp" size="5" maxlength="5" pattern="[0-9]{5}" oninvalid="this.setCustomValidity('Debes introducir solo números')"
+            oninput="this.setCustomValidity('')">
+            
+            <label for="pais">País</label>
+            <input type="text" name="pais" id="pais" size="7" disabled value="Francia">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos bancarios</legend>
+            
+            <input type="radio" value="Visa" name="tarjeta">Visa
+            <input type="radio" value="Master_Card" name="tarjeta" checked>Master Card
+            <input type="radio" value="American_Express" name="tarjeta">American Express
+        </fieldset>
+
+        <fieldset>
+            <legend>Aficiones</legend>
+            
+            <input type="checkbox" name="aficiones[]" value="leer" checked>Leer
+            <input type="checkbox" name="aficiones[]" value="viajar" checked>Viajar
+            <input type="checkbox" name="aficiones[]" value="musica" checked>Escuchar música
+            <input type="checkbox" name="aficiones[]" value="deportes">Deportes
+            <input type="checkbox" name="aficiones[]" value="montana">Montaña
+            <input type="checkbox" name="aficiones[]" value="juegos" checked>Juegos de estrategia
+
+            <details>
+                <summary>Más opciones</summary>
+
+                <input type="checkbox" name="aficiones[]" value="informatica">Informática
+                <input type="checkbox" name="aficiones[]" value="jogging">Jogging
+                <input type="checkbox" name="aficiones[]" value="cine">Cine    
+            </details>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enviar información</legend>
+
+            <details>
+                <summary>Más opciones</summary>
+                <input type="file" name="resguardo_pago">
+            </details>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

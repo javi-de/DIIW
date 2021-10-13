@@ -1,0 +1,53 @@
+/* ===============================================================
+No modificar estos estilos
+================================================================== */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+li { 
+    list-style: none; 
+}
+body {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+header, nav, aside, footer, section, .contenedor {
+    border: 2px solid #777;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+}
+main{
+    display:flex;
+}
+.lateral1 { 
+    width: 20%; 
+}
+.contenedor { 
+    display:flex;
+    width: 80%; 
+}
+section { 
+    width: 80%; 
+}
+.lateral2 { 
+    width: 20%; 
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+}
+nav li { 
+    display: inline; 
+}
+section article img { 
+    float: left; 
+    width: 100px;
+}
+/* ================================================================
+Añade tus estilos aqui
+================================================================== */

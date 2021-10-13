@@ -1,0 +1,20 @@
+h1, h2, h3{
+    color: grey;
+}
+
+p {
+    color: red;
+}
+
+
+strong, p:nth-of-type(4) {
+    color:blue;
+}
+
+p:nth-of-type(-n + 2) span {
+    color:green;
+}
+
+em, del {
+    color:yellow;
+}

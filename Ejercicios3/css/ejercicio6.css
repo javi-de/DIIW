@@ -1,0 +1,27 @@
+p{
+    padding: 5px;
+}
+
+.recuadro1 p{
+    color: rgb(255, 0, 0, 0.2);
+}
+
+.recuadro2 p{
+    color: rgb(255, 0, 0, 0.5);
+}
+
+.recuadro3 p{
+    color: rgb(255, 0, 0, 1);
+}
+
+.recuadro4 p{
+    color: rgb(255, 0, 0);
+    background-color:rgb(60, 200, 170); 
+    border-radius: 10px; 
+}
+
+.recuadro5 p{
+    color: rgb(255, 0, 0, 0.3);
+    background-color:rgb(60, 200, 170, 0.3); 
+    border-radius: 10px; 
+}

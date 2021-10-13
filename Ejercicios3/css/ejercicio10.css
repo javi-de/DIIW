@@ -1,0 +1,29 @@
+/* fuente descargada */
+@font-face{
+    font-family: Niconne;
+    src: url(../fuentes/Niconne-Regular.ttf);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.recuadro1, .recuadro2{
+    color: red;
+    width: 250px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.recuadro1{
+    font-family: Niconne;
+}
+
+.recuadro2{
+    font-family: "Barrio";
+}
+
