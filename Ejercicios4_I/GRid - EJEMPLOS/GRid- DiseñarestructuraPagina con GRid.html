@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GRID</title>
+        <meta name="description" content="GRID">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>                                        
+		<h2>DISEÑAR ESTRUCTURA DE UN A WEB CON GRID </h2>
+		<br>
+		<div style="display:grid; width:100%; grid-template-columns: 1fr repeat(2, 2fr) 1fr; grid-template-rows: repeat(12, 1fr);border: 1px black dashed;;font-family:Verdana;">
+		<!-- DISEÑAR ESTRUCTURA DE UN A WEB CON GRID Posicionando elementos de acuerdo a las líneas:              
+				grid-column-start: columna en la que empieza 
+				grid-column-end: columna en la que acaba (sin incluir)
+				grid-row-start: fila en la que empieza
+				grid-row-end: fila en la que acaba (sin inlucir);
+		-->
+			<div style="grid-column-start: 1;grid-column-end: 3;grid-row-start: 1;grid-row-end: 2";> 
+				
+			</div>
+			<div style="border: solid 1px black; grid-column-start: 3;grid-column-end: 5;grid-row-start: 1;grid-row-end: 2;text-align:right;font: small-caps bold 12px/30px Georgia, serif;border-style: none;"> 
+				<span style="font-family:Verdana;border-radius: 20px; border: 2px dotted green;background-color: green;">ACCESO a mi CUENTA</span>
+			</div>
+			<div style="border: solid 1px black;grid-column-start: 1;grid-column-end: 5;grid-row-start: 2;grid-row-end: 3;text-align:center;font: bold 20px;vertical-align:center;border: 2px dotted green"> 
+				MENU 1- Imagenes de la marca,...<img src="./Baratza.jpg" style="width:5%;">
+			</div>
+			<div style="border: solid 1px black;grid-column-start: 1;grid-column-end: 5;grid-row-start: 3;grid-row-end:6;text-align:center;vertical-align:center;font: bold 40px;border: 2px dotted green;margin: 0px;align-items: center; justify-content: center;"> 
+                <p>MENU 2</p>
+			    <ul style="list-style: none;margin: 0;padding: 0;">
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción1</a></li>
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción2</a></li>
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción3</a></li>
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción4</a></li>
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción5</a></li>
+                    <li style="display:inline-block;"><a url="" style="border: 1px solid #7c7c7c;color: #333;display: block;padding: 0.3em;text-decoration: none;">Opción6</a></li>
+			    </ul>
+			
+			
+			</div>
+			<div style="border: 2px dotted green;grid-column-start: 1;grid-column-end: 2;grid-row-start: 6;grid-row-end: 12;text-align:center;"> BARRA LATERAL
+			    <ul style="list-style: none;margin: 0px; padding: 0px;border-bottom: none;width: 100%;">
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #7C7C7C;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción1</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción2</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción3</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción4</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción5</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción6</a></li>
+                    <li style="border-bottom: 1px solid #7C7C7C;border-top: 1px solid #FFF;background: #F4F4F4;"><a url="" style="padding: .2em 0 .2em .5em;text-decoration: none;color: #333;display: block; "> Opción7</a></li>
+                
+			    </ul>
+			</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: 2px dotted green;grid-column-start: 2;grid-column-end: 4;grid-row-start: 6;grid-row-end: 12;text-align:left;"> 
+                <span style="text-align: center;">CONTENIDO</span>
+			    
+			    <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies efficitur efficitur. Duis posuere elementum ipsum, non facilisis nulla tempus a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet nisi quis erat efficitur blandit. Nam blandit dignissim est, eget volutpat mauris mollis eget. Nunc rutrum fringilla mi. Vestibulum efficitur ipsum lorem, sit amet malesuada tellus suscipit sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; </article>
+			    <br>
+			    
+			    <article>Sed volutpat nibh id neque mattis scelerisque. Donec mollis enim a eros auctor, sit amet imperdiet magna imperdiet. Cras scelerisque odio magna, malesuada finibus quam semper a. In ipsum augue, iaculis eget ex quis, condimentum faucibus mauris. Sed laoreet tincidunt felis, quis tempor quam tincidunt vel. Ut bibendum lectus sit amet rhoncus consectetur. In ut ultricies risus, sed vestibulum mi. Donec mauris diam, dictum et vehicula tincidunt, suscipit nec magna. Pellentesque nec tincidunt diam. Suspendisse consequat odio eget nulla efficitur pulvinar.</article>
+			
+			
+			</div>
+			<div style="border: 2px dotted green;grid-column-start: 4;grid-row-start: 6;grid-row-end: 12;text-align:center;"> ANUNCIOS
+			    <div style="display: flex; flex-wrap: wrap; align-items: center;">
+			        <img src="./Barazkiak.jpg" style="width: 35%; border-radius:50%; border:1px solid red;"></div>
+			        <img src="./Laranjaj.jpg" style="width: 35%; border-radius:50%; border:1px solid red;">
+			   </div>
+			   
+			<div style="border: 2px dotted green;grid-column-start: 1;grid-column-end: 5;grid-row-start: 12;text-align:center;font-size: 0.8em;text-align: right;"> PIE DE PAGINA: Contacto, dirección,...
+			</div>
+        </div>
+		
+     </body>
+</html>

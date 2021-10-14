@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GRID</title>
+        <meta name="description" content="GRID">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>grid-auto-rows</h1>
+        <h3>Especifica el tamaño de una nueva fila creada de forma implícita. Especifíca el tamaño de una nueva fila creada de forma implícita. </h3>
+        <div>
+            <span style="display: list-item; margin-left: 2em">Altura: Es una medida no negativa.</span>
+            <span style="display: list-item; margin-left: 2em">Porcentaje: Es un porcentaje no negativo relativo al tamaño del bloque del contenedor del grid. Si el tamaño del bloque del contenedor es indefinido, el valor del porcentaje es tratado como auto."</span>
+            <span style="display: list-item; margin-left: 2em">Flex: Es una dimensión no negativa con la unidad fr especificando el factor flex de la pista (track). Cada pista con valor flex toma una parte del espacio restante en proporción con su factor flex. Cuando aparece fuera de una notación minmax(), implica un mínimo automático (p.e. minmax(auto, flex)).
+                <p>"/* flex values */"
+                    <span style="display: list-item; margin-left: 2em">grid-auto-rows: 0.5fr;</span>
+                    <span style="display: list-item; margin-left: 2em">grid-auto-rows: 3fr;</span>
+                </p>
+            </span>
+            <span style="display: list-item; margin-left: 2em">Max-content: representa el largo maximo del contenido de cada uno de los items de la pista en la cuadricula(grid)</span>
+            <span style="display: list-item; margin-left: 2em">Min-content: representa el largo minimo del contenido de cada uno de los items de la pista en la cuadricula(grid)</span>
+            <span style="display: list-item; margin-left: 2em">Minmax(minimo, maximo): es una notacion funcional que define el rango del tamano, dicho tamano debe ser mayor o igual al (minimo) y menor o igual al (maximo). si el parametro (maximo) es mas pequeno que el parametro (minimo), entonces el parametro (maximo) es ignorado y la funcion se tratara con el parametro (minimo). De otra manera si, a valor flex pone como minimo el factor flex de la pista, sera tratado como cero( or el contenido minimo, si el contenedor grid es inicializado con el tamano minimo permitido ).</span>
+            <span style="display: list-item; margin-left: 2em">Auto: Es una palabra clave que es identica a contenido máximo si es un máximo. Como mínimo representa el valor mínimo más grande (como esté especificado por  min-width/min-height) de los elementos de la grilla que ocupan la pista de la grilla. </span>
+        </div>
+        <h1>DIV1</h1>
+        <p>Creo un grid de 3 columnas y 3 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: 100px </p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px green dashed; grid-auto-rows:100px;">
+			<!--Creo una cuadricula explícita de de 3x2 = 6 elementos. Como hay más elementos, el resto los rellena el grid (cuadrícula explícita) -->
+			<div style="border: solid 1px green"> CAJA1</div>
+			<div style="border: solid 1px green"> CAJA2</div>
+			<div style="border: solid 1px green"> CAJA3</div>
+			<div style="border: solid 1px green"> CAJA4</div>
+			<div style="border: solid 1px green"> CAJA5</div>
+			<div style="border: solid 1px green"> CAJA6</div>
+			<div style="border: solid 1px green"> CAJA7</div>
+			<div style="border: solid 1px green"> CAJA8</div>
+			<div style="border: solid 1px green"> CAJA9</div>
+			<div style="border: solid 1px green"> CAJA10</div>
+		</div>
+		<br>
+        <h1>DIV2</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: 60%. </p>
+        <p>El grid mantiene tamaño y las filas explícitas crecen comiendo espacio al siguiente elemento. </p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px green dashed;grid-auto-rows:60%;">
+			<div style="border: solid 1px black; background-color: rgba(255,0,0,0.5);"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,221,1);"> CAJA3</div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black"> CAJA7</div>
+			<div style="border: solid 1px black"> CAJA8</div>
+			<div style="border: solid 1px black"> CAJA9</div>
+			<div style="border: solid 1px black"> CAJA10</div>
+		</div>
+		<br>
+        <br>
+        <h1>DIV3</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: 5fr (flex) </p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px black dashed;grid-auto-rows:5fr;">
+		<!-- Posicionando elementos de acuerdo a las líneas:
+				grid-column-start: columna en la que empieza 
+				grid-column-end: columna en la que acaba (sin incluir)
+				grid-row-start: fila en la que empieza
+				grid-row-end: fila en la que acaba (sin inlucir);
+		-->
+			<div style="border: solid 1px black;"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black;"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black;"> CAJA3</div>
+			<div style="border: solid 1px black;"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black;background-color: rgba(255,0,0,0.5);"> CAJA7</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);"> CAJA8</div>
+			<div style="border: solid 1px black"> CAJA9</div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);"> CAJA10</div>
+		</div>  
+        <br>
+        <h1>DIV4</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: min-content </p>
+        <p>Representa la altura <i>mínima</i> del contenido de cada uno de los items de la pista en la cuadricula(grid). Es decir se ajusta al contenido, disminuyendo la altura de la fila si es más pequeño.</p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px black dashed;grid-auto-rows:min-content;">
+			<div style="border: solid 1px black;"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black;"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black;"> CAJA3</div>
+			<div style="border: solid 1px black;"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black;background-color: rgba(255,0,0,0.5);font-size: 8px;"> caja</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);font-size: 8px"> caja</div>
+			<div style="border: solid 1px black;font-size: 8px"> caja</div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);font-size: 8px"> caja </div>
+		</div> 
+        
+         <br>
+        <h1>DIV5</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: max-content </p>
+        <p>Representa la altura <i>máxima</i> del contenido de cada uno de los ítems en la fila. Es decir, coge la altura del más alto para la fila </p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px black dashed;grid-auto-rows:max-content;">
+		
+			<div style="border: solid 1px black;"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black;"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black;"> CAJA3</div>
+			<div style="border: solid 1px black;"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black;background-color: rgba(255,0,0,0.5);"> CAJA7</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);"> CAJA8<p> p dentro de CAJA8</p><p> p dentro de CAJA8</p><p> p dentro de CAJA8</p><p> p dentro de CAJA8</p><p> p dentro de CAJA8</p><p> p dentro de CAJA8</p></div>
+			<div style="border: solid 1px black"> CAJA9<p> p dentro de CAJA9</p></div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);"> CAJA10 <p> p dentro de CAJA10</p></div>
+		</div>  
+        
+        <h1>DIV6</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: auto</p>
+            <p>Auto: Es una palabra clave que es idéntica al contenido máximo si es un máximo</p>
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px black dashed;grid-auto-rows:auto;">
+		<!-- Posicionando elementos de acuerdo a las líneas:
+				grid-column-start: columna en la que empieza 
+				grid-column-end: columna en la que acaba (sin incluir)
+				grid-row-start: fila en la que empieza
+				grid-row-end: fila en la que acaba (sin inlucir);
+		-->
+			<div style="border: solid 1px black;"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black;"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black;"> CAJA3</div>
+			<div style="border: solid 1px black;"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black;background-color: rgba(255,0,0,0.5);"> CAJA7</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);"> CAJA8<p> p dentro de CAJA8</p></div>
+			<div style="border: solid 1px black"> CAJA9<p> p dentro de CAJA9</p></div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);"> CAJA10 <p> p dentro de CAJA10</p></div>
+		</div>  
+		<br>
+        <h1>DIV7</h1>
+        <p>Creo un grid de 3 columnas y 2 filas. En total 6 elementos explícitos. Hay que colocar 10 cajas, con lo cual de la 7-10 son implícitos. Al crearse atenderán al valor grid-auto-rows: minmax (20%,80%) 
+        </p>
+        <p>Es una notacion funcional que define el rango del tamano, dicho tamano debe ser mayor o igual al (minimo) y menor o igual al (maximo). si el parametro (maximo) es mas pequeno que el parametro (minimo), entonces el parametro (maximo) es ignorado y la funcion se tratara con el parametro (minimo). </p>
+        <p> Es decir ajusta cada fila a la altura. Siempre cogerá el del elemento más alto y lo convertirá en el mínimo para toda la fila</p>
+    
+		<div style="display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);border: 1px black dashed;grid-auto-rows:minmax (20%,80%);">
+		
+			<div style="border: solid 1px black;"> 
+				CAJA1
+			</div>
+			<div style="border: solid 1px black;"> 
+				CAJA2
+			</div>
+			<div style="border: solid 1px black;"> CAJA3</div>
+			<div style="border: solid 1px black;"> CAJA4</div>
+			
+			<!-- El resto de cajas se van posicionando en los huecos libres que haya por orden de aparición-->
+			<div style="border: solid 1px black"> CAJA5</div>
+			<div style="border: solid 1px black"> CAJA6</div>
+			<div style="border: solid 1px black;background-color: rgba(255,0,0,0.5);font-size: 8px;"> CAJA7</div>
+			<div style="border: solid 1px black; background-color: rgba(46,228,128,0.5);font-size: 10px;"> CAJA8</div>
+			<div style="border: solid 1px black;font-size: 12px;">CAJA9</div>
+			<div style="border: solid 1px black; background-color: rgba(228,46,203,0.65);"> CAJA10 <p> p dentro de CAJA10</p><p> p dentro de CAJA10</p></div>
+		</div>  
+        
+		
+     </body>
+</html>
