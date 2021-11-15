@@ -1,0 +1,36 @@
+body span[class]{	
+	font-size: 2em;
+    font-weight: bold;
+	padding: 20px;
+}
+h1 span {	
+	color: red;
+	font-size: 1.5em;	
+	text-decoration: underline;
+}
+span[class] {
+    border-style: solid;
+	border-width: thick;
+}
+h1 	{ 
+    margin-bottom:50px;
+	text-align: center;
+}
+.uno{	
+	background-color:red;
+}
+.dos{
+    background-color:blue;
+	position: relative;
+	right: 100px;
+	top:60px;
+}	
+.tres{	
+	background-color:green;
+}
+.cuatro{
+    background-color:yellow;
+	position: relative;	
+	right: 100px;
+	top:60px;
+}

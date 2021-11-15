@@ -1,0 +1,40 @@
+body {
+    color: #777;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:1em;
+    text-align: center;
+}
+main{
+    display: table;
+    margin: 20px auto;
+    width: 700px;
+}
+.fila{
+    display:table-row;
+}
+.fila div{
+    display: table-cell;
+}
+.texto {
+    border: 1px solid #ccc;
+    padding: 5px;
+    vertical-align: top;
+    width: 20%;
+}
+.imagen {
+    border: 1px solid #ccc;
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    width: 80%;
+}
+.caption{
+    caption-side:bottom;
+    display: table-caption;
+    font-size: 0.8;
+    font-style:italic;
+}
+
+img {
+    max-width: 100%; 
+}

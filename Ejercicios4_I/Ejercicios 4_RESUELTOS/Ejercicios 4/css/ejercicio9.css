@@ -1,0 +1,39 @@
+body{
+    background-image: url(../imagenes/paper.gif);
+}
+h1{
+    color: grey;
+    text-align:center;
+}
+
+.principal{
+    background-color:lightcyan;
+    border: 10px groove lightgrey;
+    margin: 10px auto 0;
+    width: 750px;
+}
+.imagen{
+    background-color:lightblue;
+    border-bottom:3px solid grey;
+    border-right:3px solid grey;
+    float:left;
+    height: 180px;
+    margin:10px;
+    padding:5px;
+    text-align:center;
+    width: 215px;
+
+}
+img{
+    border: 3px solid white;
+
+}
+a{
+    color:white;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:.7em;
+    text-decoration:none;
+}
+.clear{
+    clear:both;
+}

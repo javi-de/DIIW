@@ -1,0 +1,21 @@
+.contenedor{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 700px;
+}
+
+.contenedor div{
+	background-color:#FF6600;
+	color:#FFFFFF;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 36px;
+	font-weight:bold;
+	height: 100px;
+	line-height:100px;
+	margin: 5px;
+	text-align:center;
+	vertical-align:middle;
+	width: 150px;
+}

@@ -1,0 +1,33 @@
+.contenedor {
+    background-color:#333333;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: flex-start;
+    margin: 10px auto;
+    width: 220px;
+}
+
+.uno, .dos, .tres, .cuatro{
+    background-color: grey;
+    margin: 5px;
+    text-align:center;
+}
+
+.uno{
+	order:1;
+	flex:0 0 100px;
+}
+.dos{
+	order:2;
+	flex:0 0 100px;
+}
+.tres{
+	order:3;
+	flex:0 0 100px;
+}
+.cuatro{
+	order:4;
+	flex:0 0 150px;
+}

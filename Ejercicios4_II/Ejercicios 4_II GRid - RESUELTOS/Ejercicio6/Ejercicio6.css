@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{font-family: 'Bebas Neue', cursive; 
+    }
+html{background-color: #c4e1ff;}
+    
+.grid-container {
+          background-image: url(img/Aurpegia.jpg) no-repeat;
+		  display: grid;
+		  grid-template-columns: 1fr 1fr 1fr;
+		  grid-template-areas:
+		  "area1 area1 area1"
+		  "area2 area2 area3"
+		  "area2 area2 area3"
+		  "area4 area4 area4";
+	}
+.grid-item2 h1{
+    font-size: 500%;
+}
+.grid-item2 p{
+    font-size: 130%;
+}
+	.grid-item1{
+		  grid-area: area1;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+          column-gap: 1em;
+        }
+.grid-item1 p{
+    padding: 1em;
+}
+.grid-item1 p:nth-of-type(5){
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+	.grid-item2 {
+		  
+		  text-align: center;
+		  grid-area: area2;
+	}
+    .grid-item2 p:nth-of-type(2){
+            border-radius: 5px;
+            color:black;
+            background-color: white;
+            display: inline-block;
+            padding: 0.5em;
+            margin-right: 2px;
+        }
+
+	.grid-item3 {
+		  background:  url(img/Aurpegia.jpg) no-repeat center;
+            background-size: cover;
+            box-shadow: 0 0 8px 8px white inset;
+        border-radius: 5px;
+		  text-align: center;
+		  grid-area: area3;
+	}
+	.grid-item4 {
+		  font-family: 'Stick No Bills', sans-serif;
+		  text-align: justify;
+          margin: auto 5em;
+		  grid-area: area4;
+          display: grid;
+          grid-gap: 2em;
+          grid-template-columns: repeat(1, 2fr 2fr);    
+          margin-left: 15%;
+          margin-right: 15%;
+         margin-top: 5%;
+	}
+    .grid-item4 article{
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 1em;
+    }
+    .grid-item4 h2{
+            color:gray;
+            font-size: 400%;   
+        }
+    .grid-item4 p{
+            color:black;
+            font-size: 150%;
+            
+    }
+    .grid-item4 article p span{
+        
+        font-size: 180%;
+        color:#c4e1ff;
+        text-shadow: 0.1em 0.1em #333;
+        position: absolute;
+        
+}
+    .grid-item4 p:nth-of-type(2),.grid-item4 p:nth-of-type(3) {
+            color:black;
+            font-size: 100%;
+    }
+    aside{
+        float:right;
+        display:grid;
+        column-gap: 2%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
+    }
+    aside p:nth-of-type(5){
+            border: black 5px solid;
+            background-color: black;
+            border-radius: 5px;
+            color:white;
+            margin-right: 2px;
+        }

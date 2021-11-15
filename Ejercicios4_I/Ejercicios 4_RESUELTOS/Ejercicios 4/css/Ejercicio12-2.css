@@ -1,0 +1,38 @@
+body{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+}
+.contenedor{
+   
+    background-color:#333333;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    height: 350px;
+    justify-content: flex-start;
+    margin: 10px auto;
+    width: 220px;
+}
+.contenedor div{
+    background-color:#999999;
+    color:#FFFFFF;
+    margin: 5px;
+    text-align:center;
+    width: 100px;
+}
+.uno{
+    height:100px;
+    line-height:100px;
+}
+.dos{
+    height:100px;
+    line-height:100px;
+}
+.tres{
+    height:100px;
+    line-height:100px;
+}
+.cuatro{
+    height:150px;
+    line-height:150px;
+}

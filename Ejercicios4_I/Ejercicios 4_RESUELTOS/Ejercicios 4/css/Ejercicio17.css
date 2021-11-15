@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+	background-color: #400000;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 1em;
+}
+.tabla{
+	display:table;
+	margin:15px;
+}
+
+.fila{
+    display:table-row;
+}
+p{
+    background-color:#FF9900;
+    border: 2px solid #4B0603;
+    color: #FFFFFF;
+    display:table-cell;
+    height: calc(100vh - 30px);
+    padding:15px;
+    text-align:justify;
+    width: 33%;
+}

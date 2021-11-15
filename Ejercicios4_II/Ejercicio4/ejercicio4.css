@@ -1,0 +1,91 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    row-gap: 5px;
+
+    position:absolute;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+
+    text-align: center;
+}
+
+.titulo{
+    background:url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1712/Black-cat-front-view-yellow-eyes-darkness-background_1920x1200.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 90%;
+    background-size: 30%;
+    background-color: black;
+    
+    position:relative;
+
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo h1{
+    text-align: center;
+    font-size: 5em;
+    grid-column: 1;
+}
+
+.titulo p{
+    text-align: left;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.titulo p:nth-of-type(1){
+    position: relative;
+    bottom: 30px;
+}
+
+.contenido{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    gap: 10px;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+
+.contenido div{
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    width: 300px;
+    height: 200px;
+}
+
+.gato1{
+    background:url(http://placekitten.com/305/205);
+}
+.gato2{
+    background:url(http://placekitten.com/320/220);
+}
+.gato3{
+    background:url(http://placekitten.com/343/240);
+}
+.gato4{
+    background:url(http://placekitten.com/200/250);
+}
+.gato5{
+    background:url(http://placekitten.com/410/410);
+}
+.gato6{
+    background:url(http://placekitten.com/430/240);
+}
+
+.contenido div p{
+    background-color: white;
+    opacity: 0.5;
+    position: relative;
+    top: 75%;
+}

@@ -1,0 +1,30 @@
+.contenedor{
+	background-color:#eaeaea;
+}
+.cajasBlock{
+	background-color:lightgreen;
+	border-top: 10px solid #eaeaea;
+	display:block;
+	height:55px;
+	margin: 0px auto;
+	padding-top: 10px;
+	text-align:center;
+	width: 100px;
+}
+.cajasInline{
+	background-color: lightblue;
+	display:inline;
+}
+.cajasInlineBlock{
+	background-color: #f9f;
+	color:white;
+	display:inline-block;
+	height:30px;
+	margin:15px;
+	padding-top: 5px;
+	text-align:center;
+	width: 250px;
+}
+.centrar{
+	text-align:center;
+}

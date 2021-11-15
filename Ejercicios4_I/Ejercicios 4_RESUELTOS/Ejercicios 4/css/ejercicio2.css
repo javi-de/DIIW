@@ -1,0 +1,39 @@
+p{	
+	font-size: 1.5em;
+    font-weight: bold;
+}
+h1 span {	
+	color: red;
+	font-size: 1.5em;	
+	text-decoration: underline;
+}
+h1 	{ 
+	text-align: center;
+}
+p{ 
+    border: thick solid  black;
+    height: 75px;
+    position:relative;
+	width: 25%;
+}
+.uno	{	
+	background-color:red;
+}
+.dos	{	
+	background-color:blue;
+    left: 100px;
+	top:-50px;
+}	
+.tres	{	
+	background-color:green;
+}
+.cuatro	{	
+	background-color:lightblue;
+    left: 250px;
+	top: -200px;
+}
+.cinco	{
+    background-color:lightgreen;
+	right: 50px;
+		
+}

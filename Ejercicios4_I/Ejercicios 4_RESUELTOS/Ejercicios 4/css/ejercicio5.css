@@ -1,0 +1,46 @@
+h1 span {	
+    color: red;
+    font-size: 1.5em;	
+    text-decoration: underline;
+}
+
+h1 	{ 
+    text-align: center;
+}
+
+body span[class]{
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+div{
+    background-color:lightblue;
+    height: 200px;
+    padding:40px;
+    position:relative
+}			
+
+span[class] ,div	{
+    border-style: solid;
+    border-width: thick;
+}
+
+.uno	{	
+    background-color:red;
+}
+
+.dos	{	    
+    background-color: blue;
+    left: 150px;
+    position: absolute;
+    top: 80px;
+}	
+
+.tres	{	
+    background-color:green;
+}
+
+.cuatro	{	
+    background-color:yellow;
+}

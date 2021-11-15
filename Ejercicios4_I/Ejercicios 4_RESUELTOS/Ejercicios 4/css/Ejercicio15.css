@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{	
+    color: #333; 
+    font-family: Helvetica, arial, sans-serif; 
+    font-size: 62.5%; 
+    line-height: 1.4em; 
+    width: 100%;
+}
+header{
+    align-items:flex-end;
+    background-color: #202020;
+    display:flex;
+    height: 150px;
+    justify-content:flex-end;
+    width:100%;
+}
+header img{
+    height: 76px;
+    width: 353px;
+}
+h1{	
+    font-size: 3em; 
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.viajes{
+    display: flex ;
+    min-width: 625px;
+}
+.dos{
+    background-color: #b6ebb3;
+    flex: 1;
+}
+.uno {
+    background-color: #bacee3;
+    flex: 1;
+}
+.tres {
+    background-color: #7ebdbb;
+    flex: 1;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /*justify-content: flex-end;*/
+}
+article img{
+    align-self: center;
+    height:	100px;
+    order: 1;
+    width: 200px;
+}
+h2{
+    align-self: center;
+    font-size: 1.5em; 
+    line-height: 1.4em;
+    margin-top:10px;
+    order: 2;
+}
+article p{
+    flex:1;
+    font-size: 1.2em;
+    order: 3;
+    text-align:justify;
+}
+article button{
+    align-self: center;
+    height: 30px;
+    order: 4;
+    width: 30%;
+    min-width: 100px;
+    margin-top:10px;
+    
+}

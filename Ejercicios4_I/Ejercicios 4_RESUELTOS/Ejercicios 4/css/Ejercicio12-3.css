@@ -1,0 +1,34 @@
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+}
+.contenedor{
+	align-items: center;
+	background-color:#333333;
+	display:flex;
+	flex-wrap: wrap-reverse;
+	justify-content: flex-end;
+	margin: 10px auto;
+	width: 420px;
+}
+.contenedor div{
+	background-color:#999999;
+	color:#FFFFFF;
+	height: 100px;
+	line-height:100px;
+	margin: 5px;
+	text-align:center;
+}
+.uno{
+	flex:0 1 100px;
+	
+}
+.dos{
+	flex:0 1 100px;
+}
+.tres{
+	flex:0 1 100px;
+}
+.cuatro{
+	flex:0 1 200px;
+}

@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EJEMPLO GRID AUTOFLOW</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="./grid-auto-flow.css">
+    </head>
+    <body>
+       <img src="Flow-row.png">
+        <div id="grid1"><!--Crea un grid de 4 filas y 2 columnas. Rellena las filas primero.-->
+            
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3; Empieza en la fila 3. Fila 1 y 2 quedan libres-->
+			<div id="item2"> CAJA2</div> <!-- Como hay que llenar las filas, vuelve atrás y mira si hay hueco libre. Si hay libre, se coloca. Es la posicion 1-1. Rellena el hueco-->
+			<div id="item3"> CAJA3</div> <!-- Como hay que llenar las filas, vuelve atrás y mira el primer sitio libre. CAJA2 se ha sentado en 1-1. Para llenar la fila, se sienta a su lado, en la posicion 1-2-->
+			<div id="item4_1"> CAJA4</div>
+			<div id="item5"> CAJA5</div>
+            
+        </div>
+        <br>
+        <h1>grid-flow:row</h1>
+        <div id="grid3"><!--Crea un grid de 5 filas y 3 columnas. Rellena las filas primero.-->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3; Empieza en la fila 3. Fila 1 y 2 quedan libres-->
+            <div id="item2"> CAJA2</div> <!-- Como hay que llenar las filas, vuelve atrás y mira el primer sitio libre desde su anterior elemento. Es la posicion 1-1. Rellena el hueco-->
+            <div id="item3"> CAJA3</div> <!-- Como hay que llenar las filas, vuelve atrás y mira el primer sitio libre. CAJA2 se ha sentado en 1-1. Para llenar la fila, se sienta a su lado, en la posicion 1-2-->
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2; Tiene comienzo especificado, en la segunda columna. Busca sitio libre en la segunda columna-->
+            <div id="item5"> CAJA5</div><!-- Desde el anterior elemento, empieza el flujo, hacia la derecha. Hay un sitio libre al lado de CAJA4. Se sitúa en él -->
+            <div id="item6"> CAJA6</div><!-- Sigue el flujo de su anterior elemento. No queda espacio libre en la fila anterior. Baja por la diagonal a la siguiente fila, pero está CAJA1. Sigue el flujo hacia la derecha y se sitúa en la posición libre, al lado de CAJA1--> 
+            <div id="item7"> CAJA7</div><!-- Sigue el flujo de su anterior elemento. Hay sitio a su lado, se sitúa ahí. -->
+            <div id="item8"> CAJA8</div><!-- Sigue el fujo de su anterior elemento. No hay sitio en la fila para situarse a la derecha. Baja por la diagonal y se sitúa en el prier sitio más a la izquierda. Posición 4-1.-->
+        </div>
+        <br>
+        <h1>grid-flow:row</h1>
+        <div id="grid4"><!--Crea un grid de 5 filas y 2 columnas. Rellena las filas primero.-->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3; Empieza en la fila 3. Fila 1 y 2 quedan libres-->
+            <div id="item2"> CAJA2</div> <!-- Como hay que llenar las filas, vuelve atrás y mira el primer sitio libre desde su anterior elemento. Es la posicion 1-1. Rellena el hueco-->
+            <div id="item3"> CAJA3</div> <!-- Como hay que llenar las filas, vuelve atrás y mira el primer sitio libre. CAJA2 se ha sentado en 1-1. Para llenar la fila, se sienta a su lado, en la posicion 1-2-->
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2; Tiene comienzo especificado, en la segunda columna. Busca sitio libre en la segunda columna-->
+            <div id="item5"> CAJA5</div><!-- Sigue el flujo de su anterior elemento. No queda espacio libre en la fila anterior. Baja por la diagonal a la siguiente fila, pero está CAJA1. Sigue el flujo hacia la derecha y se sitúa en la posición libre, al lado de CAJA1-->
+            <div id="item6"> CAJA6</div><!---????????? Por qué está ahí?????? -->
+            <div id="item7"> CAJA7</div>
+            <div id="item8"> CAJA8</div>
+        </div>
+        <br>
+        <h1>grid-flow:column</h1>
+        <img src="Flow-column.png">
+        <div class="grid2"><!--Crea un grid de 4 filas y 2 columnas -->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3;-->
+            <div id="item2"> CAJA2</div>
+            <div id="item3"> CAJA3</div>
+            <div id="item4_1"> CAJA4</div><!--grid-column-start: 2; Desplaza a caja 3 hacia abajo??????-->
+            <div id="item5"> CAJA5</div>
+        </div>
+        <br>
+		<div class="grid2"><!--Crea un grid de 4 filas y 2 columnas -->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3;-->
+            <div id="item2"> CAJA2</div>
+            <div id="item3"> CAJA3</div>
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2;-->
+            <div id="item5"> CAJA5</div>
+        </div>
+        <h1>grid-flow:dense</h1>
+        <div id="grid5"><!--Crea un grid de 4 filas y 2 columnas -->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3;-->
+            <div id="item2"> CAJA2</div>
+            <div id="item3"> CAJA3</div>
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2;-->
+            <div id="item5"> CAJA5</div>
+        </div>
+		<h1>grid-flow:row-dense</h1>
+		<div id="grid6"><!--Crea un grid de 4 filas y 2 columnas -->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3;-->
+            <div id="item2"> CAJA2</div>
+            <div id="item3"> CAJA3</div>
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2;-->
+            <div id="item5"> CAJA5</div>
+        </div>
+		<h1>grid-flow:column-dense</h1>
+		<div id="grid6"><!--Crea un grid de 4 filas y 2 columnas -->
+            <div id="item1"> CAJA1</div> <!--grid-row-start: 3;-->
+            <div id="item2"> CAJA2</div>
+            <div id="item3"> CAJA3</div>
+            <div id="item4"> CAJA4</div><!--grid-column-start: 2;-->
+            <div id="item5"> CAJA5</div>
+        </div>
+		
+     </body>
+</html>

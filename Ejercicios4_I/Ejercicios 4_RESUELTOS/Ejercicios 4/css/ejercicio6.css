@@ -1,0 +1,38 @@
+.contenedor{
+    background-color:lightcyan;
+    height:600px;
+    margin: 50px auto;
+    position:relative;
+    width:620px;
+}
+.CSS{
+    background-color:lightgrey;
+    color:blue;
+    font-family:Algerian;
+    font-size:200px;
+    left: 120px;
+    position:absolute;
+    top: 250px;
+    width: 350px;
+    z-index: 10;
+
+}
+.efectos{
+    color:#ff00ff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    left:40px;
+    position:absolute;
+    top:230px;
+    z-index: 20;
+}
+
+.hojas{
+    color:red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    left:40px;
+    position:absolute;
+    top:255px;
+    z-index: 30;
+}

@@ -1,0 +1,25 @@
+body
+{
+    position:absolute;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+.contenedor
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    text-align: center;
+}
+.caja1,.caja2,.caja3,.caja4,.caja5,.caja6,.caja7
+{
+    height:200px;
+    width:200px;
+    padding:20px;
+    background-color: purple;
+    color:white;
+    font-size:50px;
+}

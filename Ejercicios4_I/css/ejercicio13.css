@@ -1,0 +1,36 @@
+.contenedor {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 600px;
+    margin: auto;
+}
+
+.contenedor div{
+    background-color: orange;
+    line-height: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.uno{
+    flex: 1 0 100px;
+}
+.dos{
+    flex: 1 0 100px;
+}
+.tres{
+    flex: 1 0 100px;
+}
+.cuatro{
+    flex: 1 0 100px;
+}
+.cinco{
+    flex: 0 0 100px;
+}
+.seis{
+    flex: 0 0 100px;
+}

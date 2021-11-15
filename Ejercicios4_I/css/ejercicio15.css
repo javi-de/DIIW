@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #202020;
+    height: 150px;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+
+header img{
+    height: 100px;
+    flex: 0 1;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+section div{
+    display: flex;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+}
+
+article img{
+    order: 1;
+    width: 200px;
+    margin: 10px auto;
+}
+
+article h2{
+    order: 2;
+    text-align: center;
+    margin: 10px;
+}
+
+article p{
+    order: 3;
+    text-align: justify;
+    margin: 10px;
+}
+
+article button{
+    order: 4;
+    width: 33%;
+    height: 25px;
+    align-self: center;
+    margin: 10px
+}
+
+.info1{
+    background-color: lightblue;
+}
+
+.info2{
+    background-color: lightgreen;
+}
+
+.info3{
+    background-color: lightskyblue;
+}

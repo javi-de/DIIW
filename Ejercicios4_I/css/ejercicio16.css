@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    color: grey;
+}
+
+main{
+    display: table;
+}
+
+.texto, .imagen{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.caja{
+    display: table-row;
+}
+
+.texto{
+    display: table-cell;
+    width: 25%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.imagen{
+    display: table-cell;
+    width: 75%;
+}
+
+.imagen img{
+    max-width: 100%; 
+}
+
+.titulo{
+    caption-side:bottom;
+    display: table-caption;
+    text-align: center;
+}

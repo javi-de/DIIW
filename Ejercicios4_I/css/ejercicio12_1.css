@@ -1,0 +1,30 @@
+.contenedor {
+    background-color:#333333;
+	display:flex;
+	justify-content: space-between;
+	margin: 10px auto;
+}
+
+.uno, .dos, .tres, .cuatro{
+    background-color: grey;
+    margin: 5px;
+    text-align:center;
+    height: 100px;
+}
+
+.uno{
+	order:3;
+	flex:0 1 100px;
+}
+.dos{
+	order:1;
+	flex:0 1 100px;
+}
+.tres{
+	order:4;
+	flex:0 1 100px;
+}
+.cuatro{
+	order:2;
+	flex:0 1 200px;
+}

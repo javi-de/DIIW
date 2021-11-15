@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.tabla{
+    display: table;
+    background-color: darkred;
+    padding: 15px;
+}
+
+.fila{
+    display: table-row;
+}
+
+.fila p{
+    width: 33%;
+    display: table-cell;
+    background-color: orange;
+    border: 2px solid darkred;
+    color: white;
+    margin: 15px;
+    padding: 15px;
+    height: calc(100vh - 30px);
+}
