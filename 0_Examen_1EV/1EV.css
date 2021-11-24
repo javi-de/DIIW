@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body h1, body h2{
+    font-family: "Bebas Neue";
+    /*background-color: ;*/
+}
+
+body{
+    background-image: url(./img/Logo.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    position:absolute;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+
+    font-family: "Roboto";
+    background-color: dimgrey;
+    /* align-items: center;
+    text-align: center; */
+    color: white;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+}
+
+header h1{
+    order: 1;
+    letter-spacing: 0.25em;
+    word-spacing: 1em;
+}
+
+header nav{
+    order: 3;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: honeydew;
+    border-radius:10px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+header video{
+    order: 2;
+    width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    padding: 5px;
+    text-align: justify;
+}
+
+aside{
+    display: none;
+}
+
+#section4{
+    display: none;
+}
+
+ footer{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 50px;
+    order: 1;
+}
+
+footer span{
+    order: 2;
+}
+
+
+@media (min-width: 550px) and (max-width:960px){
+    body{
+        background-image: none;
+    }
+    
+    header nav{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        margin: 5px;
+        background-color: transparent;
+    }
+    
+    a{
+        color: white;
+        background-color: darkgreen;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main section{
+        column-count: 2;
+        column-rule: 2px solid white;
+    }
+
+    footer span{
+        position: absolute;
+        left: 0;
+    }
+
+    footer img{
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 960px){
+    body{
+        background-image: none;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 3fr 0.5fr;
+        background-image: url(./img/fondohojas.png);
+        background-size: 70%;
+    }
+    
+    header{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    header nav{
+        order: 2;
+        text-decoration: overline;
+        position: absolute;
+        top: 100px;
+        width: 58%;
+    }
+
+    header video{
+        order: 3;
+        align-self: center;
+        width: 60%;
+    }
+
+    main{
+        grid-column: 2;
+        grid-row: 2;
+        /* background-image: url(./img/fondohojas.png);
+        background-size: 100%; */
+    }
+
+    main section{
+        column-count: 3;
+        column-rule: 2px solid white;
+        text-align: left;
+        grid-column: 2;
+    }
+
+    #asideIzq{
+        background-image: url(./img/Logo.webp);
+        background-repeat: no-repeat;
+        grid-column: 1;
+        grid-row: 2;
+        display: block;
+    }
+
+    #asideDch{
+        grid-row: 2;
+        grid-column: 3;
+        display: block;
+        background-image: url(./img/bg-bike.png);
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+
+    }
+
+    #asideDch video{
+        width: 200px;
+    }
+
+    #section1, #section2, #section3{
+        display: none;
+    }
+
+    #section4{
+        display: inline-block;
+    }
+    
+    footer{
+        grid-column: 1/4;
+        grid-row: 3;
+        background-image: url(./img/bici1v2.png);
+        height: 100px;
+        background-repeat: no-repeat;
+
+        animation-duration: 10s;
+        animation-name: animacion;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes animacion{
+        0%{
+            background-image: url(./img/bici1v2.png);
+            background-position-x: 110%;
+        }
+
+        33%{
+            background-image: url(./img/bici2v2.png);
+        }
+        66%{
+            background-image: url(./img/bici3v2.png);
+        }
+        100%{
+            background-position-x: -0%;
+        }
+    }
+
+        footer span{
+            display: none;
+        }
+
+        footer img{
+            display: none;
+        }
+        
+    }
