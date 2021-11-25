@@ -1,0 +1,28 @@
+.post .blog p em {
+  color: #fff;
+}
+
+em .blog .post p {
+  color: #fff;
+}
+
+.blog .post p:hover em {
+  color: #fff;
+}
+
+.menu .button {
+  background-color: #ce4dd6;
+}
+
+.menu .button:hover {
+  background-color: #e5a0e9;
+}
+
+.menu .button:active {
+  background-color: #93239a;
+}
+
+.menu .button.disabled {
+  background-color: #929292;
+}
+/*# sourceMappingURL=traducciones.css.map */

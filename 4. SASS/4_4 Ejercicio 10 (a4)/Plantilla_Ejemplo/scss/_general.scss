@@ -1,0 +1,16 @@
+*{
+   @include inicio;
+}
+
+body{
+    background-color: $color-fondo;
+    color: $color-principal;
+    font: {
+        family: $fuente-principal;
+        size:$fuente-principal-tamano;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    color:$color-titulos;
+    font-family: $fuente-titulos;
+}

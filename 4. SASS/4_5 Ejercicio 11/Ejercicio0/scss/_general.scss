@@ -1,0 +1,31 @@
+html{
+    background-color: $fondo;
+  }
+  
+  body{
+    font: 100% $fuente;
+    @include letra ("p");
+      @media (min-width: 500px) {@include letra ("m");}
+      @media (min-width: 960px) {@include letra("g");}
+  }
+  
+  nav{
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: $color_menu;
+    }
+  
+    li{
+        @include visualización (inline-block);
+    }
+  
+    a{
+      @include visualización (block);
+      padding: 6px 12px;
+      text-decoration: none;
+      color: $color_enlaces;
+    }
+  }
+  

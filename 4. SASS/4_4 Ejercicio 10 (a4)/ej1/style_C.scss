@@ -1,0 +1,35 @@
+/* convertir a scss, GENERA UN MIXIN PARA ESTOS ELEMENTOS
+.tres:before {
+    content:"Soy previo al bloque 3";
+    color:blue;
+}
+
+#i1:after {
+    content: "Soy posterior al bloque 2";
+    color:green;
+    border: 2;
+}
+*/
+
+@mixin contAnterior {
+    content:"Soy previo al bloque 3";
+    color:blue;
+}
+
+@mixin contPosterior {
+    content: "Soy posterior al bloque 2";
+    color:green;
+    border: 2;
+}
+
+.tres{
+    &:before{
+        @include contAnterior;
+    }
+}
+
+#i1{
+    &:after{
+        @include contPosterior;
+    }
+}

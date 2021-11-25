@@ -1,0 +1,22 @@
+.noticia {
+    padding-top: 10px;
+    margin-bottom: 30px;
+    border-top: 2px dotted $color-borde-noticia;
+
+    h3 {
+        color: $color-header-noticia;
+        margin-bottom:10px;
+        font-size: $fuente-principal-tamano;
+        text-transform: uppercase;
+    }
+
+    img {
+        float:left;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size:$fuente-principal-tamano - 0.4;
+        color:$color-texto-noticia;
+    }
+}

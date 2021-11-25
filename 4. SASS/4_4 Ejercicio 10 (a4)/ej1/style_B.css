@@ -1,0 +1,25 @@
+/* convertir a scss, AGRUPA REGLAS DE ELEMENTOS
+.uno li:nth-child(1) {
+  background: lightsteelblue;
+}
+
+.dos :nth-child(2) :nth-child(3) {
+  background: lightsteelblue;
+}
+
+.tres :nth-child(odd) li:nth-child(-n+3) {
+  background: lightsteelblue;
+}
+*/
+.uno li:nth-child(1) {
+  background: lightsteelblue;
+}
+
+.dos :nth-child(2) :nth-child(3) {
+  background: lightsteelblue;
+}
+
+.tres :nth-child(odd) li:nth-child(-n+3) {
+  background: lightsteelblue;
+}
+/*# sourceMappingURL=style_B.css.map */

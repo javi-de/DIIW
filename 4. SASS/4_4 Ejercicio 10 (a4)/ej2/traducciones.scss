@@ -1,0 +1,77 @@
+// CODIGO 1
+.blog {
+    .post & p {
+        em {
+            color: #fff;
+        }
+    }
+}
+
+//traduccion CODIGO 1
+// .post .blog p em{
+//     color: #fff;
+// }
+
+
+//CODIGO 2
+.blog {
+    .post p {
+        em & {
+            color: #fff;
+        }
+    }
+}
+
+//traduccion CODIGO 2
+// em .blog .post p{
+//     color: #fff;
+// }
+
+
+//CODIGO 3
+.blog {
+    .post p {
+      &:hover em {
+          color: #fff;
+      }
+    }
+  }
+  
+//traduccion CODIGO 3
+// .blog .post p:hover em{
+//     color: #fff;
+// }
+
+//CODIGO 4
+$btn-bg-color: #ce4dd6;
+.menu {
+  .button {
+    background-color: $btn-bg-color;
+    &:hover{
+      background-color: lighten($btn-bg-color, 20%);
+    }
+    &:active{
+      background-color: darken($btn-bg-color, 20%);
+    }
+    &.disabled{
+      background-color: grayscale($btn-bg-color);
+    }
+  }
+}
+
+//traduccion CODIGO 4
+// .menu .button{
+//     background-color: #ce4dd6;
+// }
+
+// .menu .button:hover{
+//     background-color: lighten(#ce4dd6, 20%);
+// }
+
+// .menu .button:active{
+//     background-color: darken(#ce4dd6, 20%);
+// }
+
+// .menu .button.disabled{
+//     background-color: grayscale(#ce4dd6);
+// }

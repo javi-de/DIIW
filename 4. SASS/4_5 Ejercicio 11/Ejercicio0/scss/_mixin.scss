@@ -1,0 +1,15 @@
+@mixin letra ($pantalla){
+    @if $pantalla == "p"{
+	    color:$color1;
+    }
+    @elseif $pantalla == "m"{
+        color:$color2;
+    }
+    @else{
+        color:$color3;
+    }
+}
+
+@mixin visualización ($valordis){
+	display:$valordis;
+}

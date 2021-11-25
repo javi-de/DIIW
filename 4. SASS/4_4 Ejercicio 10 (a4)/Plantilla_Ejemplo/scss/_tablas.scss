@@ -1,0 +1,41 @@
+.horario{
+    margin-top:-30px;
+     @include tablet{
+        padding-left:1em;
+         margin-top:0px;
+    }
+}
+
+table {
+    width:100%;
+    text-align: left;
+    font-size:   $fuente-principal-tamano - 0.4;
+    border-collapse: collapse;
+   
+    
+    caption {
+        text-align: left;
+        font-family:$fuente-titulos;
+        font-size:  $fuente-principal-tamano + 0.4;
+        padding:5px;
+        color:$color-caption;
+        margin-bottom: 20px;
+    }
+    th  {
+        background-color: $color-fondo-th;
+        font-size: 1.3rem;
+    }
+    tr {
+        background-color: $color-fondo-td1;
+        &:nth-child(odd) {
+            background-color: $color-fondo-td2;
+        }
+        &:hover {
+            background-color: $color-tabla-hover;
+        }
+        th, td {
+            padding:10px;
+            border-bottom: 1px dotted $color-borde-tabla;
+        }
+    }
+}

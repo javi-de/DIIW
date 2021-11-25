@@ -1,0 +1,65 @@
+/* Convertir este css en un scss, GENERA VARIABLES PARA LOS COLORES
+body {
+    padding: 1em 2em;
+}
+
+ul, ol {
+list-style: none;
+padding: 0;
+}
+
+li {
+text-align: center;
+line-height: 2;
+background: slategrey;
+}
+
+div {
+width: 12em;
+float: left;
+margin-right: 2em;
+}
+
+hr {
+clear: both;
+padding-top: 1em;
+border: 0;
+border-bottom: 1px solid grey;
+}
+
+.rojo {
+    color:red;
+}
+*/
+body {
+  padding: 1em 2em;
+}
+
+body ul, body ol {
+  list-style: none;
+  padding: 0;
+}
+
+body ul li, body ol li {
+  text-align: center;
+  line-height: 2;
+  background: slategrey;
+}
+
+body div {
+  width: 12em;
+  float: left;
+  margin-right: 2em;
+}
+
+body hr {
+  clear: both;
+  padding-top: 1em;
+  border: 0;
+  border-bottom: 1px solid grey;
+}
+
+body .rojo {
+  color: red;
+}
+/*# sourceMappingURL=style_A.css.map */

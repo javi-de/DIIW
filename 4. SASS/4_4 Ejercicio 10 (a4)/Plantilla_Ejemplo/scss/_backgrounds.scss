@@ -1,0 +1,17 @@
+.london {
+    @include imagenFondo('../img/imagen02.jpg', 600px, top center );
+}
+
+.estacion {
+    margin-top:30px;
+    @include imagenFondo('../img/imagen03.jpg', 200px);
+}
+
+.background {
+    @include displayFlex(column, flex-end, flex-start);
+    padding: 0 20px 20px 20px;
+    font-size: $fuente-principal-tamano - 0.1;
+    p {
+        font-weight: 700;
+    }
+}
