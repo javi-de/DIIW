@@ -1,0 +1,27 @@
+html {
+  background-color: #CCC; }
+
+body {
+  font: 100% Arial, sans-serif;
+  color: #0E0; }
+  @media (min-width: 500px) {
+    body {
+      color: #7F7; } }
+  @media (min-width: 960px) {
+    body {
+      color: #ABA; } }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #FFF; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000; }
+
+/*# sourceMappingURL=_main.css.map */
