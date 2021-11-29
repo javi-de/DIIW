@@ -1,0 +1,114 @@
+$fondoBody: darkgrey;
+$fondoImagen: black;
+$fondoTitulos: rgb(78, 78, 78);
+$bordes: 25px  0 25px 0;
+
+
+body{
+    background-color: $fondoBody;
+
+    header{
+        background: linear-gradient(to right, $fondoBody, $fondoImagen);
+        nav{
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            li{
+                padding: 10px;
+                display: inline;
+                a{
+                    text-decoration:none;
+                    color: white;
+                    padding: 10px;
+
+                    &:hover{
+                        background: linear-gradient(to left, $fondoBody, $fondoImagen);
+                        border-radius: $bordes;
+                    }
+                }
+            }
+        }
+
+        .logotipo{
+            background-color: $fondoImagen;
+
+            img{
+                align-self: center;
+                width: 650px;
+                height: 300px;
+                margin: auto;
+                display:block;
+            }
+        }
+    }
+
+    h2{
+        padding: 10px;
+        background-color: $fondoTitulos;
+        border-radius: $bordes;
+
+    }
+    main {
+        section {
+            article{
+                .date{
+                    text-align: right;
+                    font-style: italic;
+                    font-size: 1.5em;
+                }
+
+                img{
+                    float: right;
+                    border: 1px solid black;
+                    padding: 10px;
+                    margin: 20px;
+                    width: 100px;
+                }
+
+                p{
+                    text-align: justify;
+                }
+            }
+
+            form{
+                padding: 15px;
+                border: 1px solid black;
+
+                #nombre, #correo, #comentario{
+                    display: block;
+                    margin: 15px;
+                    border-radius: $bordes;
+                    width: 80%;
+                    padding: 5px;
+                }
+
+                #comentario{
+                    height: 150px;
+                }
+
+                #butEnviar{
+                    display:block;
+                    margin: auto;
+                    background-color: black;
+                    color: white;
+
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    footer{
+        background-color: $fondoImagen;
+        padding: 15px;
+        color: white;
+        text-align: center;
+    }
+    
+}
+

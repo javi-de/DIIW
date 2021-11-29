@@ -1,0 +1,106 @@
+body {
+  background-color: darkgrey;
+}
+
+body header {
+  background: -webkit-gradient(linear, left top, right top, from(darkgrey), to(black));
+  background: linear-gradient(to right, darkgrey, black);
+}
+
+body header nav {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+body header nav li {
+  padding: 10px;
+  display: inline;
+}
+
+body header nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+body header nav li a:hover {
+  background: -webkit-gradient(linear, right top, left top, from(darkgrey), to(black));
+  background: linear-gradient(to left, darkgrey, black);
+  border-radius: 25px 0 25px 0;
+}
+
+body header .logotipo {
+  background-color: black;
+}
+
+body header .logotipo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 650px;
+  height: 300px;
+  margin: auto;
+  display: block;
+}
+
+body h2 {
+  padding: 10px;
+  background-color: #4e4e4e;
+  border-radius: 25px 0 25px 0;
+}
+
+body main section article .date {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+body main section article img {
+  float: right;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+  width: 100px;
+}
+
+body main section article p {
+  text-align: justify;
+}
+
+body main section form {
+  padding: 15px;
+  border: 1px solid black;
+}
+
+body main section form #nombre, body main section form #correo, body main section form #comentario {
+  display: block;
+  margin: 15px;
+  border-radius: 25px 0 25px 0;
+  width: 80%;
+  padding: 5px;
+}
+
+body main section form #comentario {
+  height: 150px;
+}
+
+body main section form #butEnviar {
+  display: block;
+  margin: auto;
+  background-color: black;
+  color: white;
+}
+
+body main section form #butEnviar:hover {
+  background-color: white;
+  color: black;
+}
+
+body footer {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=ejercicio1.css.map */
