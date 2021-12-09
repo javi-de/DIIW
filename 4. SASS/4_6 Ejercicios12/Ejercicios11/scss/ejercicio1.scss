@@ -3,12 +3,14 @@ $fondoImagen: black;
 $fondoTitulos: rgb(78, 78, 78);
 $bordes: 25px  0 25px 0;
 
-
 body{
     background-color: $fondoBody;
+    padding: 0px;
+    margin: 0px;
 
     header{
         background: linear-gradient(to right, $fondoBody, $fondoImagen);
+
         nav{
             padding: 10px;
             margin: 10px;
@@ -46,10 +48,11 @@ body{
         padding: 10px;
         background-color: $fondoTitulos;
         border-radius: $bordes;
-
     }
     main {
         section {
+            padding: 10px;
+            
             article{
                 .date{
                     text-align: right;
@@ -108,6 +111,35 @@ body{
         padding: 15px;
         color: white;
         text-align: center;
+    }
+
+    @media (min-width: 960px){
+        main{
+            display: grid;
+            grid-template-columns:3fr 1fr;
+            
+            section{
+                grid-column: 1;
+            }
+
+            aside{
+                grid-column: 2;
+            }
+
+            form{
+                display: grid;
+                grid-template-columns:1fr 3fr;
+
+                label{
+                    grid-column: 1;
+                }
+
+                #nombre, #correo, #comentario{
+                    grid-column: 2;
+                }
+            }
+
+        }
     }
     
 }

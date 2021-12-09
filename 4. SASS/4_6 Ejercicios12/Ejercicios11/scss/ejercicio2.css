@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=ejercicio2.css.map */
+body {
+  background-color: darkgrey;
+}
+
+body h1, body h2 {
+  color: orange;
+  text-align: center;
+}
+
+body nav {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+body nav a {
+  color: darkred;
+  padding: 10px 20px;
+}
+
+body nav a:hover {
+  background-color: darkred;
+  color: grey;
+}
+
+body section article {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+body footer {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: darkred;
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  body nav {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  body nav a:nth-child(1) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  body nav a:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  body nav a:nth-child(3) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  body nav a:nth-child(4) {
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  body nav a:nth-child(5) {
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+}
+/*# sourceMappingURL=ejercicio2.css.map */

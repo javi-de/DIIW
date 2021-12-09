@@ -1,0 +1,81 @@
+$fondoBody: darkgrey;
+$fondoCajas: grey;
+
+$colorTitulos: orange;
+$colorEnlaces: darkred;
+$colorLetra: white;
+
+body{
+    background-color: $fondoBody;
+
+    h1, h2{
+        color: $colorTitulos;
+        text-align: center;
+    }
+
+    header{
+    }
+
+    nav{
+        background-color: $fondoCajas;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+         
+        a {
+            color: $colorEnlaces;
+            padding: 10px 20px;
+
+            &:hover{
+                background-color: $colorEnlaces;
+                color: $fondoCajas;
+
+            }
+        }
+    }
+
+    section{
+        article{
+            background-color: $fondoCajas;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            color: $colorLetra;
+        }
+    }
+
+    footer{
+        background-color: $fondoCajas;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        color: $colorEnlaces;
+        text-align: right;
+    }
+
+    @media (max-width: 960px){
+        nav{
+            text-align: center;
+            
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+            a:nth-child(1){
+                grid-row: 1;
+            }
+            a:nth-child(2){
+                grid-row: 2;
+            }
+            a:nth-child(3){
+                grid-row: 3;
+            }
+            a:nth-child(4){
+                grid-row: 4;
+            }
+            a:nth-child(5){
+                grid-row: 5;
+            }
+        }
+    }
+
+}
