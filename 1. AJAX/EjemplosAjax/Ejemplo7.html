@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ejemplo7</title>
+        <style type="text/css">
+			body{
+				text-align:center;
+			}
+			form{
+				border:1px solid black; 
+				width:325px;
+				margin:0 auto;
+			}
+			label{
+				width:150px;
+				float:left;
+				text-align:right;
+			}
+        </style>
+		<script type="text/javascript"> 
+		//<![CDATA[
+			var peticion_http = null;
+			var cuentaAtras = null;
+			var tiempoMaximo = 5000;
+			function inicializa_xhr() { 
+				if(window.XMLHttpRequest) {
+					return new XMLHttpRequest();
+				}else if(window.ActiveXObject) {
+					return new ActiveXObject("Microsoft.XMLHTTP");
+				}
+			}
+			function crea_query_string() {
+				var fecha = document.getElementById("fecha_nacimiento"); 
+				var cp = document.getElementById("codigo_postal");
+				var telefono = document.getElementById("telefono");
+				var texto = "fecha_nacimiento=" + encodeURIComponent(fecha.value) 
+				+ "&codigo_postal=" + encodeURIComponent(cp.value) 
+				+ "&telefono=" + encodeURIComponent(telefono.value) 
+				+ "&nocache=" + Math.random();
+				return texto
+			}
+			function valida() {
+				peticion_http = inicializa_xhr();
+				if(peticion_http) {
+					cuentaAtras = setTimeout(expirada, tiempoMaximo); 
+					peticion_http.onreadystatechange = procesaRespuesta; 
+					peticion_http.open("POST", "Ejemplo7valida.php");
+					peticion_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); 
+					var query_string = crea_query_string();
+					peticion_http.send(query_string);
+				}
+			}
+			
+			function procesaRespuesta() { 
+				if(peticion_http.readyState == 4 && peticion_http.status == 200) {
+					clearTimeout(cuentaAtras);
+					var respuesta_json = peticion_http.responseText; 
+					var objeto_json = eval("("+respuesta_json+")");
+					var mensaje = objeto_json.mensaje;
+					var telefono = objeto_json.parametros.telefono;
+					var fecha_nacimiento = objeto_json.parametros.fecha_nacimiento; 
+					var codigo_postal = objeto_json.parametros.codigo_postal;
+					document.getElementById("respuesta").innerHTML = "<p>" + mensaje.split(".").join("<br>") +" </p>"
+					document.getElementById("respuesta").innerHTML += "<p>Fecha nacimiento = " + fecha_nacimiento + "</p>"
+					document.getElementById("respuesta").innerHTML += "<p>Codigo postal = " + codigo_postal + "</p>"
+					document.getElementById("respuesta").innerHTML += "<p>Telefono = " + telefono + "</p>" 
+				}
+			}
+			function expirada() {
+				// La cuentra atrás se ha cumplido, detener la petición HTTP pendiente
+				peticion_http.abort();
+				alert("Se ha producido un error en la comunicación con el servidor. Inténtalo un poco más adelante.");
+			}
+
+			window.onload = function(){
+				document.getElementById("validar").onclick=valida
+			}
+		//]]>
+		</script>
+	</head>
+	<body>
+    	<form action="" >
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" /><br/>
+            <label for="codigo_postal">Codigo postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" /><br/>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" /><br/>
+            <div><input type="button" value="Validar datos" id="validar" /></div>
+        </form>
+        <div id="respuesta"></div>
+	</body>
+</html>

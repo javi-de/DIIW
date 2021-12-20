@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ejemplo6</title>
+        <style type="text/css">
+			body{
+				text-align:center;
+			}
+			form{
+				border:1px solid black; 
+				width:325px;
+				margin:0 auto;
+			}
+			label{
+				width:150px;
+				float:left;
+				text-align:right;
+			}
+        </style>
+        <script src="scripts/jquery-1.10.2.min.js" type="text/javascript"></script>	
+		<script type="text/javascript"> 
+		//<![CDATA[
+			function validar() {
+			  var peticion = $.ajax({
+				url:  'Ejemplo5valida.php',
+				type: 'POST',
+				data:  crea_query_string(),
+				success: procesaRespuesta,
+				error: function() { alert('Se ha producido un error'); }
+			  });
+			}	
+			function procesaRespuesta(respuesta) { 
+				 var objson = eval("("+respuesta+")");
+				$("#respuesta").html("<p>" + objson.mensaje.split(".").join("<br>") +" </p><p>Fecha nacimiento = " + objson.parametros.fecha_nacimiento + "</p><p>Codigo postal = " + objson.parametros.codigo_postal + "</p><p>Telefono = " + objson.parametros.telefono + "</p>" );
+				 
+			}
+			function crea_query_string() {
+				var texto="fecha_nacimiento=" + encodeURIComponent($("#fecha_nacimiento").val()) + 
+					"&codigo_postal=" + encodeURIComponent($("#codigo_postal").val())+ 
+					"&telefono=" + encodeURIComponent($("#telefono").val())+ 
+					"&nocache=" + Math.random();
+				return texto
+			}
+			$(document).ready(function(){
+			  $('#validar').click(validar);
+			});
+		//]]>
+		</script>
+	</head>
+	<body>
+    	<form action="" >
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" /><br/>
+            <label for="codigo_postal">Codigo postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" /><br/>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" /><br/>
+            <div><input type="button" value="Validar datos" id="validar" /></div>
+        </form>
+        <div id="respuesta"></div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ejemplo1</title>
+		<script type="text/javascript"> 
+		//<![CDATA[
+			function obtenerInformacion() {
+				//INSTANCIAR EL OBJETO XMLHTTPREQUEST
+				if(window.XMLHttpRequest) { 
+					peticion_http = new XMLHttpRequest();
+				}else if(window.ActiveXObject) {
+					peticion_http = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				//PREPARAR LA FUNCION DE RESPUESTA
+				peticion_http.onreadystatechange = muestraContenido;
+				//REALIZAR PETICIÓN HTTP AL SERVIDOR
+				peticion_http.open("GET", "Ejemplo1ajax.html"); 
+				peticion_http.send(null);
+				//FUNCION DE RESPUESTA
+				function muestraContenido() { 
+					if(peticion_http.readyState == 4 && peticion_http.status == 200) {
+							document.getElementById("elemento_destino").innerHTML=peticion_http.responseText;
+					}
+				}
+			}
+			window.onload = function(){
+				document.getElementById("boton").onclick=obtenerInformacion
+			}
+		//]]>
+		</script>
+	</head>
+	<body>
+    	<h1>Ejemplo de AJAX</h1>
+        <form action="">
+        	<input type="button" id="boton" value="Buscar información"/>
+        </form>
+        <div id="elemento_destino">
+        	<p>La información aparecerá aquí</p>
+        </div>
+	</body>
+</html>
