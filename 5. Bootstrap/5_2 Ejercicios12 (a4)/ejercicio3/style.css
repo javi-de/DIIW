@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.header, .caja, .nav, .pie{
+    height: 75px;
+}
+
+.header{
+    background-color: green;
+}
+
+.aside{
+    background-color: orange;
+}
+
+.caja{
+    background-color: yellow;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.nav{
+    background-color: grey;
+    text-align: center;
+}
+
+.pie{
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+.pie:nth-child(2){
+    text-align: right;
+}
+
+.pie:nth-child(3){
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .aside{
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.nav{
+    background: rgb(87, 66, 54);
+    height: 50px;
+}
+
+.header{
+    background: lightgreen;
+    height: 75px;
+}
+
+.main{
+    background: lightskyblue;
+    height: calc(100vh - 125px);
+}
+
+.columna1{
+    background: lightcoral;
+    height: calc(100vh - 125px);
+}
+
+.columna2{
+    background: lightpink;
+    height: auto;
+}

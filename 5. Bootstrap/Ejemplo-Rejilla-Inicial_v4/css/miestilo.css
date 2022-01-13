@@ -1,0 +1,23 @@
+.borde {
+    border:1px solid black;
+}
+.gris{
+    background-color:darkgrey;
+    height: 50px;
+}
+.verde{
+    background-color:lightgreen;
+    height: 75px;
+}
+.rosa{
+    background-color:lightpink;
+    height: calc(100vh - 125px);
+}
+.azul{
+    background-color:lightblue;
+    height: calc(100vh - 125px);
+}
+.morado{
+    background-color:plum;
+    height: calc(100vh - 125px);
+}
