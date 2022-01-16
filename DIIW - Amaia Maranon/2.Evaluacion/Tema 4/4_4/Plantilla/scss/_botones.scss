@@ -1,0 +1,28 @@
+[class*='btn']{
+    display: block;
+    @include tablet{
+        display:inline-block
+    }
+    border-radius:3px;
+    color:$texto-boton;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-size: $fuente-principal-tamano - 0.4;
+    transition: all .3s ease;
+    background-color:darken($rojo,10);
+    &:hover{
+        background-color: darken($rojo,20);
+    }
+}
+
+@each $nombre_color, $color in (noticia, $verde), (servicio, $amarillo){
+    .btn-#{$nombre_color}{
+        background-color:darken($color,10);
+        &:hover{
+            background-color: darken($color,20);
+        }
+    }
+}
+

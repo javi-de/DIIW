@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ibai Romero Martin" />
+    <meta name="description" content="Web de ofertas y productos"/>
+    <meta name="keywords" content="irm, productos, ofertas"/>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrusel.css"/>
+    <link rel="stylesheet" href="../css/contactar.css"/>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <script src="../js/js.js"></script>
+    <title>IRM</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="cabecera">
+        <form label="form">
+            <div>
+                <img src="../img/logo.png" alt="logo" height="40">
+                <input type="search" placeholder="Buscar" name="buscar" aria-labelledby="buscarLabel">
+                <label id="buscarLabel" for="buscar">Buscar</label>
+            </div>
+        </form>
+        <h1>IRM</h1>
+    </header>
+    
+    <!--Carrusel-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../img/i1.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="../img/i2.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="../img/i3.jpg" alt="paisaje"></div>
+      </div>
+    </div>
+    
+    <!--Menu navegacion(Medianas y grandes)-->
+    <nav class="nav-menu">
+        <div>
+            <a href="../index.html">
+                <p>Inicio</p>
+            </a>
+        </div>
+        <div>
+            <a href="productos.html">
+                <p>Productos</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <p class="seleccionado-texto">Contactar</p>
+            </a>
+        </div>
+    </nav>
+    
+     <!--Titulo-->
+    <div class="titulo" role="titulo" id="titulo">
+        <h1>Contactar</h1>
+    </div>
+    
+    <!--Cuerpo-->
+    <div class="cuerpo" role="articulos">   
+        <form action="#" method="post"> 
+            <div class="caja">
+                <div class="separar">
+                    <label for="nombre" class="colocar_nombre">Nombre: </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                </div>
+                <div class="separar">
+                    <label for="email" class="colocar_email">Email: </label>
+                    <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+                </div>
+                <div class="separar">
+                    <label for="mensaje" class="colocar_mensaje">Mensaje: </label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                </div>
+                <div class="separar">
+                    <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <div class="caja">
+            <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d370586.92338993226!2d-1.295181145326575!3d43.42833798567202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd56b6cf5073f2e3%3A0x2ee89721c6b91e40!2sCentre%20d&#39;%20Imagerie%20des%20Landes!5e0!3m2!1ses!2ses!4v1637320553675!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    
+    <!--Cambiar color y letra-->
+    <div>
+        <button class="color" onclick="color()" aria-label="cambiar color y fondo">Color y fondo</button>
+    </div>
+
+    <!--Pie contacto-->
+    <div class="pie-contacto" id="contacto" role="redes sociales">
+        <div class="footer">
+            <div><a href="http://www.twitter.com"><img src="../img/twitter.png" alt="twitter"></a></div>
+            <div><a href="http://www.telegram.org"><img src="../img/telegram.png" alt="telegram"></a></div>
+            <div><a href="http://www.whatsapp.com"><img src="../img/whatsapp.png" alt="whatsapp"></a></div>
+            <div><a href="http://www.facebook.com"><img src="../img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a></div>
+            <div><a href="http://www.instagram.com"><img src="../img/instagram.png" alt="instagram"></a></div>
+        </div>
+    </div>
+        
+    <!--Pie de pagina-->
+    <footer class="pie">
+        <div class="footer">
+            <div onclick="encender()"><img src="../img/menu.png" alt="menu"></div>
+            <div><a href="" class="seleccionado"><img src="../img/telefono.png" alt="telefono"></a></div>
+            <div><a href="../index.html"><img src="../img/casa.png" alt="casa"></a></div>
+            <div><a href="productos.html"><img src="../img/carro.png" alt="carro"></a></div>
+            <div><a href=""><img src="../img/subir.png" alt="subir"></a></div>
+        </div>
+    </footer>
+    <div class="subir"><a href=""><img src="../img/subir.png" alt="subir"></a></div>
+    <!--Scripts-->
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-auto.js"></script>
+</body>
+</html>

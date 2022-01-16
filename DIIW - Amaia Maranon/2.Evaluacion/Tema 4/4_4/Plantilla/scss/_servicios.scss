@@ -1,0 +1,26 @@
+.servicios{
+    margin-top:30px;
+    margin-bottom: 30px;
+    .servicios-lista{
+        list-style:none;
+        @include displayFlex(column, space-between, center);
+        li{
+            margin-top: 20px;
+            text-align: center;
+            @include tablet{
+                padding-right: 10px;
+                &:last-child {
+                    padding-right:0;
+                }
+            }
+        }
+        @include tablet{
+            @include displayFlex(row, space-between, center);
+            flex-wrap: nowrap;
+        }
+        .btn-servicio{
+            margin-top:5px;
+            font-weight: bold;
+        }
+    }
+}

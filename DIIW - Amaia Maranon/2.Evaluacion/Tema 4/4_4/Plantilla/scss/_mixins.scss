@@ -1,0 +1,45 @@
+@mixin inicio{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin tablet {
+    @media  (min-width: #{$tablet}) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content  
+    }
+}
+
+@mixin displayFlex($direccion: row, $disposicion-eje1: space-between, $disposicion-eje2: center, $wrap: warp) {
+    display:flex;
+    flex-direction: $direccion;
+    justify-content: $disposicion-eje1;
+    align-items:$disposicion-eje2;
+    flex-wrap: $wrap;
+}
+
+@mixin imagenFondo($imagen, $height: 100vh, $bgPos: center center) {
+    background: url($imagen);
+    background-repeat: no-repeat;
+    background-position: $bgPos;
+    background-size:cover;
+    height: $height;
+}
+
+@mixin gridImagenes($cantidad, $margin) {
+     width: ((100% - (($cantidad - 1) * $margin))/$cantidad);
+     &:nth-child(n) {
+        margin-right: $margin;
+        margin-bottom: $margin;
+    }
+    &:nth-child(#{$cantidad}n ) {
+        margin-right:0;
+        
+    }
+}

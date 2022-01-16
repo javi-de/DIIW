@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ibai Romero Martin" />
+    <meta name="description" content="Web de ofertas y productos"/>
+    <meta name="keywords" content="irm, productos, ofertas"/>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carrusel.css"/>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <script src="../js/js.js"></script>
+    <title>IRM</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="cabecera">
+        <form label="form">
+            <div>
+                <img src="../img/logo.png" alt="logo" height="40">
+                <input type="search" placeholder="Buscar" name="buscar" aria-labelledby="buscarLabel">
+                <label id="buscarLabel" for="buscar">Buscar</label>
+            </div>
+        </form>
+        <h1>IRM</h1>
+    </header>
+    
+    <!--Carrusel-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../img/i1.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="../img/i2.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="../img/i3.jpg" alt="paisaje"></div>
+      </div>
+    </div>
+    
+    <!--Menu navegacion(Medianas y grandes)-->
+    <nav class="nav-menu">
+        <div>
+            <a href="../index.html">
+                <p>Inicio</p>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <p class="seleccionado-texto">Productos</p>
+            </a>
+        </div>
+        <div>
+            <a href="contactar.html">
+                <p>Contactar</p>
+            </a>
+        </div>
+    </nav>
+    
+     <!--Titulo-->
+    <div class="titulo" id="titulo">
+        <h1>Productos</h1>
+    </div>
+    
+    <!--Cuerpo-->
+    <div class="cuerpo">
+        <div class="caja" id="Candy-Smart-FCS-100">
+            <img src="../img/51FEztgWBPL._AC_SL1000_.jpg" alt="Candy Smart FCS 100">
+            <div class="texto">
+                <p class="nombre">Candy Smart FCS 100</p><br>
+                <p class="descripcion">Candy, estilo italiano En 1945, se crea la primera lavadora con ADN italiano. Hoy, como siempre.</p>
+                <p class="mas">Alice Louise Walton (nacida en Arkansas, Estados Unidos, el 1 de diciembre de 1948) es la mujer más adinerada del mundo en 2020.</p>
+            </div>
+        </div>
+        <div class="caja" id="miaX-Rasqueta-Profesional">
+            <img src="../img/71q+6HJ07FL._AC_SL1500_.jpg" alt="miaX Rasqueta Profesional">
+            <div class="texto">
+                <p class="nombre">miaX Rasqueta Profesional</p><br>
+                <p class="descripcion">Con la rasqueta multiusos de alta calidad de miaX, siempre tiene la herramienta adecuada a su alcance rápidamente.</p>
+                <p class="mas">Ya sea quemado en su estufa u otra suciedad obstinada en superficies lisas, nuestro raspador multiusos es perfecto para todas las tareas. Nuestra rasqueta impresiona con un diseño moderno con ojal integrado para colgar.</p>
+            </div>
+        </div>
+        <div class="caja" id="Candy-Timeless-CH63CC">
+            <img src="../img/71i3VCQ2l0L._AC_SL1500_.jpg" alt="Candy Timeless CH63CC">
+            <div class="texto">
+                <p class="nombre">Candy Timeless CH63CC</p><br>
+                <p class="descripcion">Innovadoras encimeras vitrocerámicas, fabricadas con materiales de alta calidad para garantizar...</p>
+                <p class="mas">una larga vida útil del producto y la posibilidad de escoger el modelo perfecto que se adapte el diseño de tu cocina.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Menu-->
+    <div class="menu">
+        <a href="#Candy-Smart-FCS-100">
+            <img src="../img/51FEztgWBPL._AC_SL1000_.jpg" alt="Candy Smart FCS 100">
+        </a>
+        <a href="#miaX-Rasqueta-Profesional">
+            <img src="../img/71q+6HJ07FL._AC_SL1500_.jpg" alt="miaX Rasqueta Profesional">
+        </a>
+        <a href="#Candy-Timeless-CH63CC">
+            <img src="../img/71i3VCQ2l0L._AC_SL1500_.jpg" alt="Candy Timeless CH63CC">
+        </a>
+    </div>
+
+    <!--Cambiar color y letra-->
+    <div>
+        <button class="color" onclick="color()" aria-label="cambiar color y fondo">Color y fondo</button>
+    </div>
+    
+    <!--Pie contacto-->
+    <div class="pie-contacto" id="contacto">
+        <div class="footer">
+            <div><a href="http://www.twitter.com"><img src="../img/twitter.png" alt="twitter"></a></div>
+            <div><a href="http://www.telegram.org"><img src="../img/telegram.png" alt="telegram"></a></div>
+            <div><a href="http://www.whatsapp.com"><img src="../img/whatsapp.png" alt="whatsapp"></a></div>
+            <div><a href="http://www.facebook.com"><img src="../img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a></div>
+            <div><a href="http://www.instagram.com"><img src="../img/instagram.png" alt="instagram"></a></div>
+        </div>
+    </div>
+        
+    <!--Pie de pagina-->
+    <footer class="pie">
+        <div class="footer">
+            <div onclick="encender()"><img src="../img/menu.png" alt="menu"></div>
+            <div><a href="contactar.html"><img src="../img/telefono.png" alt="telefono"></a></div>
+            <div><a href="../index.html"><img src="../img/casa.png" alt="casa"></a></div>
+            <div><a href="" class="seleccionado"><img src="../img/carro.png" alt="carro"></a></div>
+            <div><a href=""><img src="../img/subir.png" alt="subir"></a></div>
+        </div>
+    </footer>
+    <div class="subir"><a href=""><img src="../img/subir.png" alt="subir"></a></div>
+    <!--Scripts-->
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-auto.js"></script>
+</body>
+</html>

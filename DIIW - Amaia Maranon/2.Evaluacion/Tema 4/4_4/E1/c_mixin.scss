@@ -1,0 +1,17 @@
+$before-color: blue;
+$after-color: green;
+
+
+.tres {
+    &:before {
+        content:"Soy previo al bloque 3";
+        color: $before-color;
+    }
+}
+#i1 {
+    &:after {
+        content: "Soy posterior al bloque 2";
+        color: $after-color;
+        border: 2;
+    }
+}

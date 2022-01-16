@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ibai Romero Martin" />
+    <meta name="description" content="Web de ofertas y productos"/>
+    <meta name="keywords" content="irm, productos, ofertas"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrusel.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <script src="js/js.js"></script>
+    <title>IRM</title>
+</head>
+<body>
+    <!--Cabecera-->
+    <header class="cabecera">
+        <form name="form">
+            <div>
+                <img src="img/logo.png" alt="logo" height="40">
+                <input type="search" placeholder="Buscar" name="buscar" aria-labelledby="buscarLabel">
+                <label id="buscarLabel" for="buscar">Buscar</label>
+            </div>
+        </form>
+        <h1>IRM</h1>
+    </header>
+    
+    <!--Carrusel-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/i1.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="img/i2.jpg" alt="paisaje"></div>
+        <div class="swiper-slide"><img src="img/i3.jpg" alt="paisaje"></div>
+      </div>
+    </div>
+    
+    <!--Menu navegacion(Medianas y grandes)-->
+    <nav class="nav-menu" aria-label="menu principal" role="menu">
+        <div role="menuitem">
+            <a href="">
+                <p class="seleccionado-texto">Inicio</p>
+            </a>
+        </div>
+        <div role="menuitem">
+            <a href="pages/productos.html">
+                <p>Productos</p>
+            </a>
+        </div>
+        <div role="menuitem">
+            <a href="pages/contactar.html">
+                <p>Contactar</p>
+            </a>
+        </div>
+    </nav>
+    
+     <!--Titulo-->
+    <div class="titulo" id="titulo">
+        <h1>Quienes somos?</h1>
+    </div>
+    
+    <!--Cuerpo-->
+    <div class="cuerpo" role="article">
+        <div class="caja" id="Larry-Ellison">
+            <img src="img/Larry_Ellison.png" alt="Larry Ellison">
+            <div class="texto">
+                <p class="nombre">Larry Ellison</p><br>
+                <p class="descripcion">Lawrence Joseph Ellison (El Bronx, Nueva York; 17 de agosto de 1944), más conocido como Larry Ellison.</p>
+                <p class="mas">El 18 de septiembre de 2014, Oracle anunció que Ellison abandonaría de manera inmediata su puesto como director ejecutivo de la empresa, desempeñando a partir de ese momento la función de director de tecnología. En su lugar Mark Hurd y Safra Catz fueron nombrados directores ejecutivos. De esta manera, Ellison se separó de un puesto que ocupó por 37 años, desde la creación de la empresa en 1977.</p>
+            </div>
+        </div>
+        <div class="caja" id="Alice-Walton">
+            <img src="img/Alice_Walton.jpg" alt="Alice Walton">
+            <div class="texto">
+                <p class="nombre">Alice Walton</p><br>
+                <p class="descripcion">Alice Louise Walton (nacida en Arkansas, Estados Unidos, el 1 de diciembre de 1948) es la mujer más adinerada del mundo en 2020.</p>
+                <p class="mas">Heredó la base de su fortuna de Sam Walton, fundador de Wal-Mart. Ella y varios de sus familiares ocupan diversos lugares dentro de los diez primeros del ranking de las mayores fortunas personales del mundo en 2003 y 2009, publicado por la revista Forbes.</p>
+            </div>
+        </div>
+        <div class="caja" id="Juan-Roig-Alfonso">
+            <img src="img/juan%20roig%20alfonso.jpg" alt="Juan Roig Alfonso">
+            <div class="texto">
+                <p class="nombre">Juan Roig Alfonso</p><br>
+                <p class="descripcion">Alice Louise Walton (nacida en Arkansas, Estados Unidos, el 1 de diciembre de 1948) es la mujer más adinerada del mundo en 2020.</p>
+                <p class="mas"></p>
+            </div>
+        </div>
+        <div class="caja" id="Manuel-Lao-Hernandez">
+            <img src="img/Manuel-Lao-800x445.jpg" alt="Manuel Lao Hernandez">
+            <div class="texto">
+                <p class="nombre">Manuel Lao Hernandez</p><br>
+                <p class="descripcion">Manuel Lao Hernández (Doña María, Almería, 10 de junio de 1944) es un empresario español dedicado a las inversiones en diferentes sectores como el financiero.</p>
+                <p class="mas">Fundador y presidente de numerosas empresas, entre las que destaca Cirsa, que fue adquirida por el fondo de inversión Blackstone Group en 2018, a excepción del negocio de Leisure en Argentina. Actualmente es presidente de Nortia Capital Investment Holding (NCIH), fundada en 2007 como cabecera del grupo de empresas que preside e integra inversiones en los diferentes ámbitos que abarca. En 2005 crea la Fundación Manuel Lao, con el fin agrupar y dar sentido a las distintas donaciones que se llevaban a cabo. En 2017, es investido Doctor Honoris Causa por la Universidad Católica San Antonio de Murcia (UCAM) y en 2019, se le otorga el título de "Catedrático de Universidad Extraordinario y Director de la Cátedra Internacional de Emprendimiento y Empleo de la UCAM".</p>
+            </div>
+        </div>
+    </div>
+    
+    <!--Menu-->
+    <div class="menu" role="menu">
+        <a href="#Larry-Ellison" role="menuitem">
+            <img src="img/Larry_Ellison.png" alt="Larry Ellison">
+        </a>
+        <a href="#Alice-Walton" role="menuitem">
+            <img src="img/Alice_Walton.jpg" alt="Alice Walton">
+        </a>
+        <a href="#Juan-Roig-Alfonso" role="menuitem">
+            <img src="img/juan%20roig%20alfonso.jpg" alt="Juan Roig Alfonso">
+        </a>
+        <a href="#Manuel-Lao-Hernandez" role="menuitem">
+            <img src="img/Manuel-Lao-800x445.jpg" alt="Manuel Lao Hernandez">
+        </a>
+    </div>
+    <!--Aviso legal-->
+    <div class="aviso-legal" id="aviso" role="aviso legal">
+        <p>A continuación le informamos del uso que hacemos de los datos que recabamos mientras navega por nuestras páginas. Puede cambiar sus preferencias, en cualquier momento, accediendo al enlace al Area de Privacidad que encontrará al pie de nuestra página principal.
+        Con su acuerdo, nosotros y nuestros socios usamos cookies o tecnologías similares para almacenar, acceder y procesar datos personales como su visita en este sitio web. Puede retirar su consentimiento u oponerse al procesamiento de datos basado en intereses legítimos en cualquier momento haciendo clic en "Más información" o en nuestra Política de privacidad en este sitio web.
+        Nosotros y nuestros socios hacemos el siguiente tratamiento de datos:
+        Almacenar o acceder a información en un dispositivo, Anuncios y contenido personalizados, medición de anuncios y del contenido, información sobre el público y desarrollo de productos, Datos de localización geográfica precisa e identificación mediante las características de dispositivos, Finalidades propias de La Vanguardia, Uso de cookies técnicas o de preferencias</p>
+        <br>
+        <button class="aceptar" onclick="aceptar()" aria-label="aceptar aviso legal" aria-labelledby="aviso">Aceptar</button>
+    </div>
+    
+    <!--Cambiar color y letra-->
+    <div>
+        <button class="color" onclick="color()" aria-label="cambiar color y fondo">Color y fondo</button>
+    </div>
+    
+    <!--Pie contacto-->
+    <div class="pie-contacto" id="contacto">
+        <div class="footer">
+            <div><a href="http://www.twitter.com"><img src="img/twitter.png" alt="twitter"></a></div>
+            <div><a href="http://www.telegram.org"><img src="img/telegram.png" alt="telegram"></a></div>
+            <div><a href="http://www.whatsapp.com"><img src="img/whatsapp.png" alt="whatsapp"></a></div>
+            <div><a href="http://www.facebook.com"><img src="img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a></div>
+            <div><a href="http://www.instagram.com"><img src="img/instagram.png" alt="instagram"></a></div>
+        </div>
+    </div>
+        
+    
+    <!--Pie de pagina-->
+    <footer class="pie">
+        <div class="footer">
+            <div onclick="encender()"><img src="img/menu.png" alt="menu"></div>
+            <div><a href="pages/contactar.html"><img src="img/telefono.png" alt="telefono"></a></div>
+            <div><a href=""><img src="img/casa.png"  class="seleccionado" alt="casa"></a></div>
+            <div><a href="pages/productos.html"><img src="img/carro.png" alt="carro"></a></div>
+            <div><a href=""><img src="img/subir.png" alt="subir"></a></div>
+        </div>
+    </footer>
+    <div class="subir"><a href=""><img src="img/subir.png" alt="subir"></a></div>
+    <!--Scripts-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-auto.js"></script>
+</body>
+</html>

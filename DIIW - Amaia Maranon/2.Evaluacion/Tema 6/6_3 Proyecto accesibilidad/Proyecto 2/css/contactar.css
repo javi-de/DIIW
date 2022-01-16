@@ -1,0 +1,37 @@
+.caja{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.separar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    width: 40%;
+    text-align: center;
+    background-color: darkgrey;
+    padding: 2px;
+    border: solid 1px;
+}
+
+form *{
+    border-radius: 5px;
+}
+@media (min-width: 960px){
+    body{
+        grid-template-columns: 1fr 1fr 110px; 
+        grid-template-rows: 64px 20px 37px 800px 61px;
+        grid-template-areas: 
+        "swiper swiper swiper"
+        "nav-menu nav-menu nav-menu"
+        "titulo titulo titulo"
+        "cuerpo cuerpo cuerpo"
+        "pie-contacto pie-contacto subir"; 
+    }
+    .cuerpo{
+        height: 800px;
+    }
+}

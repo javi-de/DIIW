@@ -1,0 +1,24 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-width:1000px;
+}
+
+.row{
+   @include displayFlex(row, center, flex-start);
+}
+
+[class*='col-']{
+    float: left;
+    margin-top:30px;
+    width: 100%;
+}
+
+@include tablet{
+    @for $i from 1 through $numero-columnas{
+        .col-#{$i}{
+            width:100%/$numero-columnas *$i;
+        }
+    }
+}
+
