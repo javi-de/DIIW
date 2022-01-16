@@ -10,37 +10,34 @@
         <link href="css/ejercicio1.css" rel="stylesheet" >
     </head>
     <body>
-        <div>
-           <div> 
-                <h1>Mi cabecera <br/><small>subcabecera</small></h1>
-                <ul>
-                        <li><a aria-current="page" href="#">Pestaña1</a></li>
-                        <li><ahref="#">Pestaña2</a></li>
-                        <li><ahref="#">Pestaña3</a></li>
+        <div class="container-fluid border border-primary">
+            <div class="row"> 
+                <h1>Mi cabecera 
+                    <br/>
+                    <small class="text-secondary fs-3">subcabecera</small>
+                </h1>
+                <ul class="list-group list-group-horizontal-lg list-group- text-center">
+                    <li class="list-group-item flex-fill border border-primary"><a class="nav-link" aria-current="page" href="#">Pestaña1</a></li>
+                    <li class="list-group-item flex-fill border border-secondary"><a class="nav-link" href="#">Pestaña2</a></li>
+                    <li class="list-group-item flex-fill border border-secondary"><a class="nav-link" href="#">Pestaña3</a></li>
                 </ul> 
-           
-            </div>
-        </div>
-        <div>
-            <div>      
-                    <div>
+             </div>
+            <div class="row mx-sm-5 p">
+                    <div class="col-12 col-lg-5 py-3">
                         <h1>Lorem ipsum</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p><a>Leer más</a></p>
+                        <p><a class="btn btn-primary btn-lg">Leer más</a></p>
                     </div>
-                    <div></div>
-                    <ul>
-                        <li>Documentos<span> 14 </span></li>
-                        <li>Imagenes<span> 1 </span></li>
-                        <li>Videos<span> 8 </span></li>
-                        <li>Musica<span> 0 </span></li>
-                        <li>Mensajes<span> 9 </span></li>
+                    <div class="col-12 col-lg-2"></div>
+                    <ul class="list-group col-12 col-lg-5">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border">Documentos<span class="badge bg-secondary rounded-pill"> 14 </span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border">Imagenes<span class="badge bg-secondary rounded-pill"> 1 </span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border">Videos<span class="badge bg-secondary rounded-pill"> 8 </span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border">Musica<span class="badge bg-secondary rounded-pill"> 0 </span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border">Mensajes<span class="badge bg-secondary rounded-pill"> 9 </span></li>
                     </ul>
-               
             </div>
-        </div>    
-       
-
+        </div>  
     </body>
 </html>
