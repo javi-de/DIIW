@@ -1,0 +1,11 @@
+.dropdown-menu a:hover {
+  background-color: #8fe18e !important; }
+
+.jumbotron { 
+  background: url("../imagenes/paisaje.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed !important;  
+  }
+  
+footer {
+  padding: 1%; }

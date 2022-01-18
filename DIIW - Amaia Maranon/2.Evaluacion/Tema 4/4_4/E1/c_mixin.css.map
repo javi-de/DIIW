@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAIA,AACI,KADC,AACA,OAAO,CAAC;EACL,OAAO,EAAC,wBAAwB;EAChC,KAAK,EAPE,IAAI;CAQd;;AAEL,AACI,GADD,AACE,MAAM,CAAC;EACJ,OAAO,EAAE,2BAA2B;EACpC,KAAK,EAZC,KAAK;EAaX,MAAM,EAAE,CAAC;CACZ",
-    "sources": [
-        "c_mixin.scss"
-    ],
-    "names": [],
-    "file": "c_mixin.css"
-}

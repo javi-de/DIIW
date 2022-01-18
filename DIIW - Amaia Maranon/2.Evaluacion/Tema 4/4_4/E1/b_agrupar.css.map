@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAEQ,IAFJ,CACA,EAAE,AACG,UAAW,CAAA,CAAC,EAAC;EACV,UAAU,EAAE,cAAc;CAC7B;;AAGT,AAEQ,IAFJ,AACC,UAAW,CAAA,CAAC,CACR,UAAW,CAAA,CAAC,EAAE;EACX,UAAU,EAAE,cAAc;CAC7B;;AAGT,AAGY,KAHP,AACA,UAAW,CAAA,GAAG,EACX,EAAE,AACG,UAAW,CAAA,IAAI,EAAE;EACd,UAAU,EAAE,cAAc;CAC7B",
-    "sources": [
-        "b_agrupar.scss"
-    ],
-    "names": [],
-    "file": "b_agrupar.css"
-}
