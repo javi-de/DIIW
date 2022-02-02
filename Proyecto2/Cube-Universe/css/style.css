@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/fondoOscuro.jpg");
+    display: grid;
+    grid-template-rows: 0.2fr 6fr 0.2fr;
+}
+
+body h1, h2{
+    font-family: Arial, Helvetica;
+    color: rgb(133, 124, 255);
+
+}
+
+body p, a, li, span{
+    font-family: Courier, Verdana;
+}
+
+/* Boton para volver arriba (solo para pantallas pequeñas) */
+.return img{
+    grid-row: 3;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    width: 100px;
+}
+
+/* aviso legal */
+#aviso{
+    display: none;
+    position: fixed;
+    margin: auto;
+    padding: 20px;
+    bottom: 0;
+    z-index: 4;
+    background-color: white;
+    height: 30%;
+}
+
+#aviso button{
+    float: right;
+    padding: 10px 20px;
+    background-color: rgb(66, 0, 0);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/********************************* HEADER *******************************************************/
+@keyframes openNav{
+    0%{left: -150%}
+    100%{left: 0%;}
+}
+
+@keyframes closeNav{
+    0%{left: 0%}
+    100%{left: -150%;}
+}
+
+header{
+    grid-row: 1;
+    width: 100%;
+}
+
+header nav{
+    left: -150%;
+    z-index: 4;
+    width: 80%;
+    height: 100%;
+    margin: 70px 0;
+    position: fixed;
+    background-color: rgb(18, 59, 112);
+}
+
+header nav ul li{
+    display: block;
+    float: none;
+    border-bottom: 1px solid white;
+}
+
+header nav ul li a{
+    color: white;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    background-color: rgb(0, 188, 230);
+    color: black;
+}
+
+header nav ul li span{
+    margin-right: 10px;
+}
+
+header .botonFondo{
+    position: fixed;
+    top: 75px;
+    right: 5px;
+}
+
+header .botonFondo button{
+    padding: 10px;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#menu_bar{
+    display: inline-block;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+}
+
+.butSkip{
+   
+    position: fixed;
+    transform: scale(.00005);
+}
+
+#menu_bar .butMenu{
+    display: block;
+    padding: 20px;
+    background: rgb(0, 7, 44);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+#menu_bar .butMenu span img{
+    width: 40px;
+}
+
+#menu_bar span{
+    float: right;
+}
+
+
+
+/************************ MAIN *******************************************************/
+
+@keyframes rotating{
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(270deg); }
+}
+
+main {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#main, #shop, #contactUs, #whoWeAre{
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(18, 59, 112);
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p{
+    margin: 10px;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/************************ principal **************************/
+#main{
+    display: block;
+}
+
+#main span {
+    animation: letterSwap 5s infinite;
+    font-size: 3em;
+}
+
+#main ul{
+    padding: 20px;
+    list-style: none;
+}
+
+#main ul li{
+    animation: borderSwap 5s infinite;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#main ul li div{
+    grid-column: 1;
+    margin-right: 10px;
+    padding-right: 10px;
+    text-align: left;
+    border-right: 1px solid white;
+}
+
+#main ul li img{
+    grid-column: 2;
+    width: 150px;
+    height: 150px;
+    margin: 5px 0 20px 0;
+}
+
+/************************ tienda **************************/
+#shop{
+    margin: 50px auto;
+    display: none;
+}
+
+#recipientes, #rubiks, #varios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    animation: borderSwap 5s infinite;
+}
+
+#shop h2{
+    margin-top: 30px;
+}
+
+#shop img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+#shop a{
+    margin: 20px;
+    border-bottom: 3px solid rgb(18, 59, 112);
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+
+}
+
+#shop a h3{
+    font-size: 1.5em;
+}
+ 
+#shop a p{
+    text-align: center;
+}
+
+#shop a:hover{
+    background-color: white;
+    color: black;
+}
+
+/************************ contacta **************************/
+#contactUs{
+    text-align: left;
+    margin: 50px auto;
+   display: none;
+
+}
+
+#contactUs h2{
+    color:rgb(0, 188, 230);
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgb(18, 59, 112);
+}
+
+#contactUs form{
+    padding: 10px;
+    margin: 10px;
+}
+
+.separar{
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*
+#contactUs form td{
+    padding: 10px;
+    font-size: 1.5em;
+
+}*/
+
+
+
+#contactUs img{
+    width: 100%;
+    margin-top: 50px;
+    border-top: 5px solid rgb(18, 59, 112);
+    padding-top: 20px;
+
+}
+
+#contactUs button{
+    padding: 10px 20px;
+    background-color: rgb(66, 0, 0);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/************************ quienes somos **************************/
+#whoWeAre{
+    margin: 50px auto;
+    display: none;
+}
+
+#whoWeAre img{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#whoWeAre p{
+    text-align: center;
+}
+
+#whoWeAre span{
+    animation:letterSwap 5s infinite;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+/********************************** FOOTER ****************************************************/
+footer{
+    color: white; 
+    /* background: rgb(13, 42, 80, 0.9); */
+    background: rgb(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.datos{
+    display: none;
+}
+
+.redes a img{
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+@media all and (min-width: 730px){
+    @keyframes minimMenuBar{
+        0%{left: 0%}
+        100%{left: -17%;}
+    }
+    @keyframes maximMenuBar{
+        0%{left: -17%}
+        100%{left: 0%;}
+    }
+    
+    .return{
+        display: none;
+    }
+
+    header nav{
+        padding: 5px;
+        width: 75%;
+        height: 60px;
+        margin: 0;
+        margin-left: 25%;
+        display: block;
+    }
+        
+    header nav ul{
+        list-style: none;
+    }
+    
+    header nav ul li{
+        float: left;
+    }
+    
+    #menu_bar {
+        display: block;
+        width: 25%;
+        float: right;
+        position: fixed;
+    }
+}
+
+
+@media all and (min-width: 730px) and (max-width: 1200px) {
+    header nav{
+        left: 0%
+    }
+
+    #main, #shop, #contactUs, #whoWeAre{
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
+    #recipientes, #rubiks, #varios{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .datos{
+        display: inline-block;
+        margin: 20px;
+        float: left;
+    }
+
+    .redes a img{
+        float: right;
+    }
+
+}
+
+@media all and (min-width: 1200px){
+    header nav{
+        left: 0%
+    }
+
+    #main, #shop, #contactUs, #whoWeAre{
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+
+    #recipientes, #rubiks, #varios{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #main ul li img{
+        transition: width 2s, height 2s;
+    }
+    
+    #main ul li img:hover{
+        width: 500px;
+        height: 500px;
+    }
+
+    .datos{
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .redes a img{
+        float: left;
+    }
+}
+
+
+
+@media print {
+    header, footer, .return{
+        display: none;
+    }
+    body h1, h2, p, span, li, section, form {
+        background-color: white;
+        color: black;
+        border: none !important;
+        animation: none !important;
+    }
+
+    #main, #shop, #contactUs, #WhoWeAre{
+        display: block;
+    }
+
+
+    img {
+        filter: grayscale(1);
+    }
+}

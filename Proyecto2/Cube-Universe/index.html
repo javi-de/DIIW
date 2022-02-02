@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Díaz Expósito">
+    <meta name="description" content="Cubes Universe">
+    <meta name="keywords" content="cubo, Cubes Universe, poligons, geometric"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <title>Cubes Universe</title>
+</head>
+<body>
+    <header>
+        <div>
+            <!-- botón para saltar contenido repetitivo en el que caso de que se use un lector de pantalla (accesibilidad) -->
+            <a class="butSkip" aria-label="Saltar a la sección Principal"  href="#main">Saltar a la sección Principal</a>
+        </div>
+        <div id="menu_bar">
+            <a href="#" class="butMenu"><span><img src="./img/logo.png" alt="Logo de Cube Universe"></span>Menu</a>
+        </div>
+        <nav id="nav">
+            <ul role="tablist" aria-label="Secciones de la página web">
+                <li role="presentation">
+                    <a href="#main" id="principal" role="tab" aria-controls="main" aria-posinset="1" aria-setsize="4">
+                        <span class="fas fa-home"></span>Principal
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#shop" id="tienda" role="tab" aria-controls="shop" aria-posinset="2" aria-setsize="4">
+                        <span class="fas fa-store"></span>Tienda
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#contactUs" id="contacta" role="tab" aria-controls="contactUs" aria-posinset="3" aria-setsize="4">
+                        <span class="fab fa-weixin"></span>Contacta
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#whoWeAre" id="quienesSomos" role="tab" aria-controls="quienesSomos" aria-posinset="4" aria-setsize="4">
+                        <span class="fas fa-address-book"></span>Quienes somos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div  class="botonFondo"><button aria-label="Cambiar fondo" id="butFondo">Cambiar fondo</button></div>
+    </header>
+
+    <main>
+        <section id="main">
+            <h1>¡Bienvenido al universo de los cubos!</h1>
+            <p>Seguramente te estés preguntando qué puedes encontrar en esta web. Pues es bastante obvio...</p>
+            <h2>CUBOS</h2>
+            <p>Para comenzar te vamos a ofrecer una serie de definiciones, para aclarar ciertos conceptos. Según la RAE un cubo puede ser: </p>
+            <ul>
+                <li>
+                    <p>1. Recipiente, por lo general en forma de cono truncado invertido, con asa abatible en la parte superior.</p>
+                    <img src="./img/tienda/recipiente_cubo1.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>2. Pieza central de la rueda, donde encajan los radios o rayos. El cubo de una bici es un claro ejemplo, aunque existen en todo tipo de rueda, como en un coche (de ahí que los embellecedores de las ruedas se llamen "tapacubos").</p>
+                    <img src="./img//tienda/varios_cubo_rueda.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>3. Torreón circular de las murallas o fortalezas antiguas. Se trata de esa parte de la muralla que sobresale claramente de la misma; no tiene por qué ser forma circular solamente (aunque es lo más común).</p>
+                    <img src="./img/cubo_torreon.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>4. Cilindro hueco en que remataba por abajo la bayoneta, y que servía para adaptarla al fusil.</p>
+                    <img src="./img/tienda/varios_bayoneta.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>5. Cilindro hueco en que remataba por abajo la moharra de la lanza y en el cual se introducía y aseguraba el asta.</p>
+                    <img src="./img/tienda/varios_lanza.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>6. Estanque que se hacía en los molinos para acumular agua a fin de mover la muela. Seuele estar lleno de agua siempre que se pueda para asegurar que el molino funcione.</p>
+                    <img src="./img/cubo_molino.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>7. Pieza que tenían algunos relojes de bolsillo, en la cual se arrollaba la cuerda. La cuerda se enrolla dentro de él, no alrededor, como se podría pensar</p>
+                    <img src="./img/tienda/varios_reloj.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p> 8. Sólido regular limitado por seis cuadrados iguales. Un cubo de rubik sirve de ejemplo para conocer este tipo de cubo: con seis lados iguales.</p>
+                    <img src="./img/tienda/cubo_rubik1.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>9. En los techos artesonados, adorno en relieve de forma cúbica. Existen muchos tipos de adornos cúbicos y ,debido al continuo el uso del término, no todos tienen forma de cubo.</p>
+                    <img src="./img/cubo_techo.jpg" alt="" aria-hidden="true"/>
+                </li>
+                <li>
+                    <p>10. Tercera potencia de una cantidad o expresión, que se obtiene multiplicando una u otra dos veces por sí misma.</p>
+                    <img src="./img/cubo_matematicas.jpg" alt="" aria-hidden="true"/>
+                </li>
+            </ul>         
+        </section>
+
+        <section id="shop">
+            <h1>Tienda de CUBOS</h1>
+            <p>¡Disponemos de un catálogo de cubos que no podrás imaginar!</p>
+            
+            <h2>Cubos recipientes</h2>
+            <div id="recipientes">
+                <a>
+                    <img src="./img/tienda/recipiente_cubo1.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de plastico</h3>
+                    <p>Precio: 1.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/recipiente_cubo2.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de basura</h3>
+                    <p>Precio: 9.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/recipiente_cubo3.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de metal</h3>
+                    <p>Precio: 12.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/recipiente_cubo4.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo papeleta</h3>
+                    <p>Precio: 7.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/recipiente_cubo5.jpg" alt="" aria-hidden="true"> 
+                    <h3>"Cubo" de vidrio</h3>
+                    <p>Precio: 3.99 euros</p>
+                </a>
+            </div>
+            
+            <h2>Cubos de Rubik</h2>
+            <div id="rubiks">
+                <a>
+                    <img src="./img/tienda/cubo_rubik1.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de rubik de 3x3, el clásico</h3>
+                    <p>Precio: 9.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/cubo_rubik2.jpg" alt=""> aria-hidden="true"
+                    <h3>Cubo de rubik de 2x2</h3>
+                    <p>Precio: 4.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/cubo_rubik3.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de rubik de 5x5</h3>
+                    <p>Precio: 14.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/cubo_rubik4.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de rubik especial con engranajes</h3>
+                    <p>Precio: 19.99 euros</p>
+                </a>
+            </div>
+
+            <h2>Cubos varios</h2>
+            <div id="varios">
+                <a>
+                    <img src="./img/tienda/varios_bayoneta.jpg" alt="" aria-hidden="true">
+                    <h3>Bayoneta de plástico</h3>
+                    <p>Precio: 36.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/varios_cubitos1.jpg" alt="" aria-hidden="true">
+                    <h3>Cubitera</h3>
+                    <p>2.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/varios_lanza.jpg" alt="" aria-hidden="true">
+                    <h3>Punta de lanza de plástico</h3>
+                    <p>41.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/varios_lanza2.jpg" alt="" aria-hidden="true">
+                    <h3>Punta de pica de plástico</h3>
+                    <p>Precio: 54.99 euros</p>
+                </a>
+                <a>
+                    <img src="./img/tienda/varios_reloj.jpg" alt="" aria-hidden="true">
+                    <h3>Cubo de reloj de bolsillo (cuerda incluida)</h3>
+                    <p>16.99 euros</p>
+                </a>
+            </div>
+        </section>
+        
+        <section id="contactUs">
+            <h1>Contacta con el equipo</h1>
+            <p>Si quieres enviarnos cualquier tipo de mensaje, puedes hacerlo mediante el siguiente formulario: </p>
+            <form>
+                <div class="separar">
+                    <label for="nombre">Nombre y apellidos: </label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="separar">
+                    <label for="asunto">Asunto del mensaje: </label>
+                    <input type="text" id="asunto" name="asunto">
+                </div>
+
+                <div class="separar">
+                    <label for="mensaje">Contenido del mensaje: </label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
+                </div>
+
+                <div class="separar">
+                    <button type="submit" aria-label="Enviar formulario" name="enviar" value="Enviar">Enviar</button>
+                </div>
+            </form>
+            <img src="./img/contactanos.png" alt="" aria-hidden="true">
+        </section>
+
+        <section id="whoWeAre">
+            <img src="./img/equipo.png" alt="" aria-hidden="true">
+            <h1>¡Somos un equipo!</h1>
+            <p>Somos un grupo de personas apasionadas por los cubos que han decido formar un equipo para poder cumplir nuestro sueño:</p><span>VENDER CUBOS</span>
+        </section>
+    </main>
+
+    <aside></aside>
+
+    <footer>
+        <span class="datos">
+            Javier Díaz Expósito -  DIIW 13/12/2021
+        </span>
+        <span class="redes">
+            <a href="https://www.facebook.com" target="_blank" title="Se abre en una nueva ventana"><img src="./img/redes/facebook.png" alt="Logo de Facebook"></a>
+            <a href="https://www.youtube.com" target="_blank" title="Se abre en una nueva ventana"><img src="./img/redes/youtube.png" alt="Logo de Youtube"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" title="Se abre en una nueva ventana"><img src="./img/redes/twiter.png" alt="Logo de Twiter"></a>
+            <a href="https://www.instagram.com" target="_blank" title="Se abre en una nueva ventana"><img src="./img/redes/instagram.png" alt="Logo de Instagram"></a>
+        </span>
+    </footer>
+
+    <!-- política prot. datos -->
+    <div id="aviso">
+        <p>IMPORTANTE: Te informamos que los datos que nos facilites serán tratados por 
+        Cube Universe, S.L. La base de legitimación del tratamiento es el 
+        consentimiento otorgado 
+        por el usuario. En ningún caso se cederán datos a terceros, salvo 
+        obligación legal. Puedes acceder, rectificar y suprimir tus datos, 
+        así como ejercer otros derechos, como se explica en la información 
+        adicional. Puedes conocer más en detalle el uso que hacemos de tus
+        datos accediendo a nuestra Política de Privacidad.</p>
+        
+        <button aria-label="Aceptar Aviso sobre Datos" onclick="aceptarAvisoLegal()">Aceptar</button>
+    </div>
+
+    <!-- boton para volver arriba -->
+    <div class="return">
+        <a href="#"><img src="./img/cubo.gif" alt="Botón para volver arriba"></a>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
