@@ -1,0 +1,1117 @@
+		
+<!DOCTYPE html>
+<html lang="es" data-wf-page="591e5ba264697b56d76e1ee0" data-wf-site="591e4961efba3840891b7c7c" data-wf-status="1">
+<head>
+	<meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  
+  
+  
+  <!-- Pingback -->
+	<link rel="pingback" href="https://franciscoamk.com/xmlrpc.php">
+	
+	
+	<meta name='robots' content='max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Cómo crear un tema de WordPress (Parte 2) - Francisco Aguilera G.</title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://franciscoamk.com/crear-tema-wordpress-2/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Cómo crear un tema de WordPress (Parte 2) - Francisco Aguilera G." />
+	<meta property="og:description" content="Esta es la segunda parte de la serie «Cómo crear un tema WordPress», si aún no has leído la primera parte puedes hacerlo desde éste enlace. En el artículo anterior avanzamos bastante con nuestro tema: configuramos lo más básico de la hoja de estilos CSS, la cabecera, el pie de página y el archivo index.php. [&hellip;]" />
+	<meta property="og:url" content="https://franciscoamk.com/crear-tema-wordpress-2/" />
+	<meta property="og:site_name" content="Francisco Aguilera G." />
+	<meta property="article:publisher" content="https://www.facebook.com/FranciscoAMK.Design" />
+	<meta property="article:published_time" content="2013-12-02T04:00:39+00:00" />
+	<meta property="article:modified_time" content="2017-06-13T03:00:28+00:00" />
+	<meta property="og:image" content="https://franciscoamk.com/wp-content/uploads/2013/12/primer-tema-wp-2.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="400" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@FranciscoAMK" />
+	<meta name="twitter:site" content="@FranciscoAMK" />
+	<meta name="twitter:label1" content="Escrito por">
+	<meta name="twitter:data1" content="Francisco Aguilera G.">
+	<meta name="twitter:label2" content="Tiempo de lectura">
+	<meta name="twitter:data2" content="14 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"http://franciscoamk.com/#website","url":"http://franciscoamk.com/","name":"Francisco Aguilera G.","description":"Dise\u00f1ador Gr\u00e1fico / Web","potentialAction":[{"@type":"SearchAction","target":"http://franciscoamk.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"ImageObject","@id":"https://franciscoamk.com/crear-tema-wordpress-2/#primaryimage","inLanguage":"es","url":"https://franciscoamk.com/wp-content/uploads/2013/12/primer-tema-wp-2.jpg","width":1000,"height":400},{"@type":"WebPage","@id":"https://franciscoamk.com/crear-tema-wordpress-2/#webpage","url":"https://franciscoamk.com/crear-tema-wordpress-2/","name":"C\u00f3mo crear un tema de WordPress (Parte 2) - Francisco Aguilera G.","isPartOf":{"@id":"http://franciscoamk.com/#website"},"primaryImageOfPage":{"@id":"https://franciscoamk.com/crear-tema-wordpress-2/#primaryimage"},"datePublished":"2013-12-02T04:00:39+00:00","dateModified":"2017-06-13T03:00:28+00:00","author":{"@id":"http://franciscoamk.com/#/schema/person/2dd9fd97162cf6496a9f6ae2096b3fc6"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://franciscoamk.com/crear-tema-wordpress-2/"]}]},{"@type":"Person","@id":"http://franciscoamk.com/#/schema/person/2dd9fd97162cf6496a9f6ae2096b3fc6","name":"Francisco Aguilera G.","image":{"@type":"ImageObject","@id":"http://franciscoamk.com/#personlogo","inLanguage":"es","url":"https://secure.gravatar.com/avatar/c64e07fdcf67e4099caaa772e1ab3438?s=96&d=mm&r=g","caption":"Francisco Aguilera G."},"description":"Cada d\u00eda desayuno unas tostadas de PSD, luego almuerzo un plato de HTML y una sopa de CSS acompa\u00f1ada de un vaso de jQuery y por las tardes como un gran sandwich de Wordpress.","sameAs":["http://franciscoamk.com"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.14.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+    (window.gaDevIds=window.gaDevIds||[]).push("dZGIzZG");
+	var mi_version         = '7.14.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-29065745-3';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+
+	if ( 'undefined' === typeof gaOptout ) {
+		function gaOptout() {
+			__gaTrackerOptout();
+		}
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-29065745-3', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Función desactivada __gaTracker(' + arguments[0] + " ....) porque no estás siendo rastreado. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/franciscoamk.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.3"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://franciscoamk.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='wp-components-css'  href='https://franciscoamk.com/wp-includes/css/dist/components/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css'  href='https://franciscoamk.com/wp-includes/css/dist/block-editor/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-nux-css'  href='https://franciscoamk.com/wp-includes/css/dist/nux/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css'  href='https://franciscoamk.com/wp-includes/css/dist/reusable-blocks/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css'  href='https://franciscoamk.com/wp-includes/css/dist/editor/style.min.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gumroad_block-cgb-style-css-css'  href='https://franciscoamk.com/wp-content/plugins/gumroad/dist/blocks.style.build.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://franciscoamk.com/wp-content/plugins/google-analytics-for-wordpress/assets/css/frontend.min.css?ver=7.14.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme_style-css'  href='https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/style.css?ver=1.1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://franciscoamk.com/wp-content/plugins/jetpack/css/jetpack.css?ver=9.2.2' type='text/css' media='all' />
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/franciscoamk.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.js?ver=7.14.0' id='monsterinsights-frontend-script-js'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?ver=2.2.0' id='jquery-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js?ver=5.8.3' id='html5shiv-js'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js?ver=5.8.3' id='placehoder-ie-js'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://franciscoamk.com/wp-json/" /><link rel="alternate" type="application/json" href="https://franciscoamk.com/wp-json/wp/v2/posts/788" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://franciscoamk.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://franciscoamk.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.3" />
+<link rel='shortlink' href='https://franciscoamk.com/?p=788' />
+<link rel="alternate" type="application/json+oembed" href="https://franciscoamk.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffranciscoamk.com%2Fcrear-tema-wordpress-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://franciscoamk.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffranciscoamk.com%2Fcrear-tema-wordpress-2%2F&#038;format=xml" />
+<script type="text/javascript"><!--
+function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+//-->
+</script>
+	
+	<script src="https://use.typekit.net/diu6kfd.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try{Typekit.load();}catch(e){}
+  </script>
+	
+	<script type="text/javascript">
+		var $mcGoal = {'settings':{'uuid':'9cfb1be212f5c11759b1a12ba','dc':'us5'}};
+		(function() {
+			 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+			sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+		})(); 
+	</script>
+
+	
+	
+	<script>
+		
+		//Crear cookie
+		function SetCookie(cookieName,cookieValue,nDays) {
+		 var today = new Date();
+		 var expire = new Date();
+		 if (nDays==null || nDays==0) nDays=1;
+		 expire.setTime(today.getTime() + 3600000*24*nDays);
+		 document.cookie = cookieName+"="+escape(cookieValue)
+		                 + ";expires="+expire.toGMTString()+"; path=/";
+		}
+		
+		
+		jQuery('document').ready(function($){
+		
+			//Crear la cookie on click
+			$('.hide_subscribe').click(function(e){
+				e.preventDefault;
+				$('.flyin, .subscribeblock').slideUp(300);
+				
+				SetCookie('amk_suscrito',true,7);
+				
+			});
+			
+			//FitVids
+			$('.main, .video').fitVids();
+		
+		});
+	</script>
+
+	
+<link rel="icon" href="https://franciscoamk.com/wp-content/uploads/2017/06/cropped-amk-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://franciscoamk.com/wp-content/uploads/2017/06/cropped-amk-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://franciscoamk.com/wp-content/uploads/2017/06/cropped-amk-180x180.png" />
+<meta name="msapplication-TileImage" content="https://franciscoamk.com/wp-content/uploads/2017/06/cropped-amk-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/		</style>
+		  
+  
+  
+  
+  <script type="text/javascript">
+    !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
+  </script>
+  
+  
+
+
+</head>
+<body data-ix="display-sub-menu" class="post-template-default single single-post postid-788 single-format-standard">
+  <div class="global_container">
+    <header class="header">
+      <div class="navbar w-nav" data-animation="over-left" data-collapse="medium" data-doc-height="1" data-duration="400" data-easing="ease-out" data-easing2="ease-out" data-no-scroll="1">
+        <div class="navbar_menu-logo">
+          <div class="navmenu_btn w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
+          <a class="navbar_brand w-clearfix w-nav-brand" data-ix="fade-out-content" href="https://franciscoamk.com"><img class="navmenu_logo" src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/logo_amk.svg">
+          </a>
+          <nav class="navmenu w-nav-menu" role="navigation">
+            <div class="navmenu_dropdown" data-ix="show-sub-menu">
+              <a class="navmenu_link w-inline-block" href="https://franciscoamk.com/acerca">
+                <div class="navmenu_link_text">Acerca</div><img src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/menu_arrow.svg">
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu_arrow"></div>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/acerca">Acerca de FranciscoAMK</a>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/preguntas-frecuentes">Preguntas Frecuentes</a>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/servicios">Servicios</a>
+                <a class="sub-menu_link" href="http://apkestudio.com" target="_blank">Portafolio</a>
+              </div>
+            </div>
+            <div class="navmenu_dropdown" data-ix="show-sub-menu">
+              <a class="navmenu_link w-inline-block" href="#">
+                <div class="navmenu_link_text">Contenido</div><img src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/menu_arrow.svg">
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu_arrow"></div>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/blog">Blog</a>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/categoria/estilo-libre/">Estilo Libre</a>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/hr">Huevos Revueltos</a>
+              </div>
+            </div>
+            <div class="navmenu_dropdown" data-ix="show-sub-menu">
+              <a class="navmenu_link w-inline-block" href="#">
+                <div class="navmenu_link_text">Recursos</div><img src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/menu_arrow.svg">
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu_arrow"></div>
+                                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/plantillas">Plantillas</a>
+                                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/herramientas">Herramientas</a>
+                <a class="sub-menu_link" data-ix="fade-out-content" href="https://franciscoamk.com/recomendaciones">Recomendaciones</a>
+              </div>
+            </div>
+            <a class="navmenu_link w-inline-block" data-ix="fade-out-content" href="https://franciscoamk.com/contacto">
+              <div class="navmenu_link_text">Contacto</div>
+            </a>
+            <a class="navmenu_link navmenu_link_onlymobile w-inline-block" href="https://www.youtube.com/c/APKEstudio">
+              <div class="navmenu_link_text">Canal de Youtube</div>
+            </a>
+          </nav>
+        </div>
+        <div class="navbar_cta">
+	        <a class="btn featured topcta w-button" href="https://www.youtube.com/c/APKEstudio">Canal de Youtube</a>
+	                </div>
+      </div>
+    </header>
+
+    <main class="main" data-ix="fade-in-up">
+     
+     	     	
+     	     	
+     	<article class="single_post_content post-788 post type-post status-publish format-standard has-post-thumbnail hentry category-tutoriales category-wordpress">
+        <header class="single_post_header">
+          <div class="container textcenter">
+            <div class="global_meta"><a href="https://franciscoamk.com/categoria/tutoriales/" rel="category tag">Tutoriales</a>, <a href="https://franciscoamk.com/categoria/wordpress/" rel="category tag">WordPress</a> | 2 de diciembre de 2013</div>
+           
+            <h1 class="textcenter">Cómo crear un tema de WordPress (Parte 2)</h1>
+
+            							<div class="single_post_author">por Francisco Aguilera G.</div>
+                        
+            <div class="global_divider_center"></div>
+          </div>
+        </header>
+        <div class="container">
+	        
+        	<br />
+<b>Notice</b>:  Undefined offset: 0 in <b>/home/francisc/public_html/wp-content/themes/FranciscoAMK-2017/single.php</b> on line <b>42</b><br />
+				
+											
+								<img width="1000" height="400" src="https://franciscoamk.com/wp-content/uploads/2013/12/primer-tema-wp-2.jpg" class="post_img wp-post-image" alt="" loading="lazy" srcset="https://franciscoamk.com/wp-content/uploads/2013/12/primer-tema-wp-2.jpg 1000w, https://franciscoamk.com/wp-content/uploads/2013/12/primer-tema-wp-2-430x172.jpg 430w" sizes="(max-width: 1000px) 100vw, 1000px" />					
+										
+				          
+          <div class="page_content" data-ix="fly-in">
+            
+            
+            	              
+              
+            
+  
+            <section class="w-richtext">
+	            
+	            <p>Esta es la segunda parte de la serie <strong>«Cómo crear un tema WordPress»</strong>, si aún no has leído la primera parte <a href="http://franciscoamk.com/crear-tema-wordpress/">puedes hacerlo desde éste enlace</a>.</p>
+<p>En el artículo anterior avanzamos bastante con nuestro tema: configuramos lo más básico de la hoja de estilos CSS, la cabecera, el pie de página y el archivo <em>index.php</em>. Vamos a comenzar esta segunda sesión hablando de <em>sidebar.php</em></p>
+<h2>Sidebar</h2>
+<p>El archivo <em>sidebar.php</em> es (generalmente) el que contiene la zona dinámica principal en la que podemos insertar widgets.</p>
+<p>Actualmente la zona des sidebar dentro del archivo <em>index.php</em> está de la siguiente forma:</p>
+<pre class="lang:html decode:true">&lt;div class="col-md-4"&gt;
+	Este es el sidebar
+&lt;/div&gt;</pre>
+<p>y vamos a editarla para que quede así:</p>
+<pre class="lang:php decode:true">&lt;div class="col-md-4"&gt;
+	&lt;?php get_sidebar(); ?&gt;
+&lt;/div&gt;</pre>
+<p>Como puedes apreciar usamos la función <em>get_sidebar</em> que lo que hace, (al igual que <em>get_header</em> y <em>get_footer</em>) es importar un archivo específico desde nuestro tema. En este caso, el archivo <em>sidebar.php</em>.</p>
+<p>Nuestro archivo <em>sidebar.php</em> aún está en blanco, pero antes de escribir cualquier cosa sobre él, debemos habilitar una zona dinámica de widgets desde nuestro <em>functions.php</em>, por lo que vamos a abrir este archivo y escribir lo siguiente a continuación de lo que ya tenemos:</p>
+<pre class="lang:php decode:true">//---------------------------------------------------------------------
+// REGISTRAMOS EL SIDEBAR
+//---------------------------------------------------------------------
+
+//Con la función register_sidebar, registramos una zona dinámica para nuestro tema y le pasamos algunos parámetros
+register_sidebar(array(
+	'name' =&gt; __('Bara lateral', 'amk'), //El nombre del área dinámica
+	'id' =&gt; 'barra-lateral', //Un identificador único para la zona
+	'description' =&gt; __( 'Este es el área de widgets del sitio.', 'amk'), //Una breve descripción
+	'before_widget' =&gt; '&lt;div id="%1$s" class="widget %2$s"&gt;', //Algo de HTML que irá antes de cada widget
+	'after_widget'  =&gt; '&lt;/div&gt;', //Algo de HTML que irá después de cada widget
+	'before_title' =&gt; '&lt;h3&gt;', //La etiqueta que irá antes del título de cada widget
+	'after_title' =&gt; '&lt;/h3&gt;' //La etiqueta que irá después del título de cada widget
+));</pre>
+<p>Lo que acabamos de hacer es registrar una nueva área dinámica mediante la función <em>register_sidebar</em>. A esta función le hemos dado algunos parámetros, como el nombre del área y un nombre identificador entre otras cosas.</p>
+<p>AL actualizar nuestro archivo de funciones con este nuevo contenido veremos que en nuestro administrador se habilita la opción de utilizar widgets y nos muestra el área que acabamos de crear para insertar los widgets que nosotros queramos.</p>
+<p><img loading="lazy" class="aligncenter size-full wp-image-797" alt="tema-wp-2-1" src="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-1.png" width="308" height="274" /></p>
+<p>Ahora abriremos el archivo <em>sidebar.php</em> y escribiremos lo siguiente:</p>
+<pre class="lang:php decode:true">&lt;?php if( is_active_sidebar('barra-lateral') ) { // Verificamos si el área "barra-lateral" está activa
+	dynamic_sidebar( 'barra-lateral' ); // Y si está activa, la cargamos acá
+} //Aquí termina la verificación ?&gt;</pre>
+<p>Con esto lo que hacemos utilizar el identificador único del área de widgets, para verificar si ésta se encuentra activa, y si la respuesta es sí, entonces cargará en esta zona el área de widgets <em>barra-lateral</em>. Así, en la parte frontal del sitio ya vemos que los widgets ya se están mostrando:</p>
+<p><img loading="lazy" class="aligncenter size-large wp-image-799" alt="tema-wp-2-2" src="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-2-1024x671.png" width="980" height="642" srcset="https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-2-1024x671.png 1024w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-2-430x281.png 430w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-2.png 1394w" sizes="(max-width: 980px) 100vw, 980px" /></p>
+<h2>Estilos CSS</h2>
+<p>En nuestro <em>style.css</em> hasta el momento sólo hemos declarado la información básica del tema y hemos cargado bootstrap, pero ha legado el momento de agregar algo más de estilo para mejorar la apariencia de nuestro sitio, entonces abrimos <em>style.css</em> y añadimos lo siguiente:</p>
+<pre class="lang:css">body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 700;	
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+a {
+	color: #80ca26;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+code {
+	white-space: normal;
+}
+
+/************ HEADER ************/
+#main-header {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+	#main-header h1 {
+		margin: 0;
+		font-size: 20px;
+	}
+
+		#main-header h1 small {
+			margin: 0;
+			font-size: 15px;
+			color: #999;
+		}
+
+	#main-header hr {
+		margin-top: 40px;
+	}
+
+	#main-header nav {
+		text-align: right;
+	}
+		#main-header nav ul li {
+
+		} 
+			#main-header nav ul li ul {
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+				opacity: 0;
+
+				visibility: hidden;
+
+				-webkit-transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+				-ms-transition: all 0.2s linear;
+				transition: all 0.2s linear;
+
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				top: 40px;
+				width: 200px;
+				background: #f4f4f4;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				margin: 0;
+				padding: 0;
+			} 
+			#main-header nav ul li:hover ul {
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				filter: alpha(opacity=100);
+				opacity: 1;
+
+				visibility: visible;
+			}  
+				#main-header nav ul ul li {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					text-align: left;
+				}
+					#main-header nav ul ul li a {
+						padding: 10px 15px;
+						display: block;
+					}
+
+/************ ALGUNOS ESTILOS EXTRA ************/
+.sticky {
+	background: #fffde8;
+	padding: 15px;
+}
+
+.meta {
+	font-size: 0.8em;
+	margin-bottom: 15px;
+}
+
+.paginacion {
+	margin-top: 40px;
+	border-top: solid 1px #eee;
+	padding-top: 10px;
+}
+
+.widget {
+	margin-bottom: 40px;
+}</pre>
+<p>Con estas líneas de CSS nuestro sitio luce considerablemente más ordenado que hasta ahora, sin embargo, podemos apreciar que estamos utilizando como tipografía base la fuente <a href="http://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> y para poder utilizarla tranquilamente necesitaremos cargar la hoja de estilos desde <a href="http://www.google.com/fonts" target="_blank">Google Web Fonts</a>.</p>
+<p>Para cargar hojas de estilos tenemos 3 formas de hacerlo:</p>
+<ol>
+<li>Insertarlo en el head de <em>header.php</em></li>
+<li>Importarlo desde <em>style.css</em></li>
+<li>Cargarlo desde <em>functions.php</em></li>
+</ol>
+<p>En la primera parte de este tutorial insertamos <em>style.css</em> y <em>bootstrap.min.css</em> de la primera y segunda forma respectivamente. Ese es un método que nos puede servir si estamos trabajando sólo con una o dos hojas de estilo, sin embargo cuando necesitamos agregar más, generar dependencia entre ellas y conocer la versión de cada una, debemos hacerlo desde <em>functions.php</em>. Es mucho más limpio y nos permite mantener nuestros archivos más simples.</p>
+<p>Para cargar archivos CSS desde <em>functions.php</em> usaremos las funciones <em>wp_register_style</em>, que sirve para registrar una nueva hoja de estilos y <em>wp_enqueue_style</em> que incluirá en el head de nuestro tema (justo en el lugar en donde pusimos <em>wp_head</em>) alguno de los archivos CSS registrados.</p>
+<p>A la función <em>wp_register_style</em> le vamos a asignar ciertos parámetros, que incluiremos en el siguiente orden:</p>
+<ol>
+<li><strong>Nombre</strong>: Un nombre para la hoja de estilos</li>
+<li><strong>URL</strong>: la dirección donde se encuentra la hoja de estilos</li>
+<li><strong>Dependencia</strong>: Si este CSS depende de otras hojas de estilo para funcionar aquí añadimos su nombre</li>
+<li><strong>Versión</strong>: La versión de esta hoja de estilos</li>
+<li><strong>Media</strong>: A qué medios se aplicará este CSS (all, print, screen)</li>
+</ol>
+<p>Bien, modifiquemos <em>functions.php</em> añadiendo estas líneas:</p>
+<pre class="lang:php decode:true">//---------------------------------------------------------------------
+// CARGANDO ESTILOS DEL TEMA
+//---------------------------------------------------------------------
+//Creamos una función para cargar los estilos
+function amk_theme_styles() { 
+
+	//Registramos la fuente Open Sans
+	wp_register_style( 'font-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700', '', '', 'all' );
+
+	//Registramos Bootstrap
+	wp_register_style( 'bootstrap', get_stylesheet_directory_uri().'/css/bootstrap.min.css', '', '3.0.0', 'all' );
+
+	//registramos la hoja de estilos del tema
+	wp_register_style( 'amk-style', get_stylesheet_uri(), array('font-sans', 'bootstrap'), '1.0.0', 'all' );
+
+	//Ahora cargamos los estilos. Nota que sólo cargamos 'amk-style' ya que en esta hoja de estilos declaramos dependendencia de 'font-sans' y 'bootstrap', éstas cargaran de manera automática
+	wp_enqueue_style( 'amk-style' );
+}
+add_action('wp_enqueue_scripts', 'amk_theme_styles'); //Ejecutamos la función</pre>
+<p>Como puedes ver, registramos 3 estilos pero sólo cargamos <em>&#8216;amk-style&#8217;</em> ya que como en este CSS declaramos dependencia de &#8216;font-sans&#8217; y &#8216;bootstrap&#8217;, estos últimos estarán obligados a cargar antes que <em>style.css</em>.</p>
+<p>Ahora desde <em>header.php</em> eliminaremos esta línea:</p>
+<pre class="lang:php decode:true">&lt;link rel="stylesheet" href="&lt;?php bloginfo('stylesheet_url'); ?&gt;" &gt;</pre>
+<p>Y desde <em>style.css</em> eliminaremos esta línea:</p>
+<pre class="lang:css">@import url('css/bootstrap.min.css');</pre>
+<p>Ahora refrescaremos nuestro sitio en el navegador y veremos que todo carga correctamente 🙂</p>
+<p>Por último en nuestro style CSS agregaremos estas lineas para estilizar las <a href="http://codex.wordpress.org/CSS#WordPress_Generated_Classes" target="_blank">clases que son asignadas por WordPress</a> a algunos elementos en determinadas circunstancias, como por ejemplo, cuando decidimos alinear una imagen a la izquierda o a la derecha:</p>
+<pre class="lang:css">/************ WORDPRESS CORE ************/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.gallery-caption {
+	font-size: 0.8em;
+}</pre>
+<p>Hasta ahora nuestro tema se ve así:</p>
+<p><img loading="lazy" class="aligncenter size-large wp-image-812" alt="tema-wp-2-3" src="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-3-1024x962.png" width="980" height="920" srcset="https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-3-1024x962.png 1024w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-3-319x300.png 319w" sizes="(max-width: 980px) 100vw, 980px" /></p>
+<p>No está nada mal 😉</p>
+<p>&nbsp;</p>
+<h2>Javascript</h2>
+<p>Para cargar archivos javascript haremos algo muy similar a lo que hicimos para cargar archivos CSS, pero esta vez con las funciones <em>wp_register_script</em> y <em>wp_enqueue_script</em>.</p>
+<p>La función <em>wp_register_script</em> recibe ciertos parámetros, muy similares a los que recibe <em>wp_register_style</em>:</p>
+<ol>
+<li><strong>Nombre</strong>: Un nombre para el script</li>
+<li><strong>URL</strong>: la dirección donde se encuentra el script</li>
+<li><strong>Dependencia</strong>: Si este script depende de otros para funcionar aquí añadimos su nombre</li>
+<li><strong>Versión</strong>: La versión de este script</li>
+<li><strong>Posición</strong>: Si se cargará en el pie de página (true) o en la cabecera del HTML (false)</li>
+</ol>
+<pre class="lang:php decode:true">//---------------------------------------------------------------------
+// CARGANDO EL JAVASCRIPT DEL TEMA
+//---------------------------------------------------------------------
+//Creamos una función para cargar los scripts
+function amk_theme_scripts() {
+
+	//Registramos el script de bootstrap
+	wp_register_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.min.js', array('jquery'), '3.0.0', true );
+
+	//Registramos el script de personalizado del tema
+	wp_register_script( 'amk-scripts', get_stylesheet_directory_uri().'/js/amk-scripts.js', array( 'jquery', 'bootstrap' ), '2.1', true );
+
+	//Ahora cargamos el script del tema.Como declaramos dependendencia de 'jquery' y 'bootstrap', éstas cargaran de manera automática
+	wp_enqueue_script( 'amk-scripts' );
+}
+
+add_action( 'wp_enqueue_scripts', 'amk_theme_scripts' ); //Ejecutamos la función</pre>
+<p>Con estas líneas hemos registrado y cargado los archivos <em>bootstrap.min.js</em>, <em>amk-scripts.js</em> y además estamos cargando la librería jQuery.</p>
+<p>Estamos cargando jQuery ya que en ambos scripts declaramos dependencia, sin embargo podrás apreciar que no hemos registrado a <em>jquery</em> como un script, esto es así porque jQuery ya viene registrado al momento de instalar WordPress, por ello sólo basta con que declaremos dependencia y se cargará de manera automática.</p>
+<p>Para efectos de este tutorial no tocaremos código javascript, pero es importante que hayamos cargado estos archivos para enseñarte la forma correcta de hacerlo.</p>
+<p>Si lo deseas puedes comentar la línea <strong>wp_enqueue_script( &#8216;amk-scripts&#8217; );</strong> para no cargar los scripts.</p>
+<h2>Detalle de un artículo</h2>
+<p>Hasta ahora nuestro tema va bastante bien cuando estamos viendo el listado de artículos, sin embargo, cuando entramos a ver el detalle de uno de ellos, veremos el mismo resumen que podemos ver desde el listado. Para corregir esto vamos a utilizar el archivo <em>single.php</em>.</p>
+<p>Lo que haremos será copiar el mismo contenido que tenemos en <em>index.php</em> y pegarlo en <em>single.php</em>, y hacer algunos cambios:</p>
+<ul>
+<li>Eliminamos las comprobaciones para mostrar mensajes de acuerdo a la página que estemos viendo</li>
+<li>Cambiaremos el título <em>h2</em> por <em>h1</em></li>
+<li>Quitaremos la llamada a la imagen destacada</li>
+<li>Reemplazaremos <em>the_excerpt</em> por <em>the_content</em>, es decir, reemplazaremos el extracto por el contenido completo del artículo</li>
+<li>Usaremos la función <em>wp_link_pages</em> para mostrar una paginación en caso de que el artículo contenga la etiqueta <em>&lt;!&#8211;nextpage&#8211;&gt;</em></li>
+<li>Mostraremos el listado de etiquetas asociadas al artículo usando <em>the_tags</em></li>
+<li>Eliminaremos los links a artículos recientes y artículos antiguos</li>
+<li>Cargaremos la plantilla de comentarios con <em>comments_template</em></li>
+</ul>
+<p>Habiendo realizado estos cambios nuestro <em>single.php</em> quedaría así:</p>
+<pre class="lang:php decode:true">&lt;?php get_header(); ?&gt;
+
+&lt;section class="container"&gt;
+
+	&lt;div class="row"&gt;
+
+		&lt;div class="col-md-8"&gt;
+
+			&lt;?php //El loop básicamente comprueba si hay posts para mostrar, luego mientras haya posts cargará cada uno de ellos usando el esquema que se ve a continuación
+			if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+
+				&lt;article &lt;?php post_class('clearfix'); //Carga las clases específicas del post y agrega la clase clearfix ?&gt;&gt;
+
+					&lt;header&gt;
+						&lt;h1&gt;&lt;?php the_title(); //Muestra el título del post ?&gt;&lt;/h1&gt;
+						&lt;div class="meta"&gt;
+							&lt;?php the_time(get_option('date_format')); //Muestra la fecha de publicación del artículo ?&gt;
+							&amp;bull;
+							&lt;?php the_category(', '); //Muestra enlaces a las categorías separados por coma ?&gt;&lt;/div&gt;
+					&lt;/header&gt;
+
+					&lt;?php //En esta parte muestra el contenido del post
+					the_content();
+
+					//Muestra una paginación si es que el post tiene la etiqueta &lt;!--nextpage--&gt;
+					wp_link_pages(array(
+						'before'           =&gt; '&lt;p class="paginacion"&gt;' . __('Páginas', 'apk')
+					));
+
+					//Muestra las etiquetas asociadas al artículo
+					the_tags(__('Etiquetas: ', 'apk'), ', '); ?&gt;
+
+				&lt;/article&gt;
+
+				&lt;hr /&gt;
+
+			&lt;?php endwhile; //Acá termina la estructura con la que se presentará cada post
+			else: //Ahora bien, si no hay artículos para mostrar entonces cargará lo siguiente  ?&gt;
+
+				&lt;article&gt;
+
+					&lt;header&gt;
+						&lt;h1&gt;&lt;?php _e('Este contenido no está disponible', 'amk'); //Un simple título ?&gt;&lt;/h1&gt;
+					&lt;/header&gt;
+
+					&lt;?php get_search_form(); //Llama un formulario de búsqueda  ?&gt;
+
+				&lt;/article&gt;
+
+			&lt;?php endif; // Aquí termina el loop?&gt;
+
+			&lt;?php //Cargamos la plantilla de comentarios
+			comments_template(); ?&gt;
+
+		&lt;/div&gt;
+		&lt;div class="col-md-4"&gt;
+			&lt;?php get_sidebar(); ?&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;?php get_footer(); ?&gt;</pre>
+<p>&nbsp;</p>
+<h2>Comentarios</h2>
+<p>En el código anterior usamos la función <em>comments_template</em> para cargar la plantilla de comentarios, es decir el archivo <em>comments.php</em>.</p>
+<p>Hasta la versión 2.9 de WordPress podíamos prescindir de este archivo y en su lugar WordPress cargaría una plantilla predeterminada, sin embargo desde la versión 3.0 en adelante es obligación que el tema cuente con este archivo.</p>
+<p>El archivo <em>comments.php</em> que usaremos en nuestro tema luce de la siguiente forma:</p>
+<pre class="lang:php decode:true">&lt;div id="comments"&gt;
+
+	&lt;?php
+	//---------------------------------------------------------------------
+	// Evita que carguen directamente este archivo comments.php
+	//---------------------------------------------------------------------
+	if (!empty($_SERVER['SCRIPT-FILENAME']) &amp;&amp; basename($_SERVER['SCRIPT-FILENAME']) == 'comments.php') {
+		die(__('Sabes que no puedes acceder a esta página.', 'amk'));
+	}
+
+	//---------------------------------------------------------------------
+	// Si el artículo está protegido muestra un texto 
+	//---------------------------------------------------------------------
+	if (post_password_required()) : ?&gt;
+		&lt;p&gt;&lt;?php _e( 'Este artículo está protegido por contraseña.', 'amk'); ?&gt;&lt;/p&gt; 
+		&lt;/div&gt;
+		&lt;?php return; ?&gt;
+	&lt;?php endif;
+
+	//---------------------------------------------------------------------
+	// Si es que hay comentarios, se muestran
+	//---------------------------------------------------------------------
+	if (have_comments()) : ?&gt;
+
+			&lt;?php //Muestra un titulo para los comentarios, hay 3 opciones: cuando no hay, cuando hay un solo comentario y cuando hay 2 o más  ?&gt;
+			&lt;h3&gt;&lt;?php comments_number(__('Comenta. Sé un pionero:', 'amk'), __('Hay sólo 1 comentario. Yo sé que quieres decir algo:', 'amk'), __('% comentarios. ¿Quieres agregar algo?:', 'amk')); ?&gt;&lt;/h3&gt;
+
+			&lt;ol id="comments-list"&gt;
+				&lt;?php wp_list_comments('avatar_size=40'); //Muestra el listado de comentarios y define el tamaño del avatar ?&gt; 
+			&lt;/ol&gt;
+
+			&lt;?php //Si es que los comentarios están paginados, muestra links para comentarios antiguos y recientes
+			if (get_comment_pages_count() &gt; 1 &amp;&amp; get_option('page_comments')) : ?&gt;
+
+				&lt;ul class="pager"&gt;
+
+					&lt;li class="previous"&gt;&amp;larr; &lt;?php previous_comments_link(__( 'Comentarios antiguos', 'amk')); ?&gt;&lt;/li&gt;
+					&lt;li class="next"&gt;&lt;?php next_comments_link(__( 'Comentarios recientes', 'amk')); ?&gt; &amp;rarr;&lt;/li&gt;
+
+				&lt;/ul&gt; &lt;!-- end .pager --&gt;
+
+			&lt;?php endif; ?&gt;
+
+	&lt;?php
+	//---------------------------------------------------------------------
+	// Si no hay comentarios y los comentarios están cerrados muestra un texto
+	//---------------------------------------------------------------------
+	elseif (!comments_open() &amp;&amp; !is_page() &amp;&amp; post_type_supports(get_post_type(), 'comments')) : ?&gt;
+
+		&lt;p&gt;&lt;?php _e( 'No se permiten comentarios en este artículo.', 'amk');?&gt;&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;?php return; ?&gt;
+
+	&lt;?php endif; 
+
+	//---------------------------------------------------------------------
+	// Muestra el formulario de comentarios
+	//---------------------------------------------------------------------
+	comment_form();
+
+	?&gt;
+
+&lt;/div&gt;&lt;!-- end #comments-area --&gt;</pre>
+<p>Probablemente sea el archivo más complejo de nuestro tema, pero básicamente lo que hace es realizar ciertas comprobaciones, como si el artículo está protegido por contraseña o si los comentarios están permitidos o no antes de mostrar el listado de comentarios y el formulario.</p>
+<p>Para dar una mejor apariencia a los comentarios en nuestro sitio agregaremos lo siguiente a <em>style.css</em>:</p>
+<pre class="lang:css">/************ COMENTARIOS ************/
+
+#comments-list {
+	padding-left: 0;
+	list-style: none;
+}
+	#comments-list .comment-body {
+		background: #f2f2f2;
+		padding: 15px;
+		margin-bottom: 10px;
+	}
+
+	#comments-list .comment-author {
+		margin-bottom: 15px;
+	}
+
+	#comments-list .comment-meta {
+		font-size: 0.8em;
+		margin-bottom: 10px;
+	}
+
+	#comments-list .children {
+		list-style: none;
+	}
+
+	#comments-list .bypostauthor .comment-body {
+		background: #e3e3e3;
+	}
+
+#commentform {
+
+}
+
+	#commentform input[type="text"],
+	#commentform input[type="email"],
+	#commentform textarea {
+		width: 100%;
+	}</pre>
+<p>Con estos cambios hechos nuestro artículo «Hola Mundo» y sus comentarios se ven así:</p>
+<p><img loading="lazy" class="aligncenter size-large wp-image-818" alt="tema-wp-2-4" src="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-4-983x1024.png" width="980" height="1020" srcset="https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-4-983x1024.png 983w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-4-288x300.png 288w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-4.png 1122w" sizes="(max-width: 980px) 100vw, 980px" /></p>
+<h2>Detalle de una página</h2>
+<p>Para definir como se mostrara una página cada vez que entremos a ver el detalle deberemos utilizar el archivo <em>page.php</em>. Este archivo en esencia es bastante similar a <em>single.php</em> , por lo que utilizaremos el mismo contenido, realizando 2 cambios:</p>
+<ul>
+<li>Eliminamos el div con la clase <em>meta</em> en el cual mostramos la fecha de publicación y las categorías</li>
+<li>Eliminamos el listado de etiquetas asociadas</li>
+</ul>
+<p>Luego de realizar estos cambios nuestro <em>page.php</em> quedaría así:</p>
+<pre class="lang:php decode:true">&lt;?php get_header(); ?&gt;
+
+&lt;section class="container"&gt;
+
+	&lt;div class="row"&gt;
+
+		&lt;div class="col-md-8"&gt;
+
+			&lt;?php //El loop básicamente comprueba si hay posts para mostrar, luego mientras haya posts cargará cada uno de ellos usando el esquema que se ve a continuación
+			if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+
+				&lt;article &lt;?php post_class('clearfix'); //Carga las clases específicas del post y agrega la clase clearfix ?&gt;&gt;
+
+					&lt;header&gt;
+						&lt;h1&gt;&lt;?php the_title(); //Muestra el título del post ?&gt;&lt;/h1&gt;
+					&lt;/header&gt;
+
+					&lt;?php //En esta parte muestra el contenido del post
+					the_content();
+
+					//Muestra una paginación si es que el post tiene la etiqueta &lt;!--nextpage--&gt;
+					wp_link_pages(array(
+						'before'           =&gt; '&lt;p class="paginacion"&gt;' . __('Páginas', 'apk')
+					));?&gt;
+
+				&lt;/article&gt;
+
+				&lt;hr /&gt;
+
+			&lt;?php endwhile; //Acá termina la estructura con la que se presentará cada post
+			else: //Ahora bien, si no hay artículos para mostrar entonces cargará lo siguiente  ?&gt;
+
+				&lt;article&gt;
+
+					&lt;header&gt;
+						&lt;h1&gt;&lt;?php _e('Este contenido no está disponible', 'amk'); //Un simple título ?&gt;&lt;/h1&gt;
+					&lt;/header&gt;
+
+					&lt;?php get_search_form(); //Llama un formulario de búsqueda  ?&gt;
+
+				&lt;/article&gt;
+
+			&lt;?php endif; // Aquí termina el loop?&gt;
+
+			&lt;?php //Cargamos la plantilla de comentarios
+			comments_template(); ?&gt;
+
+		&lt;/div&gt;
+		&lt;div class="col-md-4"&gt;
+			&lt;?php get_sidebar(); ?&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;?php get_footer(); ?&gt;</pre>
+<p>Y las páginas se mostrarían así:</p>
+<p><a href="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-5.png"><img loading="lazy" class="aligncenter size-large wp-image-820" alt="tema-wp-2-5" src="http://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-5-1024x862.png" width="980" height="824" srcset="https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-5-1024x862.png 1024w, https://franciscoamk.com/wp-content/uploads/2013/12/tema-wp-2-5-356x300.png 356w" sizes="(max-width: 980px) 100vw, 980px" /></a></p>
+<h2>¡Estamos listos!</h2>
+<p>Con todo lo que hemos hecho hasta ahora ya hemos creado nuestro tema de WordPress desde cero.</p>
+<p>Lo que viene ahora es revisarlo, te recomiendo visualizarlo en diferentes navegadores y dispositivos para corroborar su apariencia y utilizar el plugin <a href="http://wordpress.org/plugins/theme-check/" target="_blank">Theme-Check</a> para comprobar funcionalidades y que el código esté bien escrito.</p>
+<h3>Ayúdame a mejorar el tema</h3>
+<p>Los archivos del tema que hemos creado están disponibles en un repositorio público en BitBucket. Desde <a href="https://bitbucket.org/FranciscoAMK/amk-primer-tema-wordpress/">este enlace</a> podrás clonar el proyecto usando git o mediante la aplicación Source Tree, luego podrás enviar cualquier cambio que hayas realizado.</p>
+<p>Ahora bien, si solo deseas descargar el tema, desde la pestaña de <em>Downloads » Branches</em> podrás descargar todos los archivos comprimidos en un <em>zip</em>.</p>
+<h3>¿Tienes algo que agregar?</h3>
+<p>En este tutorial de 2 partes he querido compartir contigo y explicar en detalle el proceso que generalmente sigo para la creación de un tema de WordPress.</p>
+<p>Si tienes alguna consulta o duda, deja un comentario y responderé encantado 😉</p>
+	            
+	            							
+							
+							
+							
+								            
+            </section>
+          </div>
+        </div>
+      </article>
+      
+      	
+      
+      
+      
+      
+    </main>
+
+
+
+
+
+
+		
+		
+		
+
+
+
+
+
+
+<aside class="subscribeblock">
+  <div class="container_small" data-ix="fade-in-up">
+    <h2 class="heading_white">Suscríbete al newsletter.</h2>
+    <div class="global_divider_center"></div>
+    <p>Recibe cada semana un nuevo contenido con reflexiones,
+      <br>tutoriales y recursos de diseño web</p>
+    <div class="w-form">
+     
+     
+      
+  
+  <div class="
+    mailpoet_form_popup_overlay
+      "></div>
+  <div
+    id="mailpoet_form_1"
+    class="
+      mailpoet_form
+      mailpoet_form_php
+      mailpoet_form_position_
+      mailpoet_form_animation_
+    "
+      >
+        <style type="text/css">.mailpoet_hp_email_label{display:none!important;}#mailpoet_form_1 .mailpoet_form {  }
+#mailpoet_form_1 .mailpoet_paragraph { line-height: 20px; margin: 0; }
+#mailpoet_form_1 .mailpoet_segment_label, #mailpoet_form_1 .mailpoet_text_label, #mailpoet_form_1 .mailpoet_textarea_label, #mailpoet_form_1 .mailpoet_select_label, #mailpoet_form_1 .mailpoet_radio_label, #mailpoet_form_1 .mailpoet_checkbox_label, #mailpoet_form_1 .mailpoet_list_label, #mailpoet_form_1 .mailpoet_date_label { display: block; font-weight: bold; }
+#mailpoet_form_1 .mailpoet_text, #mailpoet_form_1 .mailpoet_textarea, #mailpoet_form_1 .mailpoet_select, #mailpoet_form_1 .mailpoet_date_month, #mailpoet_form_1 .mailpoet_date_day, #mailpoet_form_1 .mailpoet_date_year, #mailpoet_form_1 .mailpoet_date { display: inline-block; display: block; height: 51px; margin-right: 3px; margin-bottom: 3px; padding: 1rem; -webkit-box-flex: 0; -webkit-flex: 0 auto; -ms-flex: 0 auto; flex: 0 auto; border: 2px solid #e1e5e9; border-radius: 3px; background-color: #f2f4f6; background-color: #6a7c8f; color: #6a7c8f; color: #fff; font-size: 1rem; line-height: 1.6em; border-color: #6a7c8f; text-align: left; width: 100%; }
+#mailpoet_form_1 .mailpoet_text::-webkit-input-placeholder { color: #c0cad5; opacity: 1; }
+#mailpoet_form_1 .mailpoet_text:-moz-placeholder { color: #c0cad5; opacity: 1; }
+#mailpoet_form_1 .mailpoet_text::-moz-placeholder { color: #c0cad5; opacity: 1; }
+#mailpoet_form_1 .mailpoet_text:-ms-input-placeholder { color: #c0cad5; opacity: 1; }
+#mailpoet_form_1 *:
+
+.mailpoet_text, #mailpoet_form_1 .mailpoet_textarea { width: 100%; }
+#mailpoet_form_1 .mailpoet_checkbox {  }
+#mailpoet_form_1 .mailpoet_submit { display: inline-block; margin-right: 3px; margin-bottom: 3px; padding: .6rem 2rem; border: 2px solid #6a7c8f; border-radius: 3px; background-color: transparent; -webkit-transition-property: all; transition-property: all; color: #6a7c8f; color: #fff; font-size: 1rem; line-height: 1.6rem; font-weight: 700; text-decoration: none; text-transform: uppercase; border-color: #fff; }
+#mailpoet_form_1 .mailpoet_divider {  }
+#mailpoet_form_1 .mailpoet_message {  }
+#mailpoet_form_1 .mailpoet_validate_success { font-weight: 600; color: #468847; }
+#mailpoet_form_1 .mailpoet_validate_error { color: #b94a48; }
+#mailpoet_form_1 .mailpoet_form_loading { width: 30px; text-align: center; line-height: normal; }
+#mailpoet_form_1 .mailpoet_form_loading > span { width: 5px; height: 5px; background-color: #5b5b5b; }#mailpoet_form_1{;}#mailpoet_form_1 .mailpoet_message {margin: 0; padding: 0 20px;}#mailpoet_form_1 .mailpoet_paragraph.last {margin-bottom: 0} @media (max-width: 500px) {#mailpoet_form_1 {background-image: none;}} @media (min-width: 500px) {#mailpoet_form_1 .last .mailpoet_paragraph:last-child {margin-bottom: 0}}  @media (max-width: 500px) {#mailpoet_form_1 .mailpoet_form_column:last-child .mailpoet_paragraph:last-child {margin-bottom: 0}} </style>
+    <form
+      target="_self"
+      method="post"
+      action="https://franciscoamk.com/wp-admin/admin-post.php?action=mailpoet_subscription_form"
+      class="mailpoet_form mailpoet_form_form mailpoet_form_php"
+      novalidate
+      data-delay=""
+      data-exit-intent-enabled=""
+      data-font-family=""
+    >
+      <input type="hidden" name="data[form_id]" value="1" />
+      <input type="hidden" name="token" value="63c7b6693f" />
+      <input type="hidden" name="api_version" value="v1" />
+      <input type="hidden" name="endpoint" value="subscribers" />
+      <input type="hidden" name="mailpoet_method" value="subscribe" />
+
+      <label class="mailpoet_hp_email_label">Por favor, deja este campo vacío<input type="email" name="data[email]"/></label><div class="mailpoet_paragraph"><input type="text" class="mailpoet_text" name="data[form_field_YmUxNDNlZGFiOGRlX2ZpcnN0X25hbWU=]" title="Nombre" value="" data-automation-id="form_first_name"  placeholder="Nombre" /></div>
+<div class="mailpoet_paragraph"><input type="email" class="mailpoet_text" name="data[form_field_OGJiYzRhZWVkMTUzX2VtYWls]" title="Correo electrónico" value="" data-automation-id="form_email"  placeholder="Correo electrónico *" data-parsley-required="true" data-parsley-minlength="6" data-parsley-maxlength="150" data-parsley-error-message="Por favor, especifica una dirección de correo electrónico válida." data-parsley-required-message="Este campo es obligatorio."/></div>
+<div class="mailpoet_paragraph"><input type="submit" class="mailpoet_submit" value="¡Suscríbete!" data-automation-id="subscribe-submit-button" style="border-color:transparent;" /><span class="mailpoet_form_loading"><span class="mailpoet_bounce1"></span><span class="mailpoet_bounce2"></span><span class="mailpoet_bounce3"></span></span></div>
+
+      <div class="mailpoet_message">
+        <p class="mailpoet_validate_success"
+                style="display:none;"
+                >Revisa tu bandeja de entrada o la carpeta de spam para confirmar tu suscripción.
+        </p>
+        <p class="mailpoet_validate_error"
+                style="display:none;"
+                >        </p>
+      </div>
+    </form>
+  </div>
+
+  		
+		      
+    </div>
+    
+    <p class="form_disclaimer">Confidencialidad. Nunca SPAM. Puedes darte de baja cuando quieras.<br />
+	    <a href="#" class="hide_subscribe">Ya me suscribí antes, no me muestres esto.</a>
+    </p>
+  </div>
+</aside>
+
+
+		    
+        
+ 
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container textcenter">
+          <a class="footer_logo w-inline-block" href="https://franciscoamk.com"><img src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/logo_amk_orange.svg">
+          </a>
+          <div class="footer_social">
+            <a class="footer_social_link w-inline-block" href="https://dribbble.com/FranciscoAMK/" target="_blank"><img class="footer_social_link_img" src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/dribbble.svg">
+            </a>
+            <a class="footer_social_link w-inline-block" href="https://www.facebook.com/groups/comunidadamk" target="_blank"><img class="footer_social_link_img" src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/facebook.svg">
+            </a>
+            <a class="footer_social_link w-inline-block" href="https://www.instagram.com/franciscoamk/" target="_blank"><img class="footer_social_link_img" src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/instagram.svg">
+            </a>
+            <a class="footer_social_link w-inline-block" href="https://twitter.com/FranciscoAMK" target="_blank"><img class="footer_social_link_img" src="https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/images/twitter.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container textcenter">
+          <p class="small">2022 © FranciscoAMK ( Francisco Aguilera G. ) &nbsp; • &nbsp; Diseñado por <a href="http://apkestudio.com" target="_blank">APK Estudio</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+<link rel='stylesheet' id='mailpoet_public-css'  href='https://franciscoamk.com/wp-content/plugins/mailpoet/assets/dist/css/mailpoet-public.dd713c66.css?ver=5.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='mailpoet_custom_fonts_css-css'  href='https://fonts.googleapis.com/css?family=Abril+FatFace%3A400%2C400i%2C700%2C700i%7CAlegreya%3A400%2C400i%2C700%2C700i%7CAlegreya+Sans%3A400%2C400i%2C700%2C700i%7CAmatic+SC%3A400%2C400i%2C700%2C700i%7CAnonymous+Pro%3A400%2C400i%2C700%2C700i%7CArchitects+Daughter%3A400%2C400i%2C700%2C700i%7CArchivo%3A400%2C400i%2C700%2C700i%7CArchivo+Narrow%3A400%2C400i%2C700%2C700i%7CAsap%3A400%2C400i%2C700%2C700i%7CBarlow%3A400%2C400i%2C700%2C700i%7CBioRhyme%3A400%2C400i%2C700%2C700i%7CBonbon%3A400%2C400i%2C700%2C700i%7CCabin%3A400%2C400i%2C700%2C700i%7CCairo%3A400%2C400i%2C700%2C700i%7CCardo%3A400%2C400i%2C700%2C700i%7CChivo%3A400%2C400i%2C700%2C700i%7CConcert+One%3A400%2C400i%2C700%2C700i%7CCormorant%3A400%2C400i%2C700%2C700i%7CCrimson+Text%3A400%2C400i%2C700%2C700i%7CEczar%3A400%2C400i%2C700%2C700i%7CExo+2%3A400%2C400i%2C700%2C700i%7CFira+Sans%3A400%2C400i%2C700%2C700i%7CFjalla+One%3A400%2C400i%2C700%2C700i%7CFrank+Ruhl+Libre%3A400%2C400i%2C700%2C700i%7CGreat+Vibes%3A400%2C400i%2C700%2C700i%7CHeebo%3A400%2C400i%2C700%2C700i%7CIBM+Plex%3A400%2C400i%2C700%2C700i%7CInconsolata%3A400%2C400i%2C700%2C700i%7CIndie+Flower%3A400%2C400i%2C700%2C700i%7CInknut+Antiqua%3A400%2C400i%2C700%2C700i%7CInter%3A400%2C400i%2C700%2C700i%7CKarla%3A400%2C400i%2C700%2C700i%7CLibre+Baskerville%3A400%2C400i%2C700%2C700i%7CLibre+Franklin%3A400%2C400i%2C700%2C700i%7CMontserrat%3A400%2C400i%2C700%2C700i%7CNeuton%3A400%2C400i%2C700%2C700i%7CNotable%3A400%2C400i%2C700%2C700i%7CNothing+You+Could+Do%3A400%2C400i%2C700%2C700i%7CNoto+Sans%3A400%2C400i%2C700%2C700i%7CNunito%3A400%2C400i%2C700%2C700i%7COld+Standard+TT%3A400%2C400i%2C700%2C700i%7COxygen%3A400%2C400i%2C700%2C700i%7CPacifico%3A400%2C400i%2C700%2C700i%7CPoppins%3A400%2C400i%2C700%2C700i%7CProza+Libre%3A400%2C400i%2C700%2C700i%7CPT+Sans%3A400%2C400i%2C700%2C700i%7CPT+Serif%3A400%2C400i%2C700%2C700i%7CRakkas%3A400%2C400i%2C700%2C700i%7CReenie+Beanie%3A400%2C400i%2C700%2C700i%7CRoboto+Slab%3A400%2C400i%2C700%2C700i%7CRopa+Sans%3A400%2C400i%2C700%2C700i%7CRubik%3A400%2C400i%2C700%2C700i%7CShadows+Into+Light%3A400%2C400i%2C700%2C700i%7CSpace+Mono%3A400%2C400i%2C700%2C700i%7CSpectral%3A400%2C400i%2C700%2C700i%7CSue+Ellen+Francisco%3A400%2C400i%2C700%2C700i%7CTitillium+Web%3A400%2C400i%2C700%2C700i%7CUbuntu%3A400%2C400i%2C700%2C700i%7CVarela%3A400%2C400i%2C700%2C700i%7CVollkorn%3A400%2C400i%2C700%2C700i%7CWork+Sans%3A400%2C400i%2C700%2C700i%7CYatra+One%3A400%2C400i%2C700%2C700i&#038;ver=5.8.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://franciscoamk.com/wp-includes/js/comment-reply.min.js?ver=5.8.3' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/js/typer.js?ver=1.0' id='typer-js'></script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/js/jquery.fitvids.js?ver=1.0' id='fitVids-js'></script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-content/themes/FranciscoAMK-2017/js/webflow.js?ver=1.0.2' id='theme_scripts-js'></script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-includes/js/wp-embed.min.js?ver=5.8.3' id='wp-embed-js'></script>
+<script type='text/javascript' id='mailpoet_public-js-extra'>
+/* <![CDATA[ */
+var MailPoetForm = {"ajax_url":"https:\/\/franciscoamk.com\/wp-admin\/admin-ajax.php","is_rtl":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://franciscoamk.com/wp-content/plugins/mailpoet/assets/dist/js/public.27bd06f0.js?ver=3.56.1' id='mailpoet_public-js'></script>
+<script type='text/javascript' id='mailpoet_public-js-after'>
+function initMailpoetTranslation() {
+  if (typeof MailPoet !== 'undefined') {
+    MailPoet.I18n.add('ajaxFailedErrorMessage', 'An error has happened while performing a request, please try again later.')
+  } else {
+    setTimeout(initMailpoetTranslation, 250);
+  }
+}
+setTimeout(initMailpoetTranslation, 250);
+</script>
+
+</body>
+</html>
