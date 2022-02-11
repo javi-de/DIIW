@@ -1,0 +1,449 @@
+0000.001 (0) Opened log file at time: Mon, 07 Feb 2022 09:56:29 +0000 on http://localhost/wordpress
+0000.020 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.1 WP: 5.9 PHP: 8.1.2 (apache2handler, Windows NT DW2-07 10.0 build 19042 (Windows 10) AMD64) MySQL: 5.7.31 (max packet size=1048576) WPLANG: es_ES Server: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.2 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 88.5M | 92M) multisite: N openssl: OpenSSL 1.1.1m  14 Dec 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.067 (0) Free space on disk containing Updraft's temporary directory: 378767 MB
+0000.100 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.127 (0) Semaphore (fd, wp_options) being initialised
+0000.186 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.286 (0) Set semaphore last lock (fd) time to 2022-02-07 09:56:30
+0000.308 (0) Semaphore lock (fd) complete
+0000.369 (0) Backup run: resumption=0, nonce=1333195e9a86, file_nonce=1333195e9a86 begun at=1644227789 (1s ago), job type=backup
+0000.411 (0) Scheduling a resumption (1) after 300 seconds (1644228090) in case this run gets aborted
+0000.517 (0) Checking if we have a zip executable available
+0000.557 (0) Creation of backups of directories: beginning
+0000.628 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.914 (0) Total entities for the zip file: 1466 directories, 7196 files (0 skipped as non-modified), 98.7 MB
+0002.953 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3796, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0003.029 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0003.080 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0003.115 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (4.4 MB, 217 (217) files added so far); re-opening (prior size: 0 KB)
+0003.574 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 300 files added (on-disk size: 1101.6 KB)
+0004.105 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 400 files added (on-disk size: 1101.6 KB)
+0004.226 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 500 files added (on-disk size: 1101.6 KB)
+0004.330 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 600 files added (on-disk size: 1101.6 KB)
+0004.430 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 700 files added (on-disk size: 1101.6 KB)
+0004.476 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25 MB, 7196 files batched, 567 (784) added so far); re-opening (prior size: 1101.6 KB)
+0006.248 (0) A useful amount of data was added after this amount of zip processing: 3.1 s (normalised: 3.1 s, rate: 8171.7 KB/s)
+0006.324 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.1335890293121, normalised_time=3.1327658751927, max_time=6.2774028778076, data points known=1, old_max_bytes=26214400, new_max_bytes=50206879)
+0006.489 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 800 files added (on-disk size: 8142.6 KB)
+0006.633 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 900 files added (on-disk size: 8142.6 KB)
+0006.770 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1000 files added (on-disk size: 8142.6 KB)
+0006.930 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1100 files added (on-disk size: 8142.6 KB)
+0007.043 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1200 files added (on-disk size: 8142.6 KB)
+0007.226 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1300 files added (on-disk size: 8142.6 KB)
+0007.402 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1400 files added (on-disk size: 8142.6 KB)
+0007.588 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1500 files added (on-disk size: 8142.6 KB)
+0007.828 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1600 files added (on-disk size: 8142.6 KB)
+0008.170 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1700 files added (on-disk size: 8142.6 KB)
+0008.260 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (21.2 MB, 7196 files batched, 1001 (1785) added so far); re-opening (prior size: 8142.6 KB)
+0009.711 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1800 files added (on-disk size: 14202.3 KB)
+0009.785 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 1900 files added (on-disk size: 14202.3 KB)
+0009.839 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2000 files added (on-disk size: 14202.3 KB)
+0009.957 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2100 files added (on-disk size: 14202.3 KB)
+0010.047 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2200 files added (on-disk size: 14202.3 KB)
+0010.134 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2300 files added (on-disk size: 14202.3 KB)
+0010.207 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2400 files added (on-disk size: 14202.3 KB)
+0010.261 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2500 files added (on-disk size: 14202.3 KB)
+0010.313 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2600 files added (on-disk size: 14202.3 KB)
+0010.367 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2700 files added (on-disk size: 14202.3 KB)
+0010.431 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9 MB, 7196 files batched, 1001 (2786) added so far); re-opening (prior size: 14202.3 KB)
+0011.222 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2800 files added (on-disk size: 17663.7 KB)
+0011.268 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 2900 files added (on-disk size: 17663.7 KB)
+0011.313 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3000 files added (on-disk size: 17663.7 KB)
+0011.365 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3100 files added (on-disk size: 17663.7 KB)
+0011.414 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3200 files added (on-disk size: 17663.7 KB)
+0011.460 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3300 files added (on-disk size: 17663.7 KB)
+0011.508 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3400 files added (on-disk size: 17663.7 KB)
+0011.784 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3500 files added (on-disk size: 17663.7 KB)
+0011.901 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3600 files added (on-disk size: 17663.7 KB)
+0012.050 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3700 files added (on-disk size: 17663.7 KB)
+0012.103 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.5 MB, 7196 files batched, 1001 (3787) added so far); re-opening (prior size: 17663.7 KB)
+0013.062 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3800 files added (on-disk size: 21241.8 KB)
+0013.110 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 3900 files added (on-disk size: 21241.8 KB)
+0013.197 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4000 files added (on-disk size: 21241.8 KB)
+0013.249 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4100 files added (on-disk size: 21241.8 KB)
+0013.297 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4200 files added (on-disk size: 21241.8 KB)
+0013.345 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4300 files added (on-disk size: 21241.8 KB)
+0013.397 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4400 files added (on-disk size: 21241.8 KB)
+0013.469 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4500 files added (on-disk size: 21241.8 KB)
+0013.533 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4600 files added (on-disk size: 21241.8 KB)
+0013.612 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4700 files added (on-disk size: 21241.8 KB)
+0013.663 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.1 MB, 7196 files batched, 1001 (4788) added so far); re-opening (prior size: 21241.8 KB)
+0014.138 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4800 files added (on-disk size: 22508 KB)
+0014.181 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 4900 files added (on-disk size: 22508 KB)
+0014.228 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5000 files added (on-disk size: 22508 KB)
+0014.282 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5100 files added (on-disk size: 22508 KB)
+0014.339 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5200 files added (on-disk size: 22508 KB)
+0014.399 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5300 files added (on-disk size: 22508 KB)
+0014.452 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5400 files added (on-disk size: 22508 KB)
+0014.523 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5500 files added (on-disk size: 22508 KB)
+0014.578 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5600 files added (on-disk size: 22508 KB)
+0014.743 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5700 files added (on-disk size: 22508 KB)
+0014.918 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.3 MB, 7196 files batched, 1001 (5789) added so far); re-opening (prior size: 22508 KB)
+0015.641 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5800 files added (on-disk size: 24817.5 KB)
+0015.686 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 5900 files added (on-disk size: 24817.5 KB)
+0015.740 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6000 files added (on-disk size: 24817.5 KB)
+0015.797 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6100 files added (on-disk size: 24817.5 KB)
+0015.850 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6200 files added (on-disk size: 24817.5 KB)
+0015.905 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6300 files added (on-disk size: 24817.5 KB)
+0015.979 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6400 files added (on-disk size: 24817.5 KB)
+0016.033 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6500 files added (on-disk size: 24817.5 KB)
+0016.089 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6600 files added (on-disk size: 24817.5 KB)
+0016.141 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6700 files added (on-disk size: 24817.5 KB)
+0016.186 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.3 MB, 7196 files batched, 1001 (6790) added so far); re-opening (prior size: 24817.5 KB)
+0017.503 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6800 files added (on-disk size: 30804.7 KB)
+0017.619 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 6900 files added (on-disk size: 30804.7 KB)
+0017.705 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 7000 files added (on-disk size: 30804.7 KB)
+0017.793 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.tmp: 7100 files added (on-disk size: 30804.7 KB)
+0019.765 (0) Creating zip file manifest (C:\xampp\htdocs\wordpress/wp-content/updraft/backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.list-temp.tmp)
+0019.859 (0) Successfully created zip file manifest (size: 675101)
+0020.239 (0) Created plugins zip (0) - 31737.5 KB in 19.6 s (1620.3 KB/s) (sha1: ccdf166af040b6f59488b398cf345632c399e218, sha256: 99764139b5e2d794594e3c6091dded0720328b43b7e80df47b4a09810a9f8bc9)
+0020.288 (0) Beginning creation of dump of themes (split every: 400 MB)
+0020.615 (0) Total entities for the zip file: 291 directories, 657 files (0 skipped as non-modified), 21.1 MB
+0020.659 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3796, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0020.746 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0020.826 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0020.905 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0021.022 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0021.074 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0021.197 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0022.550 (0) Creating zip file manifest (C:\xampp\htdocs\wordpress/wp-content/updraft/backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.list-temp.tmp)
+0022.590 (0) Successfully created zip file manifest (size: 57067)
+0022.767 (0) Created themes zip (0) - 5956.4 KB in 2.5 s (2428.5 KB/s) (sha1: f6e82c894f6f85953594ef0eb08aaa202ad09c93, sha256: f87f5bdd9cb03ce88b5cf84173d81e9e46032c0d5cafb5dcf2d56ff0a3a5a527)
+0022.834 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0022.901 (0) Looking for candidates to backup in: C:\xampp\htdocs\wordpress/wp-content/uploads
+0022.977 (0) finding files: 2020: adding to list (1)
+0023.017 (0) finding files: 2021: adding to list (2)
+0023.055 (0) finding files: 2022: adding to list (3)
+0023.092 (0) finding files: astra-sites: adding to list (4)
+0023.159 (0) finding files: elementor: adding to list (5)
+0023.198 (0) finding files: wc-logs: adding to list (6)
+0023.267 (0) finding files: woocommerce-placeholder.png: adding to list (7)
+0023.288 (0) finding files: woocommerce_uploads: adding to list (8)
+0023.309 (0) finding files: wpforms: adding to list (9)
+0023.330 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0023.907 (0) Total entities for the zip file: 318 directories, 1739 files (0 skipped as non-modified), 56.4 MB
+0023.942 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3796, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0024.047 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0024.100 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0024.172 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0024.622 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0024.684 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0024.737 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 600 files added (on-disk size: 0 KB)
+0024.806 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 700 files added (on-disk size: 0 KB)
+0024.864 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 800 files added (on-disk size: 0 KB)
+0024.917 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 900 files added (on-disk size: 0 KB)
+0024.966 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0024.997 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (35.2 MB, 1739 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0027.063 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1100 files added (on-disk size: 15398.3 KB)
+0027.214 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1200 files added (on-disk size: 15398.3 KB)
+0027.495 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1300 files added (on-disk size: 15398.3 KB)
+0027.616 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1400 files added (on-disk size: 15398.3 KB)
+0027.665 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1500 files added (on-disk size: 15398.3 KB)
+0027.713 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1600 files added (on-disk size: 15398.3 KB)
+0027.779 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.tmp: 1700 files added (on-disk size: 15398.3 KB)
+0029.215 (0) Creating zip file manifest (C:\xampp\htdocs\wordpress/wp-content/updraft/backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.list-temp.tmp)
+0029.299 (0) Successfully created zip file manifest (size: 172788)
+0029.676 (0) Created uploads zip (0) - 21931 KB in 6.3 s (3470.1 KB/s) (sha1: aa9343df40069e9e0ef1ad53670ad9edcac86641, sha256: a9bc067a393ef93cbca7ff661d279dca1055fc7978e1f3e63c0777e723d83f56)
+0029.717 (0) Beginning backup of other directories found in the content directory (index: 0)
+0029.740 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0029.759 (0) Looking for candidates to backup in: C:\xampp\htdocs\wordpress/wp-content
+0029.781 (0) finding files: index.php: adding to list (1)
+0029.801 (0) finding files: languages: adding to list (2)
+0029.822 (0) finding files: plugins: skipping: this is the plugins directory
+0029.843 (0) finding files: themes: skipping: this is the themes directory
+0029.864 (0) finding files: updraft: skipping: this is the updraft directory
+0029.884 (0) finding files: upgrade: skipping: excluded by options
+0029.906 (0) finding files: uploads: skipping: this is the uploads directory
+0030.109 (0) Total entities for the zip file: 3 directories, 385 files (0 skipped as non-modified), 6.8 MB
+0030.134 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3796, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0030.193 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0030.265 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip.tmp: 200 files added (on-disk size: 0 KB)
+0030.321 (0) Zip: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip.tmp: 300 files added (on-disk size: 0 KB)
+0031.058 (0) Creating zip file manifest (C:\xampp\htdocs\wordpress/wp-content/updraft/backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip.list-temp.tmp)
+0031.097 (0) Successfully created zip file manifest (size: 30328)
+0031.218 (0) Created others zip (0) - 1988.4 KB in 1.3 s (1547.2 KB/s) (sha1: 9e5ae37f7a43fe5f51a916f6d80fec583fb96419, sha256: 78a5bf0ac3500be3c6b1e476f2c03a86d14d6e90d150112acbb869c88fffa71b)
+0031.334 (0) Saving backup status to database (elements: 8)
+0031.376 (0) Beginning creation of database dump (WordPress DB)
+0031.398 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0031.592 (0) Table wp_options: Total expected rows (via COUNT): 517
+0031.800 (0) Table wp_options: Rows added in this batch (next record: 790): 513 (uncompressed bytes in this segment=6767524) in 0.24 seconds
+0031.927 (0) Table wp_options: finishing file(s) (2, 771.1 KB)
+0031.978 (0) Table wp_users: Total expected rows (via COUNT): 1
+0032.040 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.116 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1380) in 0.14 seconds
+0032.176 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0032.282 (0) Table wp_usermeta: Total expected rows (via COUNT): 25
+0032.301 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.361 (0) Table wp_usermeta: Rows added in this batch (next record: 25): 25 (uncompressed bytes in this segment=2676) in 0.10 seconds
+0032.500 (0) Table wp_usermeta: finishing file(s) (2, 1.4 KB)
+0032.607 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 40
+0032.626 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0032.653 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 51): 40 (uncompressed bytes in this segment=15661) in 0.07 seconds
+0032.786 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.9 KB)
+0032.837 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 0
+0032.877 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=625) in 0.04 seconds
+0032.942 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0033.024 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 3
+0033.066 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0033.119 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=747) in 0.10 seconds
+0033.215 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0033.303 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 110
+0033.318 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0033.391 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 110): 110 (uncompressed bytes in this segment=10560) in 0.09 seconds
+0033.540 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1.3 KB)
+0033.641 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0033.683 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.06 seconds
+0033.868 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0033.968 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0034.008 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0034.083 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2217) in 0.12 seconds
+0034.202 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0034.270 (0) Table wp_links: Total expected rows (via COUNT): 0
+0034.308 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.04 seconds
+0034.377 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0034.450 (0) Table wp_postmeta: Total expected rows (approximate): 1157
+0034.527 (0) Table wp_postmeta: Rows added in this batch (next record: 1162): 1058 (uncompressed bytes in this segment=1802472) in 0.11 seconds
+0034.642 (0) Table wp_postmeta: finishing file(s) (2, 173.3 KB)
+0034.735 (0) Table wp_posts: Total expected rows (via COUNT): 148
+0034.758 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0034.808 (0) Table wp_posts: Rows added in this batch (next record: 1121): 148 (uncompressed bytes in this segment=312310) in 0.12 seconds
+0034.910 (0) Table wp_posts: finishing file(s) (2, 21.4 KB)
+0034.953 (0) Table wp_term_relationships: Total expected rows (approximate): 29
+0035.168 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 29 (uncompressed bytes in this segment=1109) in 0.22 seconds
+0035.293 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0035.401 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 30
+0035.426 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0035.503 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 30): 30 (uncompressed bytes in this segment=2019) in 0.12 seconds
+0035.603 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0035.676 (0) Table wp_termmeta: Total expected rows (via COUNT): 31
+0035.693 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0035.720 (0) Table wp_termmeta: Rows added in this batch (next record: 31): 31 (uncompressed bytes in this segment=1930) in 0.06 seconds
+0035.803 (0) Table wp_termmeta: finishing file(s) (2, 0.6 KB)
+0035.886 (0) Table wp_terms: Total expected rows (via COUNT): 30
+0035.918 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0035.936 (0) Table wp_terms: Rows added in this batch (next record: 30): 30 (uncompressed bytes in this segment=1831) in 0.05 seconds
+0036.011 (0) Table wp_terms: finishing file(s) (2, 0.8 KB)
+0036.139 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 10
+0036.202 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 10 (uncompressed bytes in this segment=689) in 0.06 seconds
+0036.362 (0) Table wp_wc_category_lookup: finishing file(s) (2, 0.4 KB)
+0036.407 (0) Table wp_wc_product_meta_lookup: Total expected rows (via COUNT): 8
+0036.460 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0036.569 (0) Table wp_wc_product_meta_lookup: Rows added in this batch (next record: 317): 8 (uncompressed bytes in this segment=2145) in 0.16 seconds
+0036.719 (0) Table wp_wc_product_meta_lookup: finishing file(s) (2, 0.7 KB)
+0036.772 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0036.836 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=665) in 0.07 seconds
+0036.903 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0036.978 (0) Table wp_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0037.001 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0037.044 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=814) in 0.07 seconds
+0037.130 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0037.228 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (via COUNT): 0
+0037.271 (0) Table wp_woocommerce_order_itemmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=771) in 0.09 seconds
+0037.363 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (2, 0.4 KB)
+0037.476 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0037.513 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=798) in 0.10 seconds
+0037.636 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0037.718 (0) Table wp_wc_admin_note_actions: Total expected rows (via COUNT): 40
+0037.737 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0037.782 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 188): 40 (uncompressed bytes in this segment=7307) in 0.09 seconds
+0038.045 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 1.8 KB)
+0038.243 (0) Table wp_wc_admin_notes: Total expected rows (via COUNT): 38
+0038.262 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0038.290 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 38): 38 (uncompressed bytes in this segment=21296) in 0.12 seconds
+0038.412 (0) Table wp_wc_admin_notes: finishing file(s) (2, 5.4 KB)
+0038.465 (0) Table wp_wc_customer_lookup: Total expected rows (via COUNT): 0
+0038.502 (0) Table wp_wc_customer_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1266) in 0.04 seconds
+0038.590 (0) Table wp_wc_customer_lookup: finishing file(s) (2, 0.5 KB)
+0038.643 (0) Table wp_wc_download_log: Total expected rows (via COUNT): 0
+0038.661 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=926) in 0.02 seconds
+0038.756 (0) Table wp_wc_download_log: finishing file(s) (2, 0.5 KB)
+0038.809 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0038.827 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=717) in 0.02 seconds
+0038.898 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 0.4 KB)
+0038.951 (0) Table wp_wc_order_product_lookup: Total expected rows (via COUNT): 0
+0038.969 (0) Table wp_wc_order_product_lookup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1227) in 0.02 seconds
+0039.032 (0) Table wp_wc_order_product_lookup: finishing file(s) (2, 0.5 KB)
+0039.114 (0) Table wp_wc_order_stats: Total expected rows (via COUNT): 0
+0039.131 (0) Table wp_wc_order_stats: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1122) in 0.02 seconds
+0039.373 (0) Table wp_wc_order_stats: finishing file(s) (2, 0.5 KB)
+0039.426 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 0
+0039.456 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=799) in 0.03 seconds
+0039.532 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0039.589 (0) Table wp_wc_rate_limits: Total expected rows (via COUNT): 0
+0039.606 (0) Table wp_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=640) in 0.02 seconds
+0039.670 (0) Table wp_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0039.756 (0) Table wp_wc_webhooks: Total expected rows (via COUNT): 0
+0039.781 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1230) in 0.03 seconds
+0039.845 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0039.922 (0) Table wp_woocommerce_api_keys: Total expected rows (via COUNT): 0
+0039.944 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1046) in 0.05 seconds
+0040.045 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.5 KB)
+0040.123 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 0
+0040.148 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=961) in 0.03 seconds
+0040.220 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.4 KB)
+0040.273 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0040.298 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1538) in 0.03 seconds
+0040.362 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0040.443 (0) Table wp_woocommerce_log: Total expected rows (via COUNT): 0
+0040.486 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=722) in 0.07 seconds
+0040.729 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0040.781 (0) Table wp_woocommerce_order_items: Total expected rows (via COUNT): 0
+0040.799 (0) Table wp_woocommerce_order_items: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=739) in 0.02 seconds
+0040.891 (0) Table wp_woocommerce_order_items: finishing file(s) (2, 0.4 KB)
+0040.944 (0) Table wp_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0040.960 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=841) in 0.02 seconds
+0041.050 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0041.151 (0) Table wp_woocommerce_sessions: Total expected rows (via COUNT): 1
+0041.173 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0041.216 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2603) in 0.12 seconds
+0041.308 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 1 KB)
+0041.362 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 0
+0041.399 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=874) in 0.04 seconds
+0041.462 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.4 KB)
+0041.548 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 0
+0041.566 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=775) in 0.02 seconds
+0041.636 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.4 KB)
+0041.689 (0) Table wp_woocommerce_shipping_zones: Total expected rows (via COUNT): 0
+0041.708 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=633) in 0.02 seconds
+0041.770 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0041.837 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0041.861 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=848) in 0.03 seconds
+0042.037 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0042.098 (0) Table wp_woocommerce_tax_rates: Total expected rows (via COUNT): 0
+0042.125 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1301) in 0.03 seconds
+0042.234 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 0.5 KB)
+0042.341 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 5
+0042.360 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0042.403 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1063) in 0.10 seconds
+0042.512 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0042.533 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\xampp\htdocs\wordpress/wp-content/updraft/backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db.gz (line 1836, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0042.578 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_options.table.tmpr791.gz (1/45/fopen): adding to final database dump
+0042.644 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_options.table.gz (2/45/fopen): adding to final database dump
+0042.674 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_users.table.tmpr2.gz (3/45/fopen): adding to final database dump
+0042.694 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_users.table.gz (4/45/fopen): adding to final database dump
+0042.716 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_usermeta.table.tmpr26.gz (5/45/fopen): adding to final database dump
+0042.750 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_usermeta.table.gz (6/45/fopen): adding to final database dump
+0042.768 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_actions.table.tmpr52.gz (7/45/fopen): adding to final database dump
+0042.792 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_actions.table.gz (8/45/fopen): adding to final database dump
+0042.810 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/45/fopen): adding to final database dump
+0042.833 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_claims.table.gz (10/45/fopen): adding to final database dump
+0042.852 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_groups.table.tmpr4.gz (11/45/fopen): adding to final database dump
+0042.894 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_groups.table.gz (12/45/fopen): adding to final database dump
+0042.916 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_logs.table.tmpr111.gz (13/45/fopen): adding to final database dump
+0042.953 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_actionscheduler_logs.table.gz (14/45/fopen): adding to final database dump
+0042.975 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_commentmeta.table.tmpr0.gz (15/45/fopen): adding to final database dump
+0043.075 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_commentmeta.table.gz (16/45/fopen): adding to final database dump
+0043.102 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_comments.table.tmpr2.gz (17/45/fopen): adding to final database dump
+0043.125 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_comments.table.gz (18/45/fopen): adding to final database dump
+0043.151 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_links.table.tmpr0.gz (19/45/fopen): adding to final database dump
+0043.175 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_links.table.gz (20/45/fopen): adding to final database dump
+0043.193 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_postmeta.table.tmpr1163.gz (21/45/fopen): adding to final database dump
+0043.237 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_postmeta.table.gz (22/45/fopen): adding to final database dump
+0043.318 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_posts.table.tmpr1122.gz (23/45/fopen): adding to final database dump
+0043.344 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_posts.table.gz (24/45/fopen): adding to final database dump
+0043.360 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_term_relationships.table.tmpr100001.gz (25/45/fopen): adding to final database dump
+0043.384 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_term_relationships.table.gz (26/45/fopen): adding to final database dump
+0043.402 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_term_taxonomy.table.tmpr31.gz (27/45/fopen): adding to final database dump
+0043.425 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_term_taxonomy.table.gz (28/45/fopen): adding to final database dump
+0043.443 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_termmeta.table.tmpr32.gz (29/45/fopen): adding to final database dump
+0043.467 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_termmeta.table.gz (30/45/fopen): adding to final database dump
+0043.485 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_terms.table.tmpr31.gz (31/45/fopen): adding to final database dump
+0043.509 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_terms.table.gz (32/45/fopen): adding to final database dump
+0043.527 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_category_lookup.table.tmpr1001.gz (33/45/fopen): adding to final database dump
+0043.550 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_category_lookup.table.gz (34/45/fopen): adding to final database dump
+0043.568 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_product_meta_lookup.table.tmpr318.gz (35/45/fopen): adding to final database dump
+0043.592 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_product_meta_lookup.table.gz (36/45/fopen): adding to final database dump
+0043.610 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_reserved_stock.table.tmpr1.gz (37/45/fopen): adding to final database dump
+0043.634 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_reserved_stock.table.gz (38/45/fopen): adding to final database dump
+0043.652 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_tax_rate_classes.table.tmpr3.gz (39/45/fopen): adding to final database dump
+0043.675 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_tax_rate_classes.table.gz (40/45/fopen): adding to final database dump
+0043.694 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_order_itemmeta.table.tmpr0.gz (41/45/fopen): adding to final database dump
+0043.717 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_order_itemmeta.table.gz (42/45/fopen): adding to final database dump
+0043.735 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (43/45/fopen): adding to final database dump
+0043.759 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_payment_tokenmeta.table.gz (44/45/fopen): adding to final database dump
+0043.777 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_admin_note_actions.table.tmpr189.gz (45/45/fopen): adding to final database dump
+0043.800 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_admin_note_actions.table.gz (46/45/fopen): adding to final database dump
+0043.819 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_admin_notes.table.tmpr39.gz (47/45/fopen): adding to final database dump
+0043.843 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_admin_notes.table.gz (48/45/fopen): adding to final database dump
+0043.860 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_customer_lookup.table.tmpr0.gz (49/45/fopen): adding to final database dump
+0043.884 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_customer_lookup.table.gz (50/45/fopen): adding to final database dump
+0043.902 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_download_log.table.tmpr0.gz (51/45/fopen): adding to final database dump
+0043.925 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_download_log.table.gz (52/45/fopen): adding to final database dump
+0043.944 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_coupon_lookup.table.tmpr1.gz (53/45/fopen): adding to final database dump
+0043.967 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_coupon_lookup.table.gz (54/45/fopen): adding to final database dump
+0043.994 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_product_lookup.table.tmpr0.gz (55/45/fopen): adding to final database dump
+0044.017 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_product_lookup.table.gz (56/45/fopen): adding to final database dump
+0044.035 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_stats.table.tmpr0.gz (57/45/fopen): adding to final database dump
+0044.069 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_stats.table.gz (58/45/fopen): adding to final database dump
+0044.100 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_tax_lookup.table.tmpr1.gz (59/45/fopen): adding to final database dump
+0044.135 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_order_tax_lookup.table.gz (60/45/fopen): adding to final database dump
+0044.158 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_rate_limits.table.tmpr0.gz (61/45/fopen): adding to final database dump
+0044.194 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_rate_limits.table.gz (62/45/fopen): adding to final database dump
+0044.217 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_webhooks.table.tmpr0.gz (63/45/fopen): adding to final database dump
+0044.236 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wc_webhooks.table.gz (64/45/fopen): adding to final database dump
+0044.258 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_api_keys.table.tmpr0.gz (65/45/fopen): adding to final database dump
+0044.277 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_api_keys.table.gz (66/45/fopen): adding to final database dump
+0044.300 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr0.gz (67/45/fopen): adding to final database dump
+0044.319 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_attribute_taxonomies.table.gz (68/45/fopen): adding to final database dump
+0044.342 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (69/45/fopen): adding to final database dump
+0044.361 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (70/45/fopen): adding to final database dump
+0044.383 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_log.table.tmpr0.gz (71/45/fopen): adding to final database dump
+0044.402 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_log.table.gz (72/45/fopen): adding to final database dump
+0044.457 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_order_items.table.tmpr0.gz (73/45/fopen): adding to final database dump
+0044.477 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_order_items.table.gz (74/45/fopen): adding to final database dump
+0044.500 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (75/45/fopen): adding to final database dump
+0044.519 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_payment_tokens.table.gz (76/45/fopen): adding to final database dump
+0044.542 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_sessions.table.tmpr2.gz (77/45/fopen): adding to final database dump
+0044.561 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_sessions.table.gz (78/45/fopen): adding to final database dump
+0044.584 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr0.gz (79/45/fopen): adding to final database dump
+0044.623 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zone_locations.table.gz (80/45/fopen): adding to final database dump
+0044.677 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr0.gz (81/45/fopen): adding to final database dump
+0044.701 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zone_methods.table.gz (82/45/fopen): adding to final database dump
+0044.718 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zones.table.tmpr0.gz (83/45/fopen): adding to final database dump
+0044.742 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_shipping_zones.table.gz (84/45/fopen): adding to final database dump
+0044.760 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (85/45/fopen): adding to final database dump
+0044.784 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_tax_rate_locations.table.gz (86/45/fopen): adding to final database dump
+0044.802 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_tax_rates.table.tmpr0.gz (87/45/fopen): adding to final database dump
+0044.826 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_woocommerce_tax_rates.table.gz (88/45/fopen): adding to final database dump
+0044.844 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wpforms_tasks_meta.table.tmpr6.gz (89/45/fopen): adding to final database dump
+0044.867 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db-table-wp_wpforms_tasks_meta.table.gz (90/45/fopen): adding to final database dump
+0044.909 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db.gz: finished writing out complete database file (995 KB)
+0045.035 (0) Total database tables backed up: 45 (backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db.gz, size: 1018974, sha1: ed07e4a5aab9cebff7ebaa41415e03486b7633d4, sha256: 5e192e3041865bc18e3963870e5cc1e567ca3c4de67ee0a70faa4e0662215c63)
+0045.109 (0) PHP event: code E_DEPRECATED: strlen(): Passing null to parameter #1 ($string) of type string is deprecated (line 2742, C:\xampp\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0045.150 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0045.168 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0045.192 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0045.210 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip: others: This file has not yet been successfully uploaded: will queue
+0045.234 (0) backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db.gz: db: This file has not yet been successfully uploaded: will queue
+0045.251 (0) Saving backup history. Total backup size: 61.1 MB
+0045.293 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0045.393 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0045.417 (0) No remote despatch: user chose no remote backup service
+0045.435 (0) Recording as successfully uploaded: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip
+0045.477 (0) Deleting zip manifest (backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-plugins.zip.list.tmp)
+0045.501 (0) Recording as successfully uploaded: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip
+0045.543 (0) Deleting zip manifest (backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-themes.zip.list.tmp)
+0045.561 (0) Recording as successfully uploaded: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip
+0045.603 (0) Deleting zip manifest (backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-uploads.zip.list.tmp)
+0045.626 (0) Recording as successfully uploaded: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip
+0045.718 (0) Deleting zip manifest (backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-others.zip.list.tmp)
+0045.759 (0) Recording as successfully uploaded: backup_2022-02-07-0956_Cosmetics_Store_1333195e9a86-db.gz
+0045.867 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0045.895 (0) Number of backup sets in history: 1; groups (db): 1
+0045.917 (0) Examining (for databases) backup set with group_id=0, nonce=1333195e9a86, datestamp=1644227789 (Feb 07 2022 09:56:29)
+0045.935 (0) This backup set is the backup set just made, so will not be deleted.
+0045.935 (0) Number of backup sets in history: 1; groups (files): 1
+0045.959 (0) Examining (for files) backup set with nonce=1333195e9a86, datestamp=1644227789 (Feb 07 2022 09:56:29)
+0045.959 (0) This backup set is the backup set just made, so will not be deleted.
+0045.997 (0) This backup set is the backup set just made, so will not be deleted.
+0045.998 (0) This backup set is the backup set just made, so will not be deleted.
+0045.998 (0) This backup set is the backup set just made, so will not be deleted.
+0045.998 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0046.030 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0046.076 (0) Resume backup (1333195e9a86, 0): finish run
+0046.135 (0) Decremented the semaphore (fd) by 1
+0046.177 (0) Semaphore (fd) unlocked
+0046.201 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0046.252 (0) The backup apparently succeeded and is now complete
+0046.268 (0) No email will/can be sent - the user has not configured an email address.
+0046.285 (0) Aparentemente, la copia de seguridad ha sido correcta y ahora está completa

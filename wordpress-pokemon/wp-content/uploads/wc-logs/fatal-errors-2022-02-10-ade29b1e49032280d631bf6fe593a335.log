@@ -1,0 +1,486 @@
+2022-02-10T20:52:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T20:52:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\wp-admin\plugin-install.php(16): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T20:53:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T20:55:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T20:57:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T20:59:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:01:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:03:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:05:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:07:49+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:09:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:11:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:13:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:15:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:16:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:16:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:16:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:16:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:17:02+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:17:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:17:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\wp-admin\about.php(10): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:21:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:24:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:24:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
+2022-02-10T21:37:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WP_Widget::__construct(), 0 passed in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php on line 61 and at least 2 expected in C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php:162
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget-factory.php(61): WP_Widget->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(115): WP_Widget_Factory->register('mqTranslateLang...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\language-code-selector-mqtranslate\mqtranslate_langcode_selector.php(17): register_widget('mqTranslateLang...')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): mqtrans_langcode_selector_widget_init('')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\widgets.php(1854): do_action('widgets_init')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(307): wp_widgets_init('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-settings.php(587): do_action('init')
+#11 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#15 {main}
+  thrown en C:\xampp\htdocs\wordpress\wp-includes\class-wp-widget.php en la línea 162
+
